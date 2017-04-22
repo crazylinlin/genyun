@@ -20,8 +20,11 @@ $(document).ready(function(){
 	classifyOfCur.innerHTML = str;
 	/*end 添加推荐以及分类课程*/
 	/*start 点击登录，注册按钮打开模态框*/
+	var index = ""; //弹出框的索引；
 	$(document).delegate("#login,#register","click",function(){
-		layer.open({
+		/*通过role判断用户点击的是注册还是登录按钮*/
+		var role = $(this).data("role");
+		index = layer.open({
 			type:1,
 			title:false,
 			closeBtn:0,
@@ -29,7 +32,12 @@ $(document).ready(function(){
 			content:$('#login-a-reg'),
 			skin:"",
 			area:['604px','380px'],
-
+			success:function(layero,index){
+				$("#btn-"+role).trigger("click");
+			},
+			end:function(){
+				$("div#login-a-reg").css("display","none");
+			}
 		});
 	})
 	/*end 点击登录，注册按钮打开模态框*/
@@ -39,16 +47,35 @@ $(document).ready(function(){
 		var id = $this.data("id").toUpperCase();
 		if(!$this.hasClass("active")){
 			$this.addClass("active").parent().siblings().children("a").removeClass("active");
+			var $reg = $(".register-content"),
+				$log = $(".login-content");
 			switch(id){
 				case "LOGIN":
-						$(".register-content").animate({"left":"604px"},500,function(){
-							$(".login-content").animate({"left":"0px"},500);
+					/*防止用户点击过快切换动画执行异常,作调整*/
+					if($reg.is(":animated") || $log.is(":animated")){
+						$reg.stop(true,true).fadeOut("normal",function(){
+							$log.css({"left":"0px"});
+						});
+						$log.stop(true,true);
+					}else{
+						$reg.fadeOut("normal",function(){
+							$log.animate({"left":0},500);
 						})
+					}	
 					break;
 				default:
-						$(".login-content").animate({"left":"-604px"},500,function(){
-							$(".register-content").animate({"left":"0px"},500);
+					/*防止用户点击过快切换动画执行异常,作调整*/
+					if($reg.is(":animated") || $log.is(":animated")){
+						$log.stop(true,true).animate({"left":"-604px"},500,function(){
+							$reg.fadeIn();
+						});
+						$reg.stop(true,true);
+					}else{
+						$log.animate({"left":"-604px"},500,function(){
+							$reg.fadeIn();
 						})
+					}
+						
 				;
 			}
 		}
@@ -81,4 +108,9 @@ $(document).ready(function(){
 
 	})
 	/*end 点击下一步切换到密码和确认注册页面*/
+	/*start 右上角关闭按钮事件，点击关闭模态框*/
+	$("#login-a-reg").delegate("#close-btn","click",function(){
+		layer.close(index);
+	})
+	/*end 右上角关闭按钮事件，点击关闭模态框*/
 })

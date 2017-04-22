@@ -112,7 +112,7 @@
 		<!--start 登录注册模态框-->
 		<div id="login-a-reg">
 			<h4 class="dialog-title text-right">
-				<a href="javascript:void(0);" class="text-center">
+				<a href="javascript:void(0);" class="text-center" id="close-btn">
 					<i class="glyphicon glyphicon-remove"></i>
 				</a>
 			</h4>
@@ -149,7 +149,8 @@
 									</div>
 									<div class="form-wrap warning num-wrap text-left">
 										<input type="text" id="check-num" placeholder="请输入验证码"/>
-										<a href="javascript:void(0);" id="get-num">免费获取</a>
+										<!--点击获取手机验证码后，给a元素添加个disabled类-->
+										<a href="javascript:void(0);" class="" id="get-num">免费获取</a>
 									</div>
 									<div class="form-wrap">
 										<input type="password" placeholder="请输入密码"/>

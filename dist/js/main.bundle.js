@@ -2615,7 +2615,7 @@ module.exports = "data:application/vnd.ms-fontobject;base64,n04AAEFNAAACAAIABAAA
 /* 11 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container header-wrap\">\n\t<span class=\"head-title\">耕耘课堂</span>\n\t<span class=\"search-wrap\">\n\t\t<input type=\"text\" placeholder=\"\"/>\n\t\t<a href=\"javascript:void(0);\" id=\"btn-search\">\n\t\t\t<i class=\"glyphicon glyphicon-search\"></i>\n\t\t</a>\n\t</span>\n\t<span class=\"link-control\">\n\t\t<a href=\"javascript:void(0);\" id=\"login\">登录</a>\n\t\t<a href=\"javascript:void(0)\" id=\"register\">注册</a>\n\t</span>\n</div>";
+module.exports = "<div class=\"container header-wrap\">\n\t<span class=\"head-title\">耕耘课堂</span>\n\t<span class=\"search-wrap\">\n\t\t<input type=\"text\" placeholder=\"\"/>\n\t\t<a href=\"javascript:void(0);\" id=\"btn-search\">\n\t\t\t<i class=\"glyphicon glyphicon-search\"></i>\n\t\t</a>\n\t</span>\n\t<span class=\"link-control\">\n\t\t<a href=\"javascript:void(0);\" id=\"login\" data-role=\"login\">登录</a>\n\t\t<a href=\"javascript:void(0)\" id=\"register\" data-role=\"register\">注册</a>\n\t</span>\n</div>";
 
 /***/ }),
 /* 12 */,

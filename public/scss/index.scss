@@ -167,6 +167,9 @@ div#login-a-reg{
 						&:hover{
 							background-color:$hover-color;
 						}
+						&:active{
+							@include opacity(0.5);
+						}
 					}
 					.btn-login{
 						padding:8px 0;
@@ -192,7 +195,7 @@ div#login-a-reg{
 				$tt-top:4px;
 				top:-$tt-top;
 				position:absolute;
-				left:$w-width;
+				display:none;
 				.level-container{
 					width:100%;
 					height:106px;
@@ -212,7 +215,7 @@ div#login-a-reg{
 								@include box-shadow(0 0 0 0 transparent);
 								}
 							}
-							a#get-num{
+							#get-num{
 								@include unstyled-link();
 								@include inline-block();
 								position:absolute;
@@ -232,6 +235,16 @@ div#login-a-reg{
 									left:-10px;
 									top:-1px;
 									border-left:2px solid $a-gray;
+								}
+							}
+							a#get-num.disabled{
+								@include border-radius($b-radius);
+								color:$gray;
+								padding:4px 6px;
+								height:28px;
+								background-color:$a-gray;
+								&:before{
+									top:4px;
 								}
 							}
 						}
