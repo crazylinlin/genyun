@@ -1,0 +1,462 @@
+/* line 4, ../scss/common/_header.scss */
+.header {
+  width: 100%;
+  color: white;
+  background-color: #313131;
+}
+/* line 8, ../scss/common/_header.scss */
+.header .header-wrap {
+  text-align: center;
+  line-height: 68px;
+}
+/* line 11, ../scss/common/_header.scss */
+.header .header-wrap .head-title {
+  float: left;
+  font-size: 24px;
+  margin-left: 48px;
+}
+/* line 16, ../scss/common/_header.scss */
+.header .header-wrap .search-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: relative;
+  height: 42px;
+  line-height: 42px;
+}
+/* line 24, ../scss/common/_header.scss */
+.header .header-wrap .search-wrap input {
+  width: 700px;
+  height: 42px;
+  line-height: normal;
+  border: none;
+  font-size: 24px;
+  padding: 2px 42px 2px 14px;
+  color: black;
+}
+/* line 35, ../scss/common/_header.scss */
+.header .header-wrap .search-wrap input:focus {
+  -moz-box-shadow: 0 0 5px 1px #4baf50;
+  -webkit-box-shadow: 0 0 5px 1px #4baf50;
+  box-shadow: 0 0 5px 1px #4baf50;
+}
+/* line 39, ../scss/common/_header.scss */
+.header .header-wrap .search-wrap #btn-search {
+  position: absolute;
+  right: 20px;
+  color: #4baf50;
+  font-size: 24px;
+  top: 1px;
+  height: 39px;
+}
+/* line 47, ../scss/common/_header.scss */
+.header .header-wrap .search-wrap #btn-search:active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
+  opacity: 0.809;
+}
+/* line 53, ../scss/common/_header.scss */
+.header .header-wrap .link-control {
+  float: right;
+}
+/* line 55, ../scss/common/_header.scss */
+.header .header-wrap .link-control a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  margin-right: 42px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.header .header-wrap .link-control a:active, .header .header-wrap .link-control a:focus {
+  outline: none;
+}
+
+/* line 3, ../scss/common/_item.scss */
+.normal-wrap .flex-box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-content: center;
+  align-content: center;
+}
+/* line 9, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item {
+  width: 280px;
+  height: 230px;
+  background-color: white;
+}
+/* line 14, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item a.img-link img {
+  width: 100%;
+  height: 160px;
+}
+/* line 19, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap {
+  padding: 0 12px;
+}
+/* line 21, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .sms-title {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: black;
+  margin-top: 12px;
+}
+/* line 27, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms a {
+  cursor: default;
+}
+/* line 30, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: black;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:focus {
+  outline: none;
+}
+/* line 34, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #b1b1b1;
+  margin-left: 30px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num:focus {
+  outline: none;
+}
+/* line 39, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  float: right;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:focus {
+  outline: none;
+}
+/* line 43, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .ok-favorite {
+  color: #f53636;
+}
+/* line 46, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .no-favorite {
+  color: #4baf50;
+}
+
+/* line 5, ../scss/index.scss */
+body {
+  background-color: #f0f0f0;
+  padding-bottom: 100px;
+}
+
+/* line 9, ../scss/index.scss */
+.top-wrap {
+  height: 640px;
+  background-color: white;
+  padding: 0;
+}
+/* line 17, ../scss/index.scss */
+.top-wrap #carousel-example-generic .carousel-inner .item img {
+  width: 100%;
+  height: 500px;
+}
+/* line 25, ../scss/index.scss */
+.top-wrap .link-wrap {
+  margin-top: 40px;
+  text-align: right;
+}
+/* line 28, ../scss/index.scss */
+.top-wrap .link-wrap a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 12px 20px;
+  border: 2px solid #4baf50;
+  color: #4baf50;
+  margin-left: 20px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.top-wrap .link-wrap a:active, .top-wrap .link-wrap a:focus {
+  outline: none;
+}
+/* line 37, ../scss/index.scss */
+.top-wrap .link-wrap a:last-child {
+  border: 0;
+}
+
+/* line 42, ../scss/index.scss */
+.normal-wrap {
+  margin-top: 64px;
+  padding: 0;
+}
+/* line 46, ../scss/index.scss */
+.normal-wrap .title-wrap .all-right {
+  float: right;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.normal-wrap .title-wrap .all-right:active, .normal-wrap .title-wrap .all-right:focus {
+  outline: none;
+}
+/* line 54, ../scss/index.scss */
+.normal-wrap .special-img-wrap {
+  position: relative;
+}
+/* line 57, ../scss/index.scss */
+.normal-wrap .special-img-wrap a.img-link img {
+  width: 100%;
+  height: 366px;
+}
+/* line 62, ../scss/index.scss */
+.normal-wrap .special-img-wrap span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 66, ../scss/index.scss */
+.normal-wrap .special-img-wrap a .sponsor {
+  color: white;
+  background-color: #4baf50;
+  font-size: 24px;
+  padding: 4px 8px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+/* line 77, ../scss/index.scss */
+.normal-wrap .special-img-wrap .sms-wrap {
+  position: absolute;
+  height: 56px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 88, ../scss/index.scss */
+.normal-wrap .special-img-wrap .sms-wrap .sms-center {
+  padding: 14px 92px;
+  background-color: rgba(210, 210, 210, 0.6);
+  font-size: 20px;
+}
+
+/* line 97, ../scss/index.scss */
+div#login-a-reg {
+  display: none;
+}
+/* line 100, ../scss/index.scss */
+div#login-a-reg .dialog-title {
+  margin-top: 0;
+}
+/* line 102, ../scss/index.scss */
+div#login-a-reg .dialog-title a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  padding: 2px;
+  color: #b1b1b1;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div#login-a-reg .dialog-title a:active, div#login-a-reg .dialog-title a:focus {
+  outline: none;
+}
+/* line 107, ../scss/index.scss */
+div#login-a-reg .dialog-title a:hover {
+  background-color: rgba(210, 210, 210, 0.6);
+}
+/* line 113, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 49, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+/* line 116, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 16px;
+  padding: 4px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li a:active, div#login-a-reg .dialog-wrap .dialog-tabs li a:focus {
+  outline: none;
+}
+/* line 122, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li a.active {
+  color: #4baf50;
+  border-bottom: 2px solid #4baf50;
+}
+/* line 128, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content {
+  margin-top: 40px;
+  position: relative;
+  height: 214px;
+}
+/* line 136, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent {
+  width: 604px;
+  height: 214px;
+}
+/* line 139, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap {
+  margin-bottom: 20px;
+}
+/* line 141, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 384px;
+  outline: none;
+  height: 38px;
+  line-height: normal;
+  text-indent: 14px;
+  border: 1px solid #b1b1b1;
+}
+/* line 149, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input:focus {
+  border-color: #4baf50;
+  -moz-box-shadow: 0 0 3px 1px #4baf50;
+  -webkit-box-shadow: 0 0 3px 1px #4baf50;
+  box-shadow: 0 0 3px 1px #4baf50;
+}
+/* line 154, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input.warning {
+  border-color: #f53636;
+  -moz-box-shadow: 0 0 3px 1px #f53636;
+  -webkit-box-shadow: 0 0 3px 1px #f53636;
+  box-shadow: 0 0 3px 1px #f53636;
+}
+/* line 158, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: white;
+  background-color: #4baf50;
+  font-size: 16px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:focus {
+  outline: none;
+}
+/* line 163, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:hover {
+  background-color: #47a14b;
+}
+/* line 167, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .btn-login {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px 0;
+  width: 384px;
+}
+/* line 173, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap {
+  width: 384px;
+  margin: 0 auto;
+}
+/* line 176, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap a {
+  color: #b1b1b1;
+}
+/* line 181, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .btn-wrap {
+  margin-top: 40px;
+}
+/* line 186, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .login-content {
+  position: absolute;
+}
+/* line 189, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content {
+  position: absolute;
+  left: 604px;
+}
+/* line 192, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-wrap {
+  width: 384px;
+  margin: 0 auto;
+}
+/* line 195, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-wrap .num-wrap {
+  border: 1px solid #b1b1b1;
+}
+/* line 197, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-wrap .num-wrap input {
+  border: 0;
+  width: auto;
+}
+/* line 201, ../scss/index.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-wrap .num-wrap:focus {
+  border-color: #4baf50;
+  -moz-box-shadow: 0 0 3px 1px #4baf50;
+  -webkit-box-shadow: 0 0 3px 1px #4baf50;
+  box-shadow: 0 0 3px 1px #4baf50;
+}

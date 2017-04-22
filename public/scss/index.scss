@@ -1,0 +1,210 @@
+@import "./common/header";
+@import "compass/typography/links/unstyled-link";
+@import "compass/typography/lists";
+@import "./common/item";
+body{
+	background-color:$bg-color;
+	padding-bottom:100px;
+}
+.top-wrap{
+	height:640px;
+	background-color:$white;
+	padding:0;
+	@at-root (without:role){
+		#carousel-example-generic{
+			.carousel-inner{
+				.item{
+					img{
+						width:100%;
+						height:500px;
+					}
+				}
+			}
+		}
+	}
+	.link-wrap{
+		margin-top:40px;
+		text-align:right;
+		a{
+			@include unstyled-link();
+			@include inline-block();
+			@include border-radius(3px);
+			padding:12px 20px;
+			border:2px solid $theme-color;
+			color:$theme-color;
+			margin-left:20px;
+		}
+		a:last-child{
+			border:0;
+		}
+	}
+}
+.normal-wrap{
+	margin-top:64px;
+	padding:0;
+	.title-wrap{
+		.all-right{
+			float:right;
+			@include unstyled-link();
+		}
+	}
+	.flex-box{
+		@extend %flex-box;
+	}
+	.special-img-wrap{
+		position:relative;
+		a.img-link{
+			img{
+				width:100%;
+				height:366px;
+			}
+		}
+		span{
+			@include inline-block();
+		}
+		a{
+			.sponsor{
+			color:$white;
+			background-color:$theme-color;
+			font-size:24px;
+			padding:4px 8px;
+			position:absolute;
+			right:0px;
+			top:0px;
+			}
+		}
+		
+		.sms-wrap{
+			position:absolute;
+			height:56px;
+			top:0;
+			bottom:0;
+			margin-top:auto;
+			margin-bottom:auto;
+			left:0;
+			right:0;
+			margin-left:auto;
+			margin-right:auto;
+			.sms-center{
+				padding:14px 92px;
+				background-color:$a-gray;
+				font-size:20px;
+			}
+		}
+		
+	}
+}
+div#login-a-reg{
+	display:none;
+	$btn-f-size:16px;
+	.dialog-title{
+		margin-top:0;
+		a{
+			@include inline-block();
+			@include unstyled-link();
+			padding:2px;
+			color:$gray;
+			&:hover{
+				background-color:$a-gray;
+			}
+		}
+	}
+	.dialog-wrap{
+		.dialog-tabs{
+			@include inline-block-list(18px);
+			li{
+				a{
+					@include unstyled-link();
+					@include inline-block();
+					font-size:$btn-f-size;
+					padding:4px;
+				}
+				a.active{
+					color:$theme-color;
+					border-bottom:2px solid $theme-color;
+				}
+			}
+		}
+		.dialog-content{
+			margin-top:40px;
+			position:relative;
+			$w-width:604px;
+			$h-height:214px;
+			$f-width:384px;
+			$b-radius:3px;
+			height:$h-height;
+			.curContent{
+				width:$w-width;
+				height:$h-height;
+				.form-wrap{
+					margin-bottom:20px;
+					input{
+						@include border-radius($b-radius);
+						width:$f-width;
+						outline:none;
+						height:38px;
+						line-height:normal;
+						text-indent:14px;
+						border:1px solid $gray;
+						&:focus{
+							border-color:$theme-color;
+							@include box-shadow(0 0 3px 1px $theme-color);
+						}
+					}
+					input.warning{
+						border-color:$red;
+						@include box-shadow(0 0 3px 1px $red);
+					}
+					.m-btn{
+						@include unstyled-link();
+						color:$white;
+						background-color:$theme-color;
+						font-size:$btn-f-size;
+						&:hover{
+							background-color:$hover-color;
+						}
+					}
+					.btn-login{
+						@include inline-block();
+						@include border-radius($b-radius);
+						padding:8px 0;
+						width:$f-width;
+					}
+					.forget-wrap{
+						width:$f-width;
+						margin:0 auto;
+						a{
+							color:$gray;
+						}
+					}
+				}
+				.btn-wrap{
+					margin-top:40px;
+
+				}
+			}
+			.login-content{
+				position:absolute;
+			}
+			.register-content{
+				position:absolute;
+				left:$w-width;
+				.level-wrap{
+					width:$f-width;
+					margin:0 auto;
+					.num-wrap{
+						border:1px solid $gray;
+						input{
+							border:0;
+							width:auto;
+						}
+						&:focus{
+							border-color:$theme-color;
+							@include box-shadow(0 0 3px 1px $theme-color);
+						}
+					}
+				}
+			}
+		}
+	}
+}
