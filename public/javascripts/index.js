@@ -54,4 +54,31 @@ $(document).ready(function(){
 		}
 	})
 	/*end 模态框登录和注册的切换*/
+	/*start 验证码输入框焦点样式事件*/
+	$(".register-content").delegate("#check-num","focus",function(){
+		var $this = $(this);
+		if(!$this.parent().hasClass("warning") && !$this.parent().hasClass("hover-wrap")){
+			$this.parent().addClass("hover-wrap");
+		}
+	})
+	/*end 验证码输入框焦点样式事件*/
+	/*start 验证码输入框失去焦点样式事件*/
+	$(".register-content").delegate("#check-num","blur",function(){
+		var $this = $(this);
+		if(!$this.parent().hasClass("warning") && $this.parent().hasClass("hover-wrap")){
+			$this.parent().removeClass("hover-wrap");
+		}
+	})
+	/*end 验证码输入框失去焦点样式事件*/
+	/*start 点击下一步切换到密码和确认注册页面*/
+	$(".register-content").delegate(".btn-next","click",function(){
+		var $this = $(this);
+		if($this.hasClass("btn-next")){
+			$(".level-wrap").animate({"margin-top":"-118px"},500,function(){
+				$this.removeClass("btn-next").addClass("btn-register").html("登录");
+			})
+		}
+
+	})
+	/*end 点击下一步切换到密码和确认注册页面*/
 })
