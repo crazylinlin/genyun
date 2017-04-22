@@ -1,0 +1,171 @@
+div#login-a-reg,div.dialog{
+	display:none;
+	$btn-f-size:16px;
+	.dialog-title{
+		margin-top:0;
+		a{
+			@include inline-block();
+			@include unstyled-link();
+			padding:2px;
+			color:$gray;
+			&:hover{
+				background-color:$a-gray;
+			}
+		}
+	}
+	.dialog-wrap{
+		.dialog-tabs{
+			@include inline-block-list(18px);
+			li{
+				a{
+					@include unstyled-link();
+					@include inline-block();
+					font-size:$btn-f-size;
+					padding:4px;
+				}
+				a.active{
+					color:$theme-color;
+					border-bottom:2px solid $theme-color;
+				}
+			}
+		}
+		.dialog-content{
+			margin-top:40px;
+			position:relative;
+			$w-width:604px;
+			$h-height:214px;
+			$f-width:384px;
+			$b-radius:3px;
+			height:$h-height;
+			.curContent{
+				width:$w-width;
+				height:$h-height;
+				.form-wrap{
+					margin-bottom:20px;
+					input{
+						@include border-radius($b-radius);
+						width:$f-width;
+						outline:none;
+						height:38px;
+						line-height:normal;
+						text-indent:14px;
+						border:1px solid $gray;
+						&:focus:not(.warning){
+							border-color:$theme-color;
+							@include box-shadow(0 0 3px 1px $theme-color);
+						}
+					}
+					@at-root(without:rule){
+						input.warning,div.warning{
+							border:1px solid $red !important;
+							@include box-shadow(0 0 3px 1px $red);
+						}
+					}
+					.m-btn{
+						@include unstyled-link();
+						@include inline-block();
+						@include border-radius($b-radius);
+						color:$white;
+						background-color:$theme-color;
+						font-size:$btn-f-size;
+						&:hover{
+							background-color:$hover-color;
+						}
+						&:active{
+							@include opacity(0.5);
+						}
+					}
+					.btn-login{
+						padding:8px 0;
+						width:$f-width;
+					}
+					.forget-wrap{
+						width:$f-width;
+						margin:0 auto;
+						a{
+							color:$gray;
+						}
+					}
+				}
+				.btn-wrap{
+					margin-top:40px;
+
+				}
+			}
+			.login-content{
+				position:absolute;
+			}
+			.register-content{
+				$tt-top:4px;
+				top:-$tt-top;
+				position:absolute;
+				display:none;
+				.level-container{
+					width:100%;
+					height:106px;
+					padding:$tt-top 0;
+					overflow:hidden;
+					.level-wrap{
+						width:$f-width;
+						margin:0 auto;
+						.num-wrap{
+							border:1px solid $gray;
+							position:relative;
+							input{
+								border:0;
+								width:auto;
+								outline:none;
+								&:focus{
+								@include box-shadow(0 0 0 0 transparent);
+								}
+							}
+							#get-num{
+								@include unstyled-link();
+								@include inline-block();
+								position:absolute;
+								right:0;
+								margin-right:12px;
+								height:20px;
+								top:0;
+								margin-top:auto;
+								bottom:0;
+								margin-bottom:auto;
+
+								&:before{
+									position:absolute;
+									content:"";
+									width:0;
+									height:22px;
+									left:-10px;
+									top:-1px;
+									border-left:2px solid $a-gray;
+								}
+							}
+							a#get-num.disabled{
+								@include border-radius($b-radius);
+								color:$gray;
+								padding:4px 6px;
+								height:28px;
+								background-color:$a-gray;
+								&:before{
+									top:4px;
+								}
+							}
+						}
+						.num-wrap.hover-wrap{
+							border:1px solid $theme-color;
+							@include box-shadow(0 0 3px 1px $theme-color);
+						}
+					}
+				}
+				.btn-wrap{
+					.btn-next,.btn-register{
+						padding:8px 0;
+						width:$f-width;
+						margin-top:-$tt-top;
+					}
+				}
+			}
+		}
+	}
+}

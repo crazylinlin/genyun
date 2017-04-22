@@ -161,29 +161,338 @@
   color: #4baf50;
 }
 
-/* line 5, ../scss/index.scss */
+/* line 1, ../scss/common/_dialog.scss */
+div#login-a-reg, div.dialog {
+  display: none;
+}
+/* line 4, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-title, div.dialog .dialog-title {
+  margin-top: 0;
+}
+/* line 6, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-title a, div.dialog .dialog-title a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  padding: 2px;
+  color: #b1b1b1;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div#login-a-reg .dialog-title a:active, div#login-a-reg .dialog-title a:focus, div.dialog .dialog-title a:active, div.dialog .dialog-title a:focus {
+  outline: none;
+}
+/* line 11, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-title a:hover, div.dialog .dialog-title a:hover {
+  background-color: rgba(210, 210, 210, 0.6);
+}
+/* line 17, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs, div.dialog .dialog-wrap .dialog-tabs {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 49, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li, div.dialog .dialog-wrap .dialog-tabs li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+/* line 20, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li a, div.dialog .dialog-wrap .dialog-tabs li a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 16px;
+  padding: 4px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li a:active, div#login-a-reg .dialog-wrap .dialog-tabs li a:focus, div.dialog .dialog-wrap .dialog-tabs li a:active, div.dialog .dialog-wrap .dialog-tabs li a:focus {
+  outline: none;
+}
+/* line 26, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-tabs li a.active, div.dialog .dialog-wrap .dialog-tabs li a.active {
+  color: #4baf50;
+  border-bottom: 2px solid #4baf50;
+}
+/* line 32, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content, div.dialog .dialog-wrap .dialog-content {
+  margin-top: 40px;
+  position: relative;
+  height: 214px;
+}
+/* line 40, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent, div.dialog .dialog-wrap .dialog-content .curContent {
+  width: 604px;
+  height: 214px;
+}
+/* line 43, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap {
+  margin-bottom: 20px;
+}
+/* line 45, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap input {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 384px;
+  outline: none;
+  height: 38px;
+  line-height: normal;
+  text-indent: 14px;
+  border: 1px solid #b1b1b1;
+}
+/* line 53, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input:focus:not(.warning), div.dialog .dialog-wrap .dialog-content .curContent .form-wrap input:focus:not(.warning) {
+  border-color: #4baf50;
+  -moz-box-shadow: 0 0 3px 1px #4baf50;
+  -webkit-box-shadow: 0 0 3px 1px #4baf50;
+  box-shadow: 0 0 3px 1px #4baf50;
+}
+/* line 59, ../scss/common/_dialog.scss */
+input.warning, div.warning {
+  border: 1px solid #f53636 !important;
+  -moz-box-shadow: 0 0 3px 1px #f53636;
+  -webkit-box-shadow: 0 0 3px 1px #f53636;
+  box-shadow: 0 0 3px 1px #f53636;
+}
+/* line 64, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: white;
+  background-color: #4baf50;
+  font-size: 16px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:focus, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:focus {
+  outline: none;
+}
+/* line 71, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:hover, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:hover {
+  background-color: #47a14b;
+}
+/* line 74, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 78, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .btn-login, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .btn-login {
+  padding: 8px 0;
+  width: 384px;
+}
+/* line 82, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap {
+  width: 384px;
+  margin: 0 auto;
+}
+/* line 85, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap a, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap a {
+  color: #b1b1b1;
+}
+/* line 90, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .curContent .btn-wrap, div.dialog .dialog-wrap .dialog-content .curContent .btn-wrap {
+  margin-top: 40px;
+}
+/* line 95, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .login-content, div.dialog .dialog-wrap .dialog-content .login-content {
+  position: absolute;
+}
+/* line 98, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content, div.dialog .dialog-wrap .dialog-content .register-content {
+  top: -4px;
+  position: absolute;
+  display: none;
+}
+/* line 103, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container, div.dialog .dialog-wrap .dialog-content .register-content .level-container {
+  width: 100%;
+  height: 106px;
+  padding: 4px 0;
+  overflow: hidden;
+}
+/* line 108, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap {
+  width: 384px;
+  margin: 0 auto;
+}
+/* line 111, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap {
+  border: 1px solid #b1b1b1;
+  position: relative;
+}
+/* line 114, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input {
+  border: 0;
+  width: auto;
+  outline: none;
+}
+/* line 118, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input:focus, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input:focus {
+  -moz-box-shadow: 0 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+/* line 122, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: absolute;
+  right: 0;
+  margin-right: 12px;
+  height: 20px;
+  top: 0;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: auto;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:active, div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:focus, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:active, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:focus {
+  outline: none;
+}
+/* line 134, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:before, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 22px;
+  left: -10px;
+  top: -1px;
+  border-left: 2px solid rgba(210, 210, 210, 0.6);
+}
+/* line 144, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #b1b1b1;
+  padding: 4px 6px;
+  height: 28px;
+  background-color: rgba(210, 210, 210, 0.6);
+}
+/* line 150, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before {
+  top: 4px;
+}
+/* line 155, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap.hover-wrap, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap.hover-wrap {
+  border: 1px solid #4baf50;
+  -moz-box-shadow: 0 0 3px 1px #4baf50;
+  -webkit-box-shadow: 0 0 3px 1px #4baf50;
+  box-shadow: 0 0 3px 1px #4baf50;
+}
+/* line 162, ../scss/common/_dialog.scss */
+div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-next, div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-register, div.dialog .dialog-wrap .dialog-content .register-content .btn-wrap .btn-next, div.dialog .dialog-wrap .dialog-content .register-content .btn-wrap .btn-register {
+  padding: 8px 0;
+  width: 384px;
+  margin-top: -4px;
+}
+
+/* line 2, ../scss/common/_specialItem.scss */
+.normal-wrap .special-img-wrap {
+  position: relative;
+}
+/* line 5, ../scss/common/_specialItem.scss */
+.normal-wrap .special-img-wrap a.img-link img {
+  width: 100%;
+  height: 366px;
+}
+/* line 10, ../scss/common/_specialItem.scss */
+.normal-wrap .special-img-wrap span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 14, ../scss/common/_specialItem.scss */
+.normal-wrap .special-img-wrap a .sponsor {
+  color: white;
+  background-color: #4baf50;
+  font-size: 24px;
+  padding: 4px 8px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+/* line 25, ../scss/common/_specialItem.scss */
+.normal-wrap .special-img-wrap .sms-wrap {
+  position: absolute;
+  height: 56px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 36, ../scss/common/_specialItem.scss */
+.normal-wrap .special-img-wrap .sms-wrap .sms-center {
+  padding: 14px 92px;
+  background-color: rgba(210, 210, 210, 0.6);
+  font-size: 20px;
+}
+
+/* line 10, ../scss/index.scss */
 body {
   background-color: #f0f0f0;
   padding-bottom: 100px;
 }
 
-/* line 9, ../scss/index.scss */
+/* line 14, ../scss/index.scss */
 .top-wrap {
   height: 640px;
   background-color: white;
   padding: 0;
 }
-/* line 17, ../scss/index.scss */
+/* line 22, ../scss/index.scss */
 .top-wrap #carousel-example-generic .carousel-inner .item img {
   width: 100%;
   height: 500px;
 }
-/* line 25, ../scss/index.scss */
+/* line 30, ../scss/index.scss */
 .top-wrap .link-wrap {
   margin-top: 40px;
   text-align: right;
 }
-/* line 28, ../scss/index.scss */
+/* line 33, ../scss/index.scss */
 .top-wrap .link-wrap a {
   color: inherit;
   text-decoration: inherit;
@@ -205,332 +514,24 @@ body {
 .top-wrap .link-wrap a:active, .top-wrap .link-wrap a:focus {
   outline: none;
 }
-/* line 37, ../scss/index.scss */
+/* line 42, ../scss/index.scss */
 .top-wrap .link-wrap a:last-child {
   border: 0;
 }
 
-/* line 42, ../scss/index.scss */
+/* line 47, ../scss/index.scss */
 .normal-wrap {
   margin-top: 64px;
   padding: 0;
 }
-/* line 46, ../scss/index.scss */
+/* line 51, ../scss/index.scss */
 .normal-wrap .title-wrap .all-right {
-  float: right;
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
+  float: right;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
 .normal-wrap .title-wrap .all-right:active, .normal-wrap .title-wrap .all-right:focus {
   outline: none;
-}
-/* line 54, ../scss/index.scss */
-.normal-wrap .special-img-wrap {
-  position: relative;
-}
-/* line 57, ../scss/index.scss */
-.normal-wrap .special-img-wrap a.img-link img {
-  width: 100%;
-  height: 366px;
-}
-/* line 62, ../scss/index.scss */
-.normal-wrap .special-img-wrap span {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-/* line 66, ../scss/index.scss */
-.normal-wrap .special-img-wrap a .sponsor {
-  color: white;
-  background-color: #4baf50;
-  font-size: 24px;
-  padding: 4px 8px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-/* line 77, ../scss/index.scss */
-.normal-wrap .special-img-wrap .sms-wrap {
-  position: absolute;
-  height: 56px;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 88, ../scss/index.scss */
-.normal-wrap .special-img-wrap .sms-wrap .sms-center {
-  padding: 14px 92px;
-  background-color: rgba(210, 210, 210, 0.6);
-  font-size: 20px;
-}
-
-/* line 97, ../scss/index.scss */
-div#login-a-reg {
-  display: none;
-}
-/* line 100, ../scss/index.scss */
-div#login-a-reg .dialog-title {
-  margin-top: 0;
-}
-/* line 102, ../scss/index.scss */
-div#login-a-reg .dialog-title a {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  padding: 2px;
-  color: #b1b1b1;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-div#login-a-reg .dialog-title a:active, div#login-a-reg .dialog-title a:focus {
-  outline: none;
-}
-/* line 107, ../scss/index.scss */
-div#login-a-reg .dialog-title a:hover {
-  background-color: rgba(210, 210, 210, 0.6);
-}
-/* line 113, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-tabs {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 49, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
-div#login-a-reg .dialog-wrap .dialog-tabs li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  white-space: nowrap;
-  padding-left: 18px;
-  padding-right: 18px;
-}
-/* line 116, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-tabs li a {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  font-size: 16px;
-  padding: 4px;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-div#login-a-reg .dialog-wrap .dialog-tabs li a:active, div#login-a-reg .dialog-wrap .dialog-tabs li a:focus {
-  outline: none;
-}
-/* line 122, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-tabs li a.active {
-  color: #4baf50;
-  border-bottom: 2px solid #4baf50;
-}
-/* line 128, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content {
-  margin-top: 40px;
-  position: relative;
-  height: 214px;
-}
-/* line 136, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent {
-  width: 604px;
-  height: 214px;
-}
-/* line 139, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap {
-  margin-bottom: 20px;
-}
-/* line 141, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  width: 384px;
-  outline: none;
-  height: 38px;
-  line-height: normal;
-  text-indent: 14px;
-  border: 1px solid #b1b1b1;
-}
-/* line 149, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input:focus:not(.warning) {
-  border-color: #4baf50;
-  -moz-box-shadow: 0 0 3px 1px #4baf50;
-  -webkit-box-shadow: 0 0 3px 1px #4baf50;
-  box-shadow: 0 0 3px 1px #4baf50;
-}
-/* line 155, ../scss/index.scss */
-input.warning, div.warning {
-  border: 1px solid #f53636 !important;
-  -moz-box-shadow: 0 0 3px 1px #f53636;
-  -webkit-box-shadow: 0 0 3px 1px #f53636;
-  box-shadow: 0 0 3px 1px #f53636;
-}
-/* line 160, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  color: white;
-  background-color: #4baf50;
-  font-size: 16px;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:focus {
-  outline: none;
-}
-/* line 167, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:hover {
-  background-color: #47a14b;
-}
-/* line 170, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-}
-/* line 174, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .btn-login {
-  padding: 8px 0;
-  width: 384px;
-}
-/* line 178, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap {
-  width: 384px;
-  margin: 0 auto;
-}
-/* line 181, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap a {
-  color: #b1b1b1;
-}
-/* line 186, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .curContent .btn-wrap {
-  margin-top: 40px;
-}
-/* line 191, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .login-content {
-  position: absolute;
-}
-/* line 194, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content {
-  top: -4px;
-  position: absolute;
-  display: none;
-}
-/* line 199, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container {
-  width: 100%;
-  height: 106px;
-  padding: 4px 0;
-  overflow: hidden;
-}
-/* line 204, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap {
-  width: 384px;
-  margin: 0 auto;
-}
-/* line 207, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap {
-  border: 1px solid #b1b1b1;
-  position: relative;
-}
-/* line 210, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input {
-  border: 0;
-  width: auto;
-  outline: none;
-}
-/* line 214, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input:focus {
-  -moz-box-shadow: 0 0 0 0 transparent;
-  -webkit-box-shadow: 0 0 0 0 transparent;
-  box-shadow: 0 0 0 0 transparent;
-}
-/* line 218, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  position: absolute;
-  right: 0;
-  margin-right: 12px;
-  height: 20px;
-  top: 0;
-  margin-top: auto;
-  bottom: 0;
-  margin-bottom: auto;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:active, div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:focus {
-  outline: none;
-}
-/* line 230, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 22px;
-  left: -10px;
-  top: -1px;
-  border-left: 2px solid rgba(210, 210, 210, 0.6);
-}
-/* line 240, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  color: #b1b1b1;
-  padding: 4px 6px;
-  height: 28px;
-  background-color: rgba(210, 210, 210, 0.6);
-}
-/* line 246, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before {
-  top: 4px;
-}
-/* line 251, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap.hover-wrap {
-  border: 1px solid #4baf50;
-  -moz-box-shadow: 0 0 3px 1px #4baf50;
-  -webkit-box-shadow: 0 0 3px 1px #4baf50;
-  box-shadow: 0 0 3px 1px #4baf50;
-}
-/* line 258, ../scss/index.scss */
-div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-next, div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-register {
-  padding: 8px 0;
-  width: 384px;
-  margin-top: -4px;
 }
