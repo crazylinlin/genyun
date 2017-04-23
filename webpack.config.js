@@ -5,7 +5,8 @@ var path = require('path');
 module.exports = {
 	entry:{
 		main:"./public/javascripts/main.js",
-		index:"./public/javascripts/index.js"
+		index:"./public/javascripts/index.js",
+		qa_list:"./public/javascripts/QA_list.js"
 	},
 	output:{
 		filename:'js/[name].bundle.js',
@@ -134,9 +135,15 @@ module.exports = {
 	plugins:[
 		new htmlWebpackPlugin({
 			template:"public/index.html",
-			fileName:"index.html",
+			filename:"index.html",
 			inject:"body",
 			chunks:['main','index']
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/QA_list.html",
+			filename:"html/QA_list.html",
+			inject:"body",
+			chunks:['main','qa_list']
 		})
 	]
 }
