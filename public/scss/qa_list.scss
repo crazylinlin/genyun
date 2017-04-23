@@ -1,4 +1,48 @@
-
+@import "compass/css3";
+@import "compass/typography/links/unstyled-link";
 @import "./common/header";
 @import "./common/dialog";
-
+body{
+	background-color:$bg-color;
+}
+$pd-lr:30px;
+.title-wrap{
+		padding:6px $pd-lr;
+		border-bottom:1px solid $a-gray;
+		background-color:$white;
+		h3{
+			//color:$gray;
+			.right-wrap{
+				@include inline-block();
+				float:right;
+				font-size:16px;
+				padding-top:4px;
+				a{
+					@include unstyled-link();
+				}
+			}
+		}
+}
+.main-wrap{
+	background-color:$white;
+	padding:0px $pd-lr;
+	padding-bottom:$pd-lr+12px;
+	height:100%;
+	.qa-wrap{
+		.qa-item{
+			border-bottom:1px solid $a-gray;
+			padding:14px 0px;
+			h4{
+				//color:$gray;
+			}
+			p{
+				//color:$f-color;
+			}
+			.btn-wrap{
+				a{
+					@include unstyled-link();
+				}
+			}
+		}
+	}
+}

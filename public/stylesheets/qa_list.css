@@ -337,3 +337,59 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   width: 384px;
   margin-top: -4px;
 }
+
+/* line 5, ../scss/qa_list.scss */
+body {
+  background-color: #f0f0f0;
+}
+
+/* line 9, ../scss/qa_list.scss */
+.title-wrap {
+  padding: 6px 30px;
+  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+  background-color: white;
+}
+/* line 15, ../scss/qa_list.scss */
+.title-wrap h3 .right-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  float: right;
+  font-size: 16px;
+  padding-top: 4px;
+}
+/* line 20, ../scss/qa_list.scss */
+.title-wrap h3 .right-wrap a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.title-wrap h3 .right-wrap a:active, .title-wrap h3 .right-wrap a:focus {
+  outline: none;
+}
+
+/* line 26, ../scss/qa_list.scss */
+.main-wrap {
+  background-color: white;
+  padding: 0px 30px;
+  padding-bottom: 42px;
+  height: 100%;
+}
+/* line 32, ../scss/qa_list.scss */
+.main-wrap .qa-wrap .qa-item {
+  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+  padding: 14px 0px;
+}
+/* line 42, ../scss/qa_list.scss */
+.main-wrap .qa-wrap .qa-item .btn-wrap a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.main-wrap .qa-wrap .qa-item .btn-wrap a:active, .main-wrap .qa-wrap .qa-item .btn-wrap a:focus {
+  outline: none;
+}
