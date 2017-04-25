@@ -76,91 +76,6 @@
   outline: none;
 }
 
-/* line 3, ../scss/common/_item.scss */
-.normal-wrap .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-align-content: center;
-  align-content: center;
-}
-/* line 9, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item {
-  width: 280px;
-  height: 230px;
-  background-color: white;
-}
-/* line 14, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item a.img-link img {
-  width: 100%;
-  height: 160px;
-}
-/* line 19, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap {
-  padding: 0 12px;
-}
-/* line 21, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .sms-title {
-  white-space: nowrap;
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  color: black;
-  margin-top: 12px;
-}
-/* line 27, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms a {
-  cursor: default;
-}
-/* line 30, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  color: black;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:focus {
-  outline: none;
-}
-/* line 34, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  color: #b1b1b1;
-  margin-left: 30px;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num:focus {
-  outline: none;
-}
-/* line 39, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  float: right;
-}
-/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:focus {
-  outline: none;
-}
-/* line 43, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .ok-favorite {
-  color: #f53636;
-}
-/* line 46, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .no-favorite {
-  color: #4baf50;
-}
-
 /* line 2, ../scss/common/_dialog.scss */
 div#login-a-reg, div.dialog {
   display: none;
@@ -423,115 +338,207 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   margin-top: -4px;
 }
 
-/* line 2, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap {
-  position: relative;
+/* line 3, ../scss/common/_item.scss */
+div.course-container .course-wrap {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-align-content: center;
+  align-content: center;
 }
-/* line 5, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap a.img-link img {
-  width: 100%;
-  height: 366px;
-}
-/* line 10, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap span {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-/* line 14, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap a .sponsor {
-  color: white;
-  background-color: #4baf50;
-  font-size: 24px;
-  padding: 4px 8px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-/* line 25, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap .sms-wrap {
-  position: absolute;
-  height: 56px;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 36, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap .sms-wrap .sms-center {
-  padding: 14px 92px;
-  background-color: rgba(210, 210, 210, 0.6);
-  font-size: 20px;
-}
-
-/* line 9, ../scss/index.scss */
-body {
-  background-color: #f0f0f0;
-  padding-bottom: 100px;
-}
-
-/* line 13, ../scss/index.scss */
-.top-wrap {
-  height: 640px;
+/* line 9, ../scss/common/_item.scss */
+div.course-container .course-wrap .item {
+  width: 280px;
+  height: 230px;
   background-color: white;
-  padding: 0;
 }
-/* line 21, ../scss/index.scss */
-.top-wrap #carousel-example-generic .carousel-inner .item img {
+/* line 14, ../scss/common/_item.scss */
+div.course-container .course-wrap .item a.img-link img {
   width: 100%;
-  height: 500px;
+  height: 160px;
 }
-/* line 29, ../scss/index.scss */
-.top-wrap .link-wrap {
-  margin-top: 40px;
-  text-align: right;
+/* line 19, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap {
+  padding: 0 12px;
 }
-/* line 32, ../scss/index.scss */
-.top-wrap .link-wrap a {
+/* line 21, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap .sms-title {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: black;
+  margin-top: 12px;
+}
+/* line 27, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap .notice-sms a {
+  cursor: default;
+}
+/* line 30, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap .notice-sms a.money-wrap {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  padding: 12px 20px;
-  border: 2px solid #4baf50;
-  color: #4baf50;
-  margin-left: 20px;
+  color: black;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.top-wrap .link-wrap a:active, .top-wrap .link-wrap a:focus {
+div.course-container .course-wrap .item .notice-wrap .notice-sms a.money-wrap:active, div.course-container .course-wrap .item .notice-wrap .notice-sms a.money-wrap:focus {
   outline: none;
 }
-/* line 41, ../scss/index.scss */
-.top-wrap .link-wrap a:last-child {
-  border: 0;
+/* line 34, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap .notice-sms .learning-num {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #b1b1b1;
+  margin-left: 30px;
 }
-
-/* line 46, ../scss/index.scss */
-.normal-wrap {
-  margin-top: 64px;
-  padding: 0;
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div.course-container .course-wrap .item .notice-wrap .notice-sms .learning-num:active, div.course-container .course-wrap .item .notice-wrap .notice-sms .learning-num:focus {
+  outline: none;
 }
-/* line 50, ../scss/index.scss */
-.normal-wrap .title-wrap .all-right {
+/* line 39, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap .notice-sms .is-favorite {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
   float: right;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.normal-wrap .title-wrap .all-right:active, .normal-wrap .title-wrap .all-right:focus {
+div.course-container .course-wrap .item .notice-wrap .notice-sms .is-favorite:active, div.course-container .course-wrap .item .notice-wrap .notice-sms .is-favorite:focus {
   outline: none;
+}
+/* line 43, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap .notice-sms .ok-favorite {
+  color: #f53636;
+}
+/* line 46, ../scss/common/_item.scss */
+div.course-container .course-wrap .item .notice-wrap .notice-sms .no-favorite {
+  color: #4baf50;
+}
+
+/* line 6, ../scss/course_list.scss */
+body {
+  background-color: #f0f0f0;
+}
+
+/* line 9, ../scss/course_list.scss */
+div.course-container {
+  padding: 0;
+  background-color: white;
+}
+/* line 13, ../scss/course_list.scss */
+div.course-container h4 {
+  text-indent: 30px;
+  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+  padding: 14px 0;
+}
+/* line 17, ../scss/course_list.scss */
+div.course-container h4 .all-right {
+  float: right;
+  position: relative;
+  font-size: 16px;
+  margin-right: 30px;
+  height: 34px;
+  line-height: normal;
+}
+/* line 24, ../scss/course_list.scss */
+div.course-container h4 .all-right a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  text-indent: 0;
+  margin-bottom: 4px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div.course-container h4 .all-right a:active, div.course-container h4 .all-right a:focus {
+  outline: none;
+}
+/* line 29, ../scss/course_list.scss */
+div.course-container h4 .all-right a i {
+  display: inline;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+/* line 34, ../scss/course_list.scss */
+div.course-container h4 .all-right ul.free-wrap {
+  position: absolute;
+  list-style: none;
+  width: 135px;
+  margin: 0;
+  padding: 0;
+  top: 33px;
+  overflow: hidden;
+}
+/* line 11, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
+div.course-container h4 .all-right ul.free-wrap li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 43, ../scss/course_list.scss */
+div.course-container h4 .all-right ul.free-wrap li {
+  display: block;
+  list-style: none;
+  text-align: center;
+  line-height: normal;
+  margin-left: 44px;
+  background-color: white;
+  text-indent: 0;
+}
+/* line 51, ../scss/course_list.scss */
+div.course-container h4 .all-right ul.free-wrap li a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-bottom: 0;
+  padding: 4px 0;
+  width: 100%;
+  text-indent: 22px;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+div.course-container h4 .all-right ul.free-wrap li a:active, div.course-container h4 .all-right ul.free-wrap li a:focus {
+  outline: none;
+}
+/* line 58, ../scss/course_list.scss */
+div.course-container h4 .all-right ul.free-wrap li a:hover {
+  background-color: rgba(210, 210, 210, 0.6);
+}
+/* line 63, ../scss/course_list.scss */
+div.course-container h4 .all-right ul.free-wrap li:first-child {
+  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+}
+/* line 69, ../scss/course_list.scss */
+div.course-container h4 .all-right:hover a i:before {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 77, ../scss/course_list.scss */
+div.course-container .course-wrap {
+  padding-top: 8px;
 }

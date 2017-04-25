@@ -1,0 +1,81 @@
+@import "compass/typography/links";
+@import "compass/typography";
+@import "./common/header";
+@import "./common/dialog";
+@import "./common/item";
+body{
+	background-color:$bg-color;
+}
+div.course-container{
+	$pm:30px;
+	padding:0;
+	background-color:$white;
+	h4{
+		text-indent:$pm;
+		border-bottom:1px solid $a-gray;
+		padding:14px 0;
+		.all-right{
+			float:right;
+			position:relative;
+			font-size:16px;
+			margin-right:$pm;
+			height:34px;
+			line-height:normal;
+			a{
+				@include inline-block();
+				@include unstyled-link();
+				text-indent:0;
+				margin-bottom:4px;
+				i{
+					display:inline;
+					@include transition(all 1s linear);
+				}
+			}
+			ul.free-wrap{
+					//@include 
+					position:absolute;
+					@include no-bullets();
+					width:135px;
+					margin:0;
+					padding:0;
+					top:33px;
+					overflow:hidden;
+					li{
+						display:block;
+						list-style:none;
+						text-align:center;
+						line-height:normal;
+						margin-left:44px;
+						background-color:$white;
+						text-indent:0;
+						a{
+							@include unstyled-link();
+							@include inline-block();
+							margin-bottom:0;
+							padding:4px 0;
+							width:100%;
+							text-indent:22px;
+							&:hover{
+								background-color:$a-gray;
+							}
+						}
+					}
+					li:first-child{
+						border-bottom:1px solid $a-gray;
+					}
+				}
+			&:hover{
+				a{
+					i:before{
+						@include inline-block();
+						@include rotateZ(90deg,false);
+					}
+				}
+			}
+		}
+	}
+	.course-wrap{
+		@extend %flex-box;
+		padding-top:8px;
+	}
+} 

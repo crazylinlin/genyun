@@ -6,7 +6,8 @@ module.exports = {
 	entry:{
 		main:"./public/javascripts/main.js",
 		index:"./public/javascripts/index.js",
-		qa_list:"./public/javascripts/QA_list.js"
+		qa_list:"./public/javascripts/QA_list.js",
+		course_list:"./public/javascripts/course_list.js"
 	},
 	output:{
 		filename:'js/[name].bundle.js',
@@ -144,6 +145,12 @@ module.exports = {
 			filename:"html/QA_list.html",
 			inject:"body",
 			chunks:['main','qa_list']
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/course_list.html",
+			filename:"html/course_list.html",
+			inject:"body",
+			chunks:['main','course_list']
 		})
 	]
 }

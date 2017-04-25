@@ -2,8 +2,8 @@
 @import "compass/typography/text/ellipsis";
 %flex-box{
 	@include display-flex();
-	@include flex-flow(row nowrap);
-	@include justify-content(space-between);
+	@include flex-flow(row wrap);
+	@include justify-content(space-around);
 	@include align-items(center);
 	@include align-content(center);
 	.item{
