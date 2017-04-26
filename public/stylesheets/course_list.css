@@ -465,23 +465,35 @@ div.course-container h4 .all-right a {
 div.course-container h4 .all-right a:active, div.course-container h4 .all-right a:focus {
   outline: none;
 }
-/* line 29, ../scss/course_list.scss */
-div.course-container h4 .all-right a i {
+/* line 30, ../scss/course_list.scss */
+div.course-container h4 .all-right i {
   display: inline;
+  text-indent: 0;
   -moz-transition: all 1s linear;
   -o-transition: all 1s linear;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
-/* line 34, ../scss/course_list.scss */
+/* line 35, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.free-wrap {
   position: absolute;
   list-style: none;
-  width: 135px;
+  width: 100px;
   margin: 0;
   padding: 0;
   top: 33px;
+  left: 48px;
   overflow: hidden;
+  -moz-transition: all, 1s, linear;
+  -o-transition: all, 1s, linear;
+  -webkit-transition: all, 1s, linear;
+  transition: all, 1s, linear;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-box-shadow: 0 0 3px 3px rgba(210, 210, 210, 0.6);
+  -webkit-box-shadow: 0 0 3px 3px rgba(210, 210, 210, 0.6);
+  box-shadow: 0 0 3px 3px rgba(210, 210, 210, 0.6);
+  height: 0;
 }
 /* line 11, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
 div.course-container h4 .all-right ul.free-wrap li {
@@ -489,17 +501,16 @@ div.course-container h4 .all-right ul.free-wrap li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 43, ../scss/course_list.scss */
+/* line 50, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.free-wrap li {
   display: block;
   list-style: none;
   text-align: center;
   line-height: normal;
-  margin-left: 44px;
   background-color: white;
   text-indent: 0;
 }
-/* line 51, ../scss/course_list.scss */
+/* line 57, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.free-wrap li a {
   color: inherit;
   text-decoration: inherit;
@@ -512,22 +523,28 @@ div.course-container h4 .all-right ul.free-wrap li a {
   margin-bottom: 0;
   padding: 4px 0;
   width: 100%;
-  text-indent: 22px;
+  text-indent: 10px;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
 div.course-container h4 .all-right ul.free-wrap li a:active, div.course-container h4 .all-right ul.free-wrap li a:focus {
   outline: none;
 }
-/* line 58, ../scss/course_list.scss */
+/* line 64, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.free-wrap li a:hover {
   background-color: rgba(210, 210, 210, 0.6);
 }
-/* line 63, ../scss/course_list.scss */
+/* line 69, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.free-wrap li:first-child {
   border-bottom: 1px solid rgba(210, 210, 210, 0.6);
 }
-/* line 69, ../scss/course_list.scss */
-div.course-container h4 .all-right:hover a i:before {
+/* line 73, ../scss/course_list.scss */
+div.course-container h4 .all-right ul.hide {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  height: 0;
+}
+/* line 78, ../scss/course_list.scss */
+div.course-container h4 .all-right:hover i:before {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -538,7 +555,13 @@ div.course-container h4 .all-right:hover a i:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 77, ../scss/course_list.scss */
+/* line 82, ../scss/course_list.scss */
+div.course-container h4 .all-right:hover ul.free-wrap {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  height: auto;
+}
+/* line 89, ../scss/course_list.scss */
 div.course-container .course-wrap {
   padding-top: 8px;
 }

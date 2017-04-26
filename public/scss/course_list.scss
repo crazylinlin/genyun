@@ -26,26 +26,32 @@ div.course-container{
 				@include unstyled-link();
 				text-indent:0;
 				margin-bottom:4px;
-				i{
-					display:inline;
-					@include transition(all 1s linear);
-				}
+			}
+			i{
+				display:inline;
+				text-indent:0;
+				@include transition(all 1s linear);
 			}
 			ul.free-wrap{
+
 					//@include 
 					position:absolute;
 					@include no-bullets();
-					width:135px;
+					width:100px;
 					margin:0;
 					padding:0;
 					top:33px;
+					left:48px;
 					overflow:hidden;
+					@include transition(all,1s,linear);
+					@include opacity(0);
+					@include box-shadow(0 0 3px 3px $a-gray);
+					height:0;
 					li{
 						display:block;
 						list-style:none;
 						text-align:center;
 						line-height:normal;
-						margin-left:44px;
 						background-color:$white;
 						text-indent:0;
 						a{
@@ -54,7 +60,7 @@ div.course-container{
 							margin-bottom:0;
 							padding:4px 0;
 							width:100%;
-							text-indent:22px;
+							text-indent:10px;
 							&:hover{
 								background-color:$a-gray;
 							}
@@ -64,12 +70,18 @@ div.course-container{
 						border-bottom:1px solid $a-gray;
 					}
 				}
+				ul.hide{
+					@include opacity(0);
+					height:0;
+				}
 			&:hover{
-				a{
 					i:before{
 						@include inline-block();
 						@include rotateZ(90deg,false);
 					}
+				ul.free-wrap{
+					@include opacity(1);
+					height:auto;
 				}
 			}
 		}
