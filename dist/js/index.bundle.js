@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 25);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2618,13 +2618,14 @@ module.exports = "<div class=\"item\">\n\t<a href=\"#\" class=\"img-link\">\n\t\
 /* 14 */,
 /* 15 */,
 /* 16 */,
-/* 17 */
+/* 17 */,
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(29);
+var content = __webpack_require__(32);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -2644,9 +2645,9 @@ if(false) {
 }
 
 /***/ }),
-/* 18 */,
 /* 19 */,
-/* 20 */
+/* 20 */,
+/* 21 */
 /***/ (function(module, exports) {
 
 /* ========================================================================
@@ -2889,9 +2890,10 @@ if(false) {
 
 
 /***/ }),
-/* 21 */,
 /* 22 */,
-/* 23 */
+/* 23 */,
+/* 24 */,
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2901,7 +2903,7 @@ var _jqueryMin = __webpack_require__(0);
 
 var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
-var _carousel = __webpack_require__(20);
+var _carousel = __webpack_require__(21);
 
 var _carousel2 = _interopRequireDefault(_carousel);
 
@@ -2914,7 +2916,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /*加载首页样式*/
 
 /*加载轮播控制脚本*/
-__webpack_require__(17);
+__webpack_require__(18);
 /*结束*/
 
 /*导入课程项目模版*/
@@ -2933,12 +2935,13 @@ __webpack_require__(17);
 });
 
 /***/ }),
-/* 24 */,
-/* 25 */,
 /* 26 */,
 /* 27 */,
 /* 28 */,
-/* 29 */
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);

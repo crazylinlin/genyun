@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>课程信息</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="/bower_components/bootstrap-star-rating/css/star-rating.css"/>
+		<script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/layer-v3.0.3/layer/layer.js"></script>
+		<script type="text/javascript" src="/bower_components/bootstrap-star-rating/js/star-rating.min.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header" id="header">
+		</div>
+		<!--头部结束-->
+		<!--start 标题容器-->
+		<div class="container main-wrap">
+			<div class="top-wrap">
+				<div class="col-xs-6 img-wrap">
+					<a href="#">
+						<img src="/images/op001.jpg" alt="课程图片"/>
+					</a>
+				</div>
+				<div class="col-xs-6 info-wrap">
+					<h3 id="course-title">BIG MUM 之三将星 克力架VS路飞</h3>
+					<p id="course-content">被全世界尊称为“海贼王”，拥有财富、名声、权势的海贼，是史上第一也是唯一完成伟大航路”的罗杰海贼团的船长；亦是传说中的大秘宝“ONE PIECE”的拥有者[2]  。罗杰罗杰(3张)出生于东海罗格镇，是白胡子海贼团第二队队长“火拳”艾斯的生父[3。过去跟海贼团船长“白胡子”艾德华·纽盖特、海贼舰队提督“金狮子”史基齐名，并且经常交战[4]。使用武器为剑和手枪[4]  。世界政府认为他拥有“世界最危险的力量”，因为他知道“毁灭世界的所有古代兵器”的下落[5]  。和海军中将“拳骨”蒙奇·D·卡普是宿命的对手，并被其多次逼上绝路。
+					</p>
+					<p class="grade-wrap">
+						<label class="control-label">评分：</label>
+						<span class="star-wrap">
+							<!--<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>
+							<i class="glyphicon glyphicon-star-empty"></i>-->
+							<input id="input-id" type="text" value="3.5" class="rating-loading">
+						</span>
+						<span id="num-stu">9999人学习</span>
+					</p>
+					<div class="bottom-active">
+						<span class="show-price">
+							<i class="glyphicon glyphicon-jpy"></i>:
+							<b id="money">9999.00元</b>
+						</span>
+						<span class="join-wrap">
+							<a href="javascript:void(0);" class="btn btn-overed">已参加</a>
+							<a href="javascript:void(0);" class="btn btn-join">参加学习</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottom-wrap">
+				<div class="col-xs-8 left-wrap">
+					
+				</div>
+				<div class="col-xs-4 right-wrap">
+					<div class="right-top">
+						
+					</div>
+					<div class="right-bottom">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end 标题容器-->
+		<!--start 添加登录以及注册对话框-->
+		<div id="dialog-container">
+			
+		</div>
+		<!--end 添加登录一集注册对话框-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#input-id").rating({displayOnly:true,step:0.5,size:'xs'});
+			})
+		</script>
+	</body>
+</html>

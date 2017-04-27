@@ -1,0 +1,81 @@
+@import "./common/header";
+@import "./common/dialog";
+@import "compass/css3";
+@import "compass/typography/text/ellipsis";
+body{
+	background-color:$bg-color;
+}
+.main-wrap{
+	margin-top:20px;
+	.top-wrap{
+		$height:310px;
+		$pd:24px;
+		height:360px;
+		background-color:$white;
+		padding-top:$pd;
+		padding-bottom:$pd;
+		.img-wrap{
+			text-align:center;
+			a{
+				img{
+					width:480px;
+					height:$height;
+				}
+			}
+		}
+		.info-wrap{
+			height:$height;
+			position:relative;
+			#course-content{
+				height:120px;
+				text-indent:24px;
+				@include ellipsis();
+				white-space:normal;
+			}
+			.grade-wrap{
+				color:$theme-color;
+				font-weight:bold;
+				.star-wrap{
+					@include inline-block();
+				}
+				#num-stu{
+					color:$gray;
+					margin-left:12px;
+				}
+			}
+			.bottom-active{
+				position:absolute;
+				bottom:0;
+				left:0;
+				right:0;
+				font-size:24px;
+				.show-price{
+
+				}
+				.join-wrap{
+					float:right;
+					margin-right:14px;
+					.btn{
+						@include inline-block();
+						padding:10px 16px;
+						font-size:16px;
+						color:$white;
+					}
+					.btn-join{
+						background-color:$theme-color;
+						&:hover{
+							@include box-shadow(0 0 5px 1px  $theme-color); 
+						}
+						&:active{
+							@include opacity(0.809);
+						}
+					}
+					.btn-overed{
+						background-color:$gray;
+						cursor:crosshair;
+					}
+				}
+			}
+		}	
+	}
+}
