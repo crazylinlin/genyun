@@ -7,7 +7,8 @@ module.exports = {
 		main:"./public/javascripts/main.js",
 		index:"./public/javascripts/index.js",
 		qa_list:"./public/javascripts/QA_list.js",
-		course_list:"./public/javascripts/course_list.js"
+		course_list:"./public/javascripts/course_list.js",
+		special_list:"./public/javascripts/special_list.js"
 	},
 	output:{
 		filename:'js/[name].bundle.js',
@@ -172,6 +173,12 @@ module.exports = {
 			filename:"html/course_list.html",
 			inject:"body",
 			chunks:['main','course_list']
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/special_list.html",
+			filename:"html/special_list.html",
+			inject:"body",
+			chunks:['main','special_list']
 		})
 	]
 }

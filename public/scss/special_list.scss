@@ -1,0 +1,15 @@
+@import "./common/header";
+@import "./common/dialog";
+@import "./common/specialItem";
+
+.special-container{
+	$pd-mt:40px;
+	padding-bottom:$pd-mt;
+	.special-wrap{
+		@extend %special_item;
+		.special-img-wrap{
+			margin-top:$pd-mt;
+		}
+	}
+}
+
