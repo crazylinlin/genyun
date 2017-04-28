@@ -1,7 +1,9 @@
-@import "./common/header";
-@import "./common/dialog";
 @import "compass/css3";
 @import "compass/typography/text/ellipsis";
+@import "compass/typography/links/hover-link";
+@import "./common/header";
+@import "./common/dialog";
+
 body{
 	background-color:$bg-color;
 }
@@ -77,5 +79,48 @@ body{
 				}
 			}
 		}	
+	}
+	.bottom-wrap{
+		$mt-pr:20px;
+		margin-top:$mt-pr;
+		.left-wrap{
+				//background-color:$white;
+				padding-right:$mt-pr;
+				padding-left:0px;
+				.list-wrap{
+					background-color:$white;
+					padding-bottom:10px;
+					.list-title{
+						margin:0;
+						padding:$mt-pr;
+						border-bottom:1px solid $a-gray;
+					}
+					.lists{
+						@include no-bullet();
+						margin:10px $mt-pr;
+						padding:0;
+						li{
+							padding:10px $mt-pr;
+							.link-a{
+								@include link-colors($black,$gray,$black,$a-gray,$gray);
+							}
+							.link-course{
+								@include hover-link();
+							}
+							.notice-right{
+								float:right;
+								@include unstyled-link();
+							}
+
+						}
+						li:nth-child(even){
+							background-color:$bg-color;
+						}
+					}
+				}
+			}
+		.right-wrap{
+			background-color:$white;
+		}
 	}
 }

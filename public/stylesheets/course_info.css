@@ -338,37 +338,37 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   margin-top: -4px;
 }
 
-/* line 5, ../scss/course_info.scss */
+/* line 7, ../scss/course_info.scss */
 body {
   background-color: #f0f0f0;
 }
 
-/* line 8, ../scss/course_info.scss */
+/* line 10, ../scss/course_info.scss */
 .main-wrap {
   margin-top: 20px;
 }
-/* line 10, ../scss/course_info.scss */
+/* line 12, ../scss/course_info.scss */
 .main-wrap .top-wrap {
   height: 360px;
   background-color: white;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/* line 17, ../scss/course_info.scss */
+/* line 19, ../scss/course_info.scss */
 .main-wrap .top-wrap .img-wrap {
   text-align: center;
 }
-/* line 20, ../scss/course_info.scss */
+/* line 22, ../scss/course_info.scss */
 .main-wrap .top-wrap .img-wrap a img {
   width: 480px;
   height: 310px;
 }
-/* line 26, ../scss/course_info.scss */
+/* line 28, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap {
   height: 310px;
   position: relative;
 }
-/* line 29, ../scss/course_info.scss */
+/* line 31, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap #course-content {
   height: 120px;
   text-indent: 24px;
@@ -379,12 +379,12 @@ body {
   text-overflow: ellipsis;
   white-space: normal;
 }
-/* line 35, ../scss/course_info.scss */
+/* line 37, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .grade-wrap {
   color: #4baf50;
   font-weight: bold;
 }
-/* line 38, ../scss/course_info.scss */
+/* line 40, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .grade-wrap .star-wrap {
   display: inline-block;
   vertical-align: middle;
@@ -392,12 +392,12 @@ body {
   *zoom: 1;
   *display: inline;
 }
-/* line 41, ../scss/course_info.scss */
+/* line 43, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .grade-wrap #num-stu {
   color: #b1b1b1;
   margin-left: 12px;
 }
-/* line 46, ../scss/course_info.scss */
+/* line 48, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .bottom-active {
   position: absolute;
   bottom: 0;
@@ -405,12 +405,12 @@ body {
   right: 0;
   font-size: 24px;
 }
-/* line 55, ../scss/course_info.scss */
+/* line 57, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .bottom-active .join-wrap {
   float: right;
   margin-right: 14px;
 }
-/* line 58, ../scss/course_info.scss */
+/* line 60, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .bottom-active .join-wrap .btn {
   display: inline-block;
   vertical-align: middle;
@@ -421,23 +421,102 @@ body {
   font-size: 16px;
   color: white;
 }
-/* line 64, ../scss/course_info.scss */
+/* line 66, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .bottom-active .join-wrap .btn-join {
   background-color: #4baf50;
 }
-/* line 66, ../scss/course_info.scss */
+/* line 68, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .bottom-active .join-wrap .btn-join:hover {
   -moz-box-shadow: 0 0 5px 1px #4baf50;
   -webkit-box-shadow: 0 0 5px 1px #4baf50;
   box-shadow: 0 0 5px 1px #4baf50;
 }
-/* line 69, ../scss/course_info.scss */
+/* line 71, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .bottom-active .join-wrap .btn-join:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
   opacity: 0.809;
 }
-/* line 73, ../scss/course_info.scss */
+/* line 75, ../scss/course_info.scss */
 .main-wrap .top-wrap .info-wrap .bottom-active .join-wrap .btn-overed {
   background-color: #b1b1b1;
   cursor: crosshair;
+}
+/* line 83, ../scss/course_info.scss */
+.main-wrap .bottom-wrap {
+  margin-top: 20px;
+}
+/* line 86, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+/* line 90, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap {
+  background-color: white;
+  padding-bottom: 10px;
+}
+/* line 93, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .list-title {
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+}
+/* line 98, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  margin: 10px 20px;
+  padding: 0;
+}
+/* line 102, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li {
+  padding: 10px 20px;
+}
+/* line 104, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-a {
+  color: black;
+}
+/* line 18, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-a:visited {
+  color: rgba(210, 210, 210, 0.6);
+}
+/* line 21, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-a:focus {
+  color: #b1b1b1;
+}
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-a:hover {
+  color: #b1b1b1;
+}
+/* line 27, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-a:active {
+  color: black;
+}
+/* line 107, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-course {
+  text-decoration: none;
+}
+/* line 4, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-course:hover, .main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .link-course:focus {
+  text-decoration: underline;
+}
+/* line 110, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .notice-right {
+  float: right;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .notice-right:active, .main-wrap .bottom-wrap .left-wrap .list-wrap .lists li .notice-right:focus {
+  outline: none;
+}
+/* line 116, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .left-wrap .list-wrap .lists li:nth-child(even) {
+  background-color: #f0f0f0;
+}
+/* line 122, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .right-wrap {
+  background-color: white;
 }
