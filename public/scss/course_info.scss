@@ -1,6 +1,7 @@
 @import "compass/css3";
 @import "compass/typography/text/ellipsis";
 @import "compass/typography/links/hover-link";
+@import "compass/typography/text/ellipsis";
 @import "./common/header";
 @import "./common/dialog";
 
@@ -48,11 +49,13 @@ body{
 			.bottom-active{
 				position:absolute;
 				bottom:0;
-				left:0;
+				left:15px;
 				right:0;
 				font-size:24px;
+				line-height:normal;
 				.show-price{
-
+					@include inline-block();
+					margin-top:8px;
 				}
 				.join-wrap{
 					float:right;
@@ -82,12 +85,14 @@ body{
 	}
 	.bottom-wrap{
 		$mt-pr:20px;
+		$height:600px;
 		margin-top:$mt-pr;
 		.left-wrap{
 				//background-color:$white;
 				padding-right:$mt-pr;
 				padding-left:0px;
 				.list-wrap{
+					height:$height;
 					background-color:$white;
 					padding-bottom:10px;
 					.list-title{
@@ -102,7 +107,7 @@ body{
 						li{
 							padding:10px $mt-pr;
 							.link-a{
-								@include link-colors($black,$gray,$black,$a-gray,$gray);
+								@include link-colors($black,$gray,$black,$gray,$gray);
 							}
 							.link-course{
 								@include hover-link();
@@ -114,13 +119,71 @@ body{
 
 						}
 						li:nth-child(even){
-							background-color:$bg-color;
+							background-color:$a-gray;
 						}
 					}
 				}
 			}
 		.right-wrap{
-			background-color:$white;
+			padding:0;
+			$mt:20px;
+			height:$height;
+			
+			.right-top{
+				background-color:$white;
+				h4{
+					border-bottom:1px solid $a-gray;
+					margin-top:0;
+					padding:10px 20px 10px 15px;
+					.btn-ask{
+						@include unstyled-link();
+						float:right;
+						font-size:14px;
+					}
+				}
+				.question-wrap{
+					padding-left:15px;
+					padding-right:15px;
+					.question{
+						border-bottom:1px solid $a-gray;
+						p.detail{	
+							height:60px;
+							@include ellipsis();
+							white-space:normal;
+						}
+						.edit-wrap{
+							.btn-edit{
+								@include unstyled-link();
+							}
+						}
+					}
+				}
+				.more-wrap{
+					background-color:$a-gray;
+					text-align:center;
+					margin-top:$mt;
+					padding:10px 0px;
+					.view-more{
+						@include unstyled-link();
+						@include inline-block();
+						@include hover-link();
+					}
+				}
+			}
+			.right-bottom{
+				margin-top:$mt;
+				background-color:$white;
+				padding:10px 20px 14px 15px;
+				h4{
+					margin-bottom:0;
+				}
+				p.user-info{
+					height:120px;
+					padding-left:50px;
+					@include ellipsis();
+					white-space:normal;
+				}
+			}
 		}
 	}
 }
