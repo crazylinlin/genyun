@@ -685,11 +685,32 @@ body {
   padding: 12px 14px;
 }
 /* line 245, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .grade-group {
+  width: 480px;
+  margin: 0 auto;
+  margin-top: 60px;
+  height: 44px;
+}
+/* line 250, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .grade-group .grade-label {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  width: 30%;
+  height: 42px;
+  line-height: 42px;
+}
+/* line 258, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .grade-group .star-wrap {
+  float: left;
+  width: 70%;
+}
+/* line 266, ../scss/course_info.scss */
 .dialog .dialog-wrap div.dialog-content .btn-wrap {
   margin-top: 26px;
 }
-/* line 247, ../scss/course_info.scss */
-.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b {
+/* line 268, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-c {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -704,18 +725,23 @@ body {
   padding: 8px 0;
   width: 384px;
   color: white;
+  font-size: 16px;
   background-color: #4baf50;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:focus, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:focus {
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-c:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:focus, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:focus, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-c:focus {
   outline: none;
 }
-/* line 255, ../scss/course_info.scss */
-.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:hover, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:hover {
+/* line 277, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:hover, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:hover, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-c:hover {
   background-color: #47a14b;
 }
-/* line 258, ../scss/course_info.scss */
-.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:active {
+/* line 280, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-c:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
   opacity: 0.809;
+}
+/* line 294, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .grade-mt {
+  margin-top: 60px;
 }

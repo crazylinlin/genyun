@@ -198,6 +198,30 @@
 			</div>
 		</div>
 		<!--end 评论对话框-->
+		<!--start 评分弹窗-->
+		<div class="dialog" id="dialog-grade">
+			<h4 class="dialog-title text-right">
+				<a href="javascript:void(0);" class="close-btn text-center">
+					<i class="glyphicon glyphicon-remove"></i>
+				</a>
+			</h4>
+			<div class="dialog-wrap">
+				<div class="dialog-content">
+					<div class="grade-group">
+						<label for="set-grade" class="grade-label">
+							评分
+						</label>
+						<div class="star-wrap">
+							<input type="text" data-show-clear="false" class=" rating-loading" id="set-grade"/>
+						</div>
+					</div>
+					<div class="btn-wrap grade-mt text-center">
+						<a href="javascript:void(0);" class="btn-sub-c">提交</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end 评分弹窗-->
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$("#input-id").rating({displayOnly:true,step:0.5,size:'xs'});
@@ -234,6 +258,25 @@
 						},
 						end:function(){
 							$("div#dialog-comment").css("display","none");
+						}
+					});
+					
+				})
+				//弹出评分对话框
+				$(".info-wrap").delegate(".star-wrap","click",function(){
+					window.index = layer.open({
+						type:1,
+						title:false,
+						closeBtn:0,
+						shadeClose:true,
+						content:$('#dialog-grade'),
+						skin:"",
+						area:['604px','300px'],
+						success:function(layero,index){
+							$("#set-grade").rating({step:0.5,size:'xs'});
+						},
+						end:function(){
+							$("div#dialog-grade").css("display","none");
 						}
 					});
 				})

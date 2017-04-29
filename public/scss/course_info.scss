@@ -242,6 +242,27 @@ body{
 					padding:12px 14px;
 				}
 			}
+			.grade-group{
+				width:$width;
+				margin:0 auto;
+				margin-top:60px;
+				height:44px;
+				.grade-label{
+					float:left;
+					font-size:16px;
+					text-align:center;
+					width:30%;
+					height:42px;
+					line-height:42px;
+				}
+				.star-wrap{
+					float:left;
+					width:70%;
+					input{
+
+					}
+				}
+			}
 			.btn-wrap{
 				margin-top:26px;
 				%base-btn{
@@ -251,6 +272,7 @@ body{
 					padding:8px 0;
 					width:$btn-width;
 					color:$white;
+					font-size:16px;
 					background-color:$theme-color;
 					&:hover{
 						background-color:$hover-color;
@@ -265,7 +287,14 @@ body{
 				.btn-sub-b{
 					@extend %base-btn;
 				}
+				.btn-sub-c{
+					@extend %base-btn;
+				}
 			}
+			.grade-mt{
+				margin-top:60px;
+			}
+
 		}
 	}
 }
