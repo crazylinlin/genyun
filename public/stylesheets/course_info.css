@@ -574,23 +574,27 @@ body {
   white-space: normal;
 }
 /* line 155, ../scss/course_info.scss */
-.main-wrap .bottom-wrap .right-wrap .right-top .question-wrap .question .edit-wrap .btn-edit {
+.main-wrap .bottom-wrap .right-wrap .right-top .question-wrap .question .edit-wrap .btn-a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.main-wrap .bottom-wrap .right-wrap .right-top .question-wrap .question .edit-wrap .btn-edit:active, .main-wrap .bottom-wrap .right-wrap .right-top .question-wrap .question .edit-wrap .btn-edit:focus {
+.main-wrap .bottom-wrap .right-wrap .right-top .question-wrap .question .edit-wrap .btn-a:active, .main-wrap .bottom-wrap .right-wrap .right-top .question-wrap .question .edit-wrap .btn-a:focus {
   outline: none;
 }
-/* line 161, ../scss/course_info.scss */
+/* line 158, ../scss/course_info.scss */
+.main-wrap .bottom-wrap .right-wrap .right-top .question-wrap .question .edit-wrap .btn-sms {
+  margin-right: 14px;
+}
+/* line 167, ../scss/course_info.scss */
 .main-wrap .bottom-wrap .right-wrap .right-top .more-wrap {
   background-color: rgba(240, 240, 240, 0.618);
   text-align: center;
   margin-top: 20px;
   padding: 10px 0px;
 }
-/* line 166, ../scss/course_info.scss */
+/* line 172, ../scss/course_info.scss */
 .main-wrap .bottom-wrap .right-wrap .right-top .more-wrap .view-more {
   color: inherit;
   text-decoration: inherit;
@@ -610,17 +614,17 @@ body {
 .main-wrap .bottom-wrap .right-wrap .right-top .more-wrap .view-more:hover, .main-wrap .bottom-wrap .right-wrap .right-top .more-wrap .view-more:focus {
   text-decoration: underline;
 }
-/* line 173, ../scss/course_info.scss */
+/* line 179, ../scss/course_info.scss */
 .main-wrap .bottom-wrap .right-wrap .right-bottom {
   margin-top: 20px;
   background-color: white;
   padding: 10px 20px 14px 15px;
 }
-/* line 177, ../scss/course_info.scss */
+/* line 183, ../scss/course_info.scss */
 .main-wrap .bottom-wrap .right-wrap .right-bottom h4 {
   margin-bottom: 0;
 }
-/* line 180, ../scss/course_info.scss */
+/* line 186, ../scss/course_info.scss */
 .main-wrap .bottom-wrap .right-wrap .right-bottom p.user-info {
   height: 120px;
   padding-left: 50px;
@@ -630,4 +634,88 @@ body {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: normal;
+}
+
+/* line 199, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content {
+  margin-top: 0;
+}
+/* line 204, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .input-wrap {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+  border: 1px solid #f0f0f0;
+  padding: 0 20px;
+}
+/* line 211, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .input-wrap input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 0;
+  line-height: normal;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 220, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .input-wrap textarea {
+  margin-top: 14px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+/* line 227, ../scss/course_info.scss */
+.num-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+/* line 234, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .comment-wrap {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+}
+/* line 238, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .comment-wrap textarea {
+  width: 100%;
+  border: 1px solid rgba(240, 240, 240, 0.618);
+  outline: none;
+  padding: 12px 14px;
+}
+/* line 245, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap {
+  margin-top: 26px;
+}
+/* line 247, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 8px 0;
+  width: 384px;
+  color: white;
+  background-color: #4baf50;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:focus, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:focus {
+  outline: none;
+}
+/* line 255, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:hover, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:hover {
+  background-color: #47a14b;
+}
+/* line 258, ../scss/course_info.scss */
+.dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-a:active, .dialog .dialog-wrap div.dialog-content .btn-wrap .btn-sub-b:active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
+  opacity: 0.809;
 }

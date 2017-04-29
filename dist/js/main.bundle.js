@@ -2622,7 +2622,7 @@ module.exports = "<div class=\"container header-wrap\">\n\t<span class=\"head-ti
 /* 13 */
 /***/ (function(module, exports) {
 
-module.exports = "<!--start 登录注册模态框-->\n\t\t<div id=\"login-a-reg\">\n\t\t\t<h4 class=\"dialog-title text-right\">\n\t\t\t\t<a href=\"javascript:void(0);\" class=\"text-center\" id=\"close-btn\">\n\t\t\t\t\t<i class=\"glyphicon glyphicon-remove\"></i>\n\t\t\t\t</a>\n\t\t\t</h4>\n\t\t\t<div class=\"dialog-wrap text-center\">\n\t\t\t\t<ul class=\"dialog-tabs\">\n\t\t\t\t\t<li><a href=\"javascript:void(0);\" id=\"btn-login\" data-id=\"login\" class=\"active\">登&nbsp;录</a></li>\n\t\t\t\t\t<li><a href=\"javascript:void(0);\" id=\"btn-register\" data-id=\"register\">注&nbsp;册</a></li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"dialog-content\">\n\t\t\t\t\t<div class=\"curContent login-content\">\n\t\t\t\t\t\t<form >\n\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"输入手机号\"/>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t<input type=\"password\" class=\"warning\" placeholder=\"请输入密码\"/>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap btn-wrap text-center\">\n\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"m-btn btn-login\">登录</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"forget-wrap text-right\">\n\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\">忘记密码</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</form>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"curContent register-content\">\n\t\t\t\t\t\t<form>\n\t\t\t\t\t\t\t<div class=\"level-container\">\n\t\t\t\t\t\t\t\t<div class=\"level-wrap\">\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"请输入手机号码\"/>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap warning num-wrap text-left\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"text\" id=\"check-num\" placeholder=\"请输入验证码\"/>\n\t\t\t\t\t\t\t\t\t\t<!--点击获取手机验证码后，给a元素添加个disabled类-->\n\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"\" id=\"get-num\">免费获取</a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"password\" placeholder=\"请输入密码\"/>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"password\" placeholder=\"再次输入密码\"/>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap btn-wrap text-center\">\n\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"m-btn btn-next\">下一步</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</form>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<!--end 登录注册模态框-->";
+module.exports = "<!--start 登录注册模态框-->\n\t\t<div id=\"login-a-reg\" class=\"dialog\">\n\t\t\t<h4 class=\"dialog-title text-right\">\n\t\t\t\t<a href=\"javascript:void(0);\" class=\"close-btn\" id=\"\">\n\t\t\t\t\t<i class=\"glyphicon glyphicon-remove\"></i>\n\t\t\t\t</a>\n\t\t\t</h4>\n\t\t\t<div class=\"dialog-wrap text-center\">\n\t\t\t\t<ul class=\"dialog-tabs\">\n\t\t\t\t\t<li><a href=\"javascript:void(0);\" id=\"btn-login\" data-id=\"login\" class=\"active\">登&nbsp;录</a></li>\n\t\t\t\t\t<li><a href=\"javascript:void(0);\" id=\"btn-register\" data-id=\"register\">注&nbsp;册</a></li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"dialog-content\">\n\t\t\t\t\t<div class=\"curContent login-content\">\n\t\t\t\t\t\t<form >\n\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"输入手机号\"/>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t<input type=\"password\" class=\"warning\" placeholder=\"请输入密码\"/>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap btn-wrap text-center\">\n\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"m-btn btn-login\">登录</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"forget-wrap text-right\">\n\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\">忘记密码</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</form>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"curContent register-content\">\n\t\t\t\t\t\t<form>\n\t\t\t\t\t\t\t<div class=\"level-container\">\n\t\t\t\t\t\t\t\t<div class=\"level-wrap\">\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"text\" placeholder=\"请输入手机号码\"/>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap warning num-wrap text-left\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"text\" id=\"check-num\" placeholder=\"请输入验证码\"/>\n\t\t\t\t\t\t\t\t\t\t<!--点击获取手机验证码后，给a元素添加个disabled类-->\n\t\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"\" id=\"get-num\">免费获取</a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"password\" placeholder=\"请输入密码\"/>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"form-wrap\">\n\t\t\t\t\t\t\t\t\t\t<input type=\"password\" placeholder=\"再次输入密码\"/>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"form-wrap btn-wrap text-center\">\n\t\t\t\t\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"m-btn btn-next\">下一步</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</form>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<!--end 登录注册模态框-->";
 
 /***/ }),
 /* 14 */
@@ -2722,11 +2722,11 @@ __webpack_require__(14);
 	cur_dialog.innerHTML = _loginAndReg2.default;
 	/*end 添加登陆一集注册对话框*/
 	/*start 点击登录，注册按钮打开模态框*/
-	var index = ""; //弹出框的索引；
+	//window.index = ""; //弹出框的索引；
 	(0, _jqueryMin2.default)(document).delegate("#login,#register", "click", function () {
 		/*通过role判断用户点击的是注册还是登录按钮*/
 		var role = (0, _jqueryMin2.default)(this).data("role");
-		index = layer.open({
+		window.index = layer.open({
 			type: 1,
 			title: false,
 			closeBtn: 0,
@@ -2810,8 +2810,8 @@ __webpack_require__(14);
 	});
 	/*end 点击下一步切换到密码和确认注册页面*/
 	/*start 右上角关闭按钮事件，点击关闭模态框*/
-	(0, _jqueryMin2.default)("#login-a-reg").delegate("#close-btn", "click", function () {
-		layer.close(index);
+	(0, _jqueryMin2.default)(".dialog").delegate(".close-btn", "click", function () {
+		layer.close(window.index);
 	});
 	/*end 右上角关闭按钮事件，点击关闭模态框*/
 });

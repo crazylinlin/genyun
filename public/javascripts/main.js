@@ -16,11 +16,11 @@ $(document).ready(function(){
 	cur_dialog.innerHTML = dialog;
 	/*end 添加登陆一集注册对话框*/
 	/*start 点击登录，注册按钮打开模态框*/
-	var index = ""; //弹出框的索引；
+	//window.index = ""; //弹出框的索引；
 	$(document).delegate("#login,#register","click",function(){
 		/*通过role判断用户点击的是注册还是登录按钮*/
 		var role = $(this).data("role");
-		index = layer.open({
+		window.index = layer.open({
 			type:1,
 			title:false,
 			closeBtn:0,
@@ -105,8 +105,8 @@ $(document).ready(function(){
 	})
 	/*end 点击下一步切换到密码和确认注册页面*/
 	/*start 右上角关闭按钮事件，点击关闭模态框*/
-	$("#login-a-reg").delegate("#close-btn","click",function(){
-		layer.close(index);
+	$(".dialog").delegate(".close-btn","click",function(){
+		layer.close(window.index);
 	})
 	/*end 右上角关闭按钮事件，点击关闭模态框*/
 })
