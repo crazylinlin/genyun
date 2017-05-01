@@ -1,6 +1,10 @@
 import $ from "../bower_components/jquery/dist/jquery.min.js";
 import header from "../htm/common/header.html";
 import dialog from "../htm/common/loginAndReg.html";
+//导入二维码支付模版
+import qrcode from "../htm/common/qrCode.html";
+//导入订单支付模版
+import order from "../htm/common/order.html";
 /*加载bootstrap样式*/
 require("../bower_components/bootstrap/dist/css/bootstrap.min.css");
 require("../bower_components/bootstrap/dist/css/bootstrap-theme.min.css");
@@ -105,8 +109,25 @@ $(document).ready(function(){
 	})
 	/*end 点击下一步切换到密码和确认注册页面*/
 	/*start 右上角关闭按钮事件，点击关闭模态框*/
-	$(".dialog").delegate(".close-btn","click",function(){
+	$(document).delegate(".close-btn","click",function(){
 		layer.close(window.index);
 	})
 	/*end 右上角关闭按钮事件，点击关闭模态框*/
+	/*start 当页面需要二维码支付时导入二维码组件*/
+	//codePay-container 为容器id
+	$("#codePay-container").html(qrcode);
+	/*end 当页面需要二维码支付时导入二维码组件*／
+	/*start 当页面需要生成订单页面时导入订单组件*/
+	$("#order-container").html(order);
+	/*end 当页面需要生成订单页面时导入订单组件*/
+
+	/*start 支付方式选择*/
+	$(document).delegate(".pay-type","change",function(){
+		var $this = $(this),
+			$tpWrap = $(this).parent();
+		if(this.checked && !$tpWrap.hasClass("type-selected")){
+			$tpWrap.addClass("type-selected").siblings().removeClass("type-selected");
+		}
+	})
+	/*end 支付方式选择*/
 })

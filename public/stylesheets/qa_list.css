@@ -103,7 +103,7 @@ div#login-a-reg .dialog-title a:active, div#login-a-reg .dialog-title a:focus, d
 }
 /* line 12, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-title a:hover, div.dialog .dialog-title a:hover {
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
 }
 /* line 18, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-tabs, div.dialog .dialog-wrap .dialog-tabs {
@@ -308,7 +308,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   height: 22px;
   left: -10px;
   top: -1px;
-  border-left: 2px solid rgba(210, 210, 210, 0.6);
+  border-left: 2px solid rgba(240, 240, 240, 0.618);
 }
 /* line 145, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled {
@@ -318,7 +318,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   color: #b1b1b1;
   padding: 4px 6px;
   height: 28px;
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
 }
 /* line 151, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before {
@@ -346,7 +346,7 @@ body {
 /* line 9, ../scss/qa_list.scss */
 .title-wrap {
   padding: 6px 30px;
-  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+  border-bottom: 1px solid rgba(240, 240, 240, 0.618);
   background-color: white;
 }
 /* line 15, ../scss/qa_list.scss */
@@ -380,7 +380,7 @@ body {
 }
 /* line 32, ../scss/qa_list.scss */
 .main-wrap .qa-wrap .qa-item {
-  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+  border-bottom: 1px solid rgba(240, 240, 240, 0.618);
   padding: 14px 0px;
 }
 /* line 42, ../scss/qa_list.scss */

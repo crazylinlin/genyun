@@ -1,0 +1,31 @@
+.dialog{
+	.qr-dialog-wrap{
+		.dialog-content{
+			.qrCode-wrap{
+				h5{
+					margin-top:20px;
+					#show-money{
+						font-size:18px;
+						color:$red;
+					}
+				}
+				.code-wrap{
+					width:194px;
+					height:250px;
+					margin:0 auto;
+					border:1px solid $bg-color;
+					padding:30px;
+					margin-top:30px;
+					img{
+						vertical-align:middle;
+						max-width:100%;
+						max-height:100%;
+					}
+					.pay-notice{
+						margin-top:20px;
+					}
+				}
+			}
+		}
+	}
+}

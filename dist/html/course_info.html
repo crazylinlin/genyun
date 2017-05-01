@@ -27,7 +27,7 @@
 					<p id="course-content">被全世界尊称为“海贼王”，拥有财富、名声、权势的海贼，是史上第一也是唯一完成伟大航路”的罗杰海贼团的船长；亦是传说中的大秘宝“ONE PIECE”的拥有者[2]  。罗杰罗杰(3张)出生于东海罗格镇，是白胡子海贼团第二队队长“火拳”艾斯的生父[3。过去跟海贼团船长“白胡子”艾德华·纽盖特、海贼舰队提督“金狮子”史基齐名，并且经常交战[4]。使用武器为剑和手枪[4]  。世界政府认为他拥有“世界最危险的力量”，因为他知道“毁灭世界的所有古代兵器”的下落[5]  。和海军中将“拳骨”蒙奇·D·卡普是宿命的对手，并被其多次逼上绝路。
 					</p>
 					<p class="grade-wrap">
-						<label class="control-label">评分：</label>
+						<a href="javascript:void(0);" id="btn-grade" class="grade-label">评分：</a>
 						<span class="star-wrap">
 							<!--<i class="glyphicon glyphicon-star-empty"></i>
 							<i class="glyphicon glyphicon-star-empty"></i>
@@ -222,6 +222,16 @@
 			</div>
 		</div>
 		<!--end 评分弹窗-->
+		<!--start 二维码支付container-->
+		<div id="codePay-container">
+			
+		</div>
+		<!--end 二维码支付container-->
+		<!--start 订单支付container-->
+		<div id="order-container">
+			
+		</div>
+		<!--end 订单支付container-->
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$("#input-id").rating({displayOnly:true,step:0.5,size:'xs'});
@@ -263,7 +273,7 @@
 					
 				})
 				//弹出评分对话框
-				$(".info-wrap").delegate(".star-wrap","click",function(){
+				$(".grade-wrap").delegate("#btn-grade","click",function(){
 					window.index = layer.open({
 						type:1,
 						title:false,
@@ -277,6 +287,42 @@
 						},
 						end:function(){
 							$("div#dialog-grade").css("display","none");
+						}
+					});
+				})
+				//弹出二维码支付框
+				$(".btn-overed").on("click",function(){
+					window.index = layer.open({
+						type:1,
+						title:false,
+						closeBtn:0,
+						shadeClose:true,
+						content:$('#qrCode-pay'),
+						skin:"",
+						area:['600px','480px'],
+						success:function(layero,index){
+							//$("#set-grade").rating({step:0.5,size:'xs'});
+						},
+						end:function(){
+							$("div#qrCode-pay").css("display","none");
+						}
+					});
+				})
+				//弹出订单信息
+				$(".btn-join").on("click",function(){
+					window.index = layer.open({
+						type:1,
+						title:false,
+						closeBtn:0,
+						shadeClose:true,
+						content:$('#orderPay-dialog'),
+						skin:"",
+						area:['600px','auto'],
+						success:function(layero,index){
+							//$("#set-grade").rating({step:0.5,size:'xs'});
+						},
+						end:function(){
+							$("div#orderPay-dialog").css("display","none");
 						}
 					});
 				})

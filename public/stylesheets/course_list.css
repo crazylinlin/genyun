@@ -103,7 +103,7 @@ div#login-a-reg .dialog-title a:active, div#login-a-reg .dialog-title a:focus, d
 }
 /* line 12, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-title a:hover, div.dialog .dialog-title a:hover {
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
 }
 /* line 18, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-tabs, div.dialog .dialog-wrap .dialog-tabs {
@@ -308,7 +308,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   height: 22px;
   left: -10px;
   top: -1px;
-  border-left: 2px solid rgba(210, 210, 210, 0.6);
+  border-left: 2px solid rgba(240, 240, 240, 0.618);
 }
 /* line 145, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled {
@@ -318,7 +318,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   color: #b1b1b1;
   padding: 4px 6px;
   height: 28px;
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
 }
 /* line 151, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before {
@@ -436,7 +436,7 @@ div.course-container {
 /* line 13, ../scss/course_list.scss */
 div.course-container h4 {
   text-indent: 30px;
-  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+  border-bottom: 1px solid rgba(240, 240, 240, 0.618);
   padding: 14px 0;
 }
 /* line 17, ../scss/course_list.scss */
@@ -490,9 +490,9 @@ div.course-container h4 .all-right ul.free-wrap {
   transition: all, 1s, linear;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-box-shadow: 0 0 3px 3px rgba(210, 210, 210, 0.6);
-  -webkit-box-shadow: 0 0 3px 3px rgba(210, 210, 210, 0.6);
-  box-shadow: 0 0 3px 3px rgba(210, 210, 210, 0.6);
+  -moz-box-shadow: 0 0 3px 3px rgba(240, 240, 240, 0.618);
+  -webkit-box-shadow: 0 0 3px 3px rgba(240, 240, 240, 0.618);
+  box-shadow: 0 0 3px 3px rgba(240, 240, 240, 0.618);
   height: 0;
 }
 /* line 11, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
@@ -531,11 +531,11 @@ div.course-container h4 .all-right ul.free-wrap li a:active, div.course-containe
 }
 /* line 64, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.free-wrap li a:hover {
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
 }
 /* line 69, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.free-wrap li:first-child {
-  border-bottom: 1px solid rgba(210, 210, 210, 0.6);
+  border-bottom: 1px solid rgba(240, 240, 240, 0.618);
 }
 /* line 73, ../scss/course_list.scss */
 div.course-container h4 .all-right ul.hide {

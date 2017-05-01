@@ -188,7 +188,7 @@ div#login-a-reg .dialog-title a:active, div#login-a-reg .dialog-title a:focus, d
 }
 /* line 12, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-title a:hover, div.dialog .dialog-title a:hover {
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
 }
 /* line 18, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-tabs, div.dialog .dialog-wrap .dialog-tabs {
@@ -393,7 +393,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   height: 22px;
   left: -10px;
   top: -1px;
-  border-left: 2px solid rgba(210, 210, 210, 0.6);
+  border-left: 2px solid rgba(240, 240, 240, 0.618);
 }
 /* line 145, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled {
@@ -403,7 +403,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   color: #b1b1b1;
   padding: 4px 6px;
   height: 28px;
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
 }
 /* line 151, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before {
@@ -466,7 +466,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
 /* line 36, ../scss/common/_specialItem.scss */
 .normal-wrap .special-img-wrap .sms-wrap .sms-center {
   padding: 14px 92px;
-  background-color: rgba(210, 210, 210, 0.6);
+  background-color: rgba(240, 240, 240, 0.618);
   font-size: 20px;
 }
 

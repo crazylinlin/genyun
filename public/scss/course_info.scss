@@ -4,7 +4,8 @@
 @import "compass/typography/text/ellipsis";
 @import "./common/header";
 @import "./common/dialog";
-
+@import "./common/qrCode";
+@import "./common/order";
 body{
 	background-color:$bg-color;
 }
@@ -38,6 +39,10 @@ body{
 			.grade-wrap{
 				color:$theme-color;
 				font-weight:bold;
+				a.grade-label{
+					@include hover-link();
+					color:$theme-color;
+				}
 				.star-wrap{
 					@include inline-block();
 				}

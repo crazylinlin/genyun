@@ -1,0 +1,44 @@
+<div class="dialog" id="orderPay-dialog">
+	<h4 class="dialog-title text-right">
+		<a href="javascript:void(0);" class="close-btn text-center">
+			<i class="glyphicon glyphicon-remove"></i>
+		</a>
+	</h4>
+	<div class="dialog-wrap">
+		<div class="dialog-content">
+			<div class="orderPay-wrap">
+				<div class="order-item">
+					<label>订单号</label>
+					<span id="order-num">434354556778989808</span>
+				</div>
+				<div class="order-item">
+					<label>订单时间</label>
+					<span id="order-date">2017/09/23 12:00:30</span>
+				</div>
+				<div class="order-item">
+					<label>待付款</label>
+					<span class="pay-wrap">
+						<i class="glyphicon glyphicon-jpy"></i>
+						<b id="pay-money">5200.00元</b>
+					</span>
+				</div>
+				<div class="order-type">
+					<h5>支付方式</h5>
+					<label class="type-wrap type-selected">
+						<i class="fa fa-credit-card-alt color-wallet"></i>
+						<input type="radio" name="pay-type" class="pay-type" value="0" checked/>&nbsp;余额支付
+						<i class="fa fa-check icon-selected"></i>
+					</label>
+					<label class="type-wrap">
+						<i class="fa fa-wechat color-wechat"></i>
+						<input type="radio" name="pay-type" class="pay-type" value="1" />&nbsp;微信支付
+						<i class="fa fa-check icon-selected"></i>
+					</label>
+				</div>
+				<div class="btn-wrap text-center">
+					<a href="javascript:void(0);">立即支付</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

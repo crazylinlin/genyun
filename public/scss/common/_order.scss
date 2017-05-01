@@ -1,0 +1,88 @@
+@import "font-awesome-compass";
+@import "font-awesome";
+.dialog{
+	.dialog-wrap{
+		.dialog-content{
+			.orderPay-wrap{
+				width:510px;
+				margin:0 auto;
+				.order-item{
+					padding:14px 0px 4px 0px;
+					border-bottom:1px solid $bg-color;
+					label{
+
+					}
+					span{
+						float:right;
+						color:$gray;
+					}
+					span.pay-wrap{
+						color:$red;
+						font-size:16px;
+					}
+				}
+				.order-type{
+					h5{
+
+					}
+					.type-wrap{
+						position:relative;
+						margin-right:70px;
+						border:1px solid $bg-color;
+						padding:8px 14px;
+						i{
+							font-size:24px;
+						}
+						i.color-wallet{
+							color:$wallet-color;
+						}
+						i.color-wechat{
+							color:$theme-color;
+						}
+						.icon-selected{
+							display:none;
+						}
+						input[type="radio"]{
+							position:absolute;
+							width:125px;
+							height:28px;
+							@include opacity(0);
+							left:0;
+							right:0;
+						}
+						&:hover{
+							cursor:pointer;
+						}
+					}
+					.type-selected{
+						@include box-sizing(padding-box);
+						border:2px solid $theme-color;
+						position:relative;
+						$b-width:14px;
+						&:after{
+							@include rotateZ(45deg);
+							position:absolute;
+							content:"";
+							width:0px;
+							height:0px;
+							border:$b-width solid transparent;
+							border-bottom-color:$theme-color;
+							top:-$b-width;
+							right:-$b-width;
+							z-index:100;
+						}
+						i.icon-selected{
+							display:inline;
+							position:absolute;
+							top:-8px;
+							right:-6px;
+							color:$white;
+							z-index:101;
+							@include scale(0.618);
+						}
+					}
+				}
+			}
+		}
+	}
+}
