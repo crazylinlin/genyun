@@ -5,7 +5,7 @@
 		</a>
 	</h4>
 	<div class="dialog-wrap">
-		<div class="dialog-content">
+		<div class="dialog-content dialog-main">
 			<div class="orderPay-wrap">
 				<div class="order-item">
 					<label>订单号</label>
@@ -34,9 +34,15 @@
 						<input type="radio" name="pay-type" class="pay-type" value="1" />&nbsp;微信支付
 						<i class="fa fa-check icon-selected"></i>
 					</label>
+					<div class="qr-wrap text-center">
+						<div class="img-wrap">
+							<img src="/images/qrcode001.jpg" alt="二维码"/>
+						</div>
+						<p class="text-center">请使用手机微信扫描二维码支付</p>
+					</div>
 				</div>
 				<div class="btn-wrap text-center">
-					<a href="javascript:void(0);">立即支付</a>
+					<a href="javascript:void(0);" class="btn-pay">立即支付</a>
 				</div>
 			</div>
 		</div>

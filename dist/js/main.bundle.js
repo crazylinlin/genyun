@@ -2628,7 +2628,7 @@ module.exports = "<!--start 登录注册模态框-->\n\t\t<div id=\"login-a-reg\
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"dialog\" id=\"orderPay-dialog\">\n\t<h4 class=\"dialog-title text-right\">\n\t\t<a href=\"javascript:void(0);\" class=\"close-btn text-center\">\n\t\t\t<i class=\"glyphicon glyphicon-remove\"></i>\n\t\t</a>\n\t</h4>\n\t<div class=\"dialog-wrap\">\n\t\t<div class=\"dialog-content\">\n\t\t\t<div class=\"orderPay-wrap\">\n\t\t\t\t<div class=\"order-item\">\n\t\t\t\t\t<label>订单号</label>\n\t\t\t\t\t<span id=\"order-num\">434354556778989808</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"order-item\">\n\t\t\t\t\t<label>订单时间</label>\n\t\t\t\t\t<span id=\"order-date\">2017/09/23 12:00:30</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"order-item\">\n\t\t\t\t\t<label>待付款</label>\n\t\t\t\t\t<span class=\"pay-wrap\">\n\t\t\t\t\t\t<i class=\"glyphicon glyphicon-jpy\"></i>\n\t\t\t\t\t\t<b id=\"pay-money\">5200.00元</b>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"order-type\">\n\t\t\t\t\t<h5>支付方式</h5>\n\t\t\t\t\t<label class=\"type-wrap type-selected\">\n\t\t\t\t\t\t<i class=\"fa fa-credit-card-alt color-wallet\"></i>\n\t\t\t\t\t\t<input type=\"radio\" name=\"pay-type\" class=\"pay-type\" value=\"0\" checked/>&nbsp;余额支付\n\t\t\t\t\t\t<i class=\"fa fa-check icon-selected\"></i>\n\t\t\t\t\t</label>\n\t\t\t\t\t<label class=\"type-wrap\">\n\t\t\t\t\t\t<i class=\"fa fa-wechat color-wechat\"></i>\n\t\t\t\t\t\t<input type=\"radio\" name=\"pay-type\" class=\"pay-type\" value=\"1\" />&nbsp;微信支付\n\t\t\t\t\t\t<i class=\"fa fa-check icon-selected\"></i>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"btn-wrap text-center\">\n\t\t\t\t\t<a href=\"javascript:void(0);\">立即支付</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>";
+module.exports = "<div class=\"dialog\" id=\"orderPay-dialog\">\n\t<h4 class=\"dialog-title text-right\">\n\t\t<a href=\"javascript:void(0);\" class=\"close-btn text-center\">\n\t\t\t<i class=\"glyphicon glyphicon-remove\"></i>\n\t\t</a>\n\t</h4>\n\t<div class=\"dialog-wrap\">\n\t\t<div class=\"dialog-content dialog-main\">\n\t\t\t<div class=\"orderPay-wrap\">\n\t\t\t\t<div class=\"order-item\">\n\t\t\t\t\t<label>订单号</label>\n\t\t\t\t\t<span id=\"order-num\">434354556778989808</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"order-item\">\n\t\t\t\t\t<label>订单时间</label>\n\t\t\t\t\t<span id=\"order-date\">2017/09/23 12:00:30</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"order-item\">\n\t\t\t\t\t<label>待付款</label>\n\t\t\t\t\t<span class=\"pay-wrap\">\n\t\t\t\t\t\t<i class=\"glyphicon glyphicon-jpy\"></i>\n\t\t\t\t\t\t<b id=\"pay-money\">5200.00元</b>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"order-type\">\n\t\t\t\t\t<h5>支付方式</h5>\n\t\t\t\t\t<label class=\"type-wrap type-selected\">\n\t\t\t\t\t\t<i class=\"fa fa-credit-card-alt color-wallet\"></i>\n\t\t\t\t\t\t<input type=\"radio\" name=\"pay-type\" class=\"pay-type\" value=\"0\" checked/>&nbsp;余额支付\n\t\t\t\t\t\t<i class=\"fa fa-check icon-selected\"></i>\n\t\t\t\t\t</label>\n\t\t\t\t\t<label class=\"type-wrap\">\n\t\t\t\t\t\t<i class=\"fa fa-wechat color-wechat\"></i>\n\t\t\t\t\t\t<input type=\"radio\" name=\"pay-type\" class=\"pay-type\" value=\"1\" />&nbsp;微信支付\n\t\t\t\t\t\t<i class=\"fa fa-check icon-selected\"></i>\n\t\t\t\t\t</label>\n\t\t\t\t\t<div class=\"qr-wrap text-center\">\n\t\t\t\t\t\t<div class=\"img-wrap\">\n\t\t\t\t\t\t\t<img src=\"/images/qrcode001.jpg\" alt=\"二维码\"/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<p class=\"text-center\">请使用手机微信扫描二维码支付</p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"btn-wrap text-center\">\n\t\t\t\t\t<a href=\"javascript:void(0);\" class=\"btn-pay\">立即支付</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>";
 
 /***/ }),
 /* 15 */
@@ -2852,6 +2852,18 @@ __webpack_require__(16);
 		    $tpWrap = (0, _jqueryMin2.default)(this).parent();
 		if (this.checked && !$tpWrap.hasClass("type-selected")) {
 			$tpWrap.addClass("type-selected").siblings().removeClass("type-selected");
+			var $qrWrap = (0, _jqueryMin2.default)(".qr-wrap"),
+			    $orderType = (0, _jqueryMin2.default)(".order-type");
+			/*当选择微信支付时弹出二维码并且调整相关样式，否则隐藏二维码*/
+			if (this.value == 1) {
+				$qrWrap.animate({ "height": "160px" }, function () {
+					$orderType.animate({ "margin-bottom": "0px" }, 500);
+				});
+			} else {
+				$qrWrap.animate({ "height": "0px" }, 700, function () {
+					$orderType.animate({ "margin-bottom": "60px" }, 1000);
+				});
+			}
 		}
 	});
 	/*end 支付方式选择*/

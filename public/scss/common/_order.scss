@@ -2,10 +2,11 @@
 @import "font-awesome";
 .dialog{
 	.dialog-wrap{
-		.dialog-content{
+		.dialog-content.dialog-main{
+			height:auto;
 			.orderPay-wrap{
 				width:510px;
-				margin:0 auto;
+				margin:0 auto 16px auto;
 				.order-item{
 					padding:14px 0px 4px 0px;
 					border-bottom:1px solid $bg-color;
@@ -22,6 +23,7 @@
 					}
 				}
 				.order-type{
+					margin-bottom:60px;
 					h5{
 
 					}
@@ -79,6 +81,44 @@
 							color:$white;
 							z-index:101;
 							@include scale(0.618);
+						}
+					}
+					@at-root (without:all){
+						.qr-wrap{
+							height:0;
+							overflow:hidden;
+							.img-wrap{
+								@include inline-block();
+								@include box-sizing(border-box);
+								width:150px;
+								height:130px;
+								padding:10px 20px;
+								img{
+									max-width:100%;
+									max-height:100%;
+								}
+							}
+						}
+					}
+					
+				}
+				.btn-wrap{
+					margin-top:0px;
+					.btn-pay{
+						@include inline-block();
+						@include unstyled-link();
+						@include border-radius(3px);
+						width:384px;
+						background-color:$theme-color;
+						color:$white;
+						font-size:16px;
+						padding:8px 0;
+
+						&:hover{
+							background-color:$hover-color;
+						}
+						&:active{
+							@include opacity(0.809);
 						}
 					}
 				}

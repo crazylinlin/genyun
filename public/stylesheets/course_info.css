@@ -4119,51 +4119,59 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   clip: auto;
 }
 
-/* line 6, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap {
-  width: 510px;
-  margin: 0 auto;
+/* line 5, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main {
+  height: auto;
 }
-/* line 9, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-item {
+/* line 7, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap {
+  width: 510px;
+  margin: 0 auto 16px auto;
+}
+/* line 10, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-item {
   padding: 14px 0px 4px 0px;
   border-bottom: 1px solid #f0f0f0;
 }
-/* line 15, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-item span {
+/* line 16, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-item span {
   float: right;
   color: #b1b1b1;
 }
-/* line 19, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-item span.pay-wrap {
+/* line 20, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-item span.pay-wrap {
   color: #f53636;
   font-size: 16px;
 }
-/* line 28, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-wrap {
+/* line 25, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type {
+  margin-bottom: 60px;
+}
+/* line 30, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap {
   position: relative;
   margin-right: 70px;
   border: 1px solid #f0f0f0;
   padding: 8px 14px;
 }
-/* line 33, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-wrap i {
+/* line 35, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap i {
   font-size: 24px;
 }
-/* line 36, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-wrap i.color-wallet {
+/* line 38, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap i.color-wallet {
   color: #9ad122;
 }
-/* line 39, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-wrap i.color-wechat {
+/* line 41, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap i.color-wechat {
   color: #4baf50;
 }
-/* line 42, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-wrap .icon-selected {
+/* line 44, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap .icon-selected {
   display: none;
 }
-/* line 45, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-wrap input[type="radio"] {
+/* line 47, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap input[type="radio"] {
   position: absolute;
   width: 125px;
   height: 28px;
@@ -4172,20 +4180,20 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   left: 0;
   right: 0;
 }
-/* line 53, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-wrap:hover {
+/* line 55, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap:hover {
   cursor: pointer;
 }
-/* line 57, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-selected {
+/* line 59, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-selected {
   -moz-box-sizing: padding-box;
   -webkit-box-sizing: padding-box;
   box-sizing: padding-box;
   border: 2px solid #4baf50;
   position: relative;
 }
-/* line 62, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-selected:after {
+/* line 64, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-selected:after {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -4200,8 +4208,8 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   right: -14px;
   z-index: 100;
 }
-/* line 74, ../scss/common/_order.scss */
-.dialog .dialog-wrap .dialog-content .orderPay-wrap .order-type .type-selected i.icon-selected {
+/* line 76, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .order-type .type-selected i.icon-selected {
   display: inline;
   position: absolute;
   top: -8px;
@@ -4212,6 +4220,66 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   -ms-transform: scale(0.618, 0.618);
   -webkit-transform: scale(0.618, 0.618);
   transform: scale(0.618, 0.618);
+}
+/* line 87, ../scss/common/_order.scss */
+.qr-wrap {
+  height: 0;
+  overflow: hidden;
+}
+/* line 90, ../scss/common/_order.scss */
+.qr-wrap .img-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 150px;
+  height: 130px;
+  padding: 10px 20px;
+}
+/* line 96, ../scss/common/_order.scss */
+.qr-wrap .img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 105, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .btn-wrap {
+  margin-top: 0px;
+}
+/* line 107, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 384px;
+  background-color: #4baf50;
+  color: white;
+  font-size: 16px;
+  padding: 8px 0;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:active, .dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:focus {
+  outline: none;
+}
+/* line 117, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:hover {
+  background-color: #47a14b;
+}
+/* line 120, ../scss/common/_order.scss */
+.dialog .dialog-wrap .dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
+  opacity: 0.809;
 }
 
 /* line 9, ../scss/course_info.scss */

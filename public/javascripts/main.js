@@ -127,6 +127,18 @@ $(document).ready(function(){
 			$tpWrap = $(this).parent();
 		if(this.checked && !$tpWrap.hasClass("type-selected")){
 			$tpWrap.addClass("type-selected").siblings().removeClass("type-selected");
+			var $qrWrap = $(".qr-wrap"),
+				$orderType = $(".order-type");
+				/*当选择微信支付时弹出二维码并且调整相关样式，否则隐藏二维码*/
+			if(this.value == 1){
+				$qrWrap.animate({"height":"160px"},function(){
+					$orderType.animate({"margin-bottom":"0px"},500);
+				});
+			}else{
+				$qrWrap.animate({"height":"0px"},700,function(){
+					$orderType.animate({"margin-bottom":"60px"},1000);
+				});
+			}
 		}
 	})
 	/*end 支付方式选择*/
