@@ -9,6 +9,7 @@ module.exports = {
 		qa_list:"./public/javascripts/QA_list.js",
 		course_list:"./public/javascripts/course_list.js",
 		special_list:"./public/javascripts/special_list.js",
+		special_detail:"./public/javascripts/special_detail.js",
 		course_info:"./public/javascripts/course_info.js",
 		feedback:"./public/javascripts/feedback.js"
 	},
@@ -193,6 +194,12 @@ module.exports = {
 			filename:"html/feedback.html",
 			inject:"body",
 			chunks:['main','feedback']
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/special_detail.html",
+			filename:"html/special_detail.html",
+			inject:"body",
+			chunks:['main','special_detail']
 		})
 	]
 }

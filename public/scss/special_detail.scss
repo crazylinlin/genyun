@@ -1,0 +1,51 @@
+@import "compass/typography/text/ellipsis";
+@import "compass/typography/links/hover-link";
+@import "./common/header";
+@import "./common/dialog";
+@import "./common/item";
+
+body{
+	background-color:$bg-color;
+}
+.main-top{
+	margin-top:16px;
+	height:360px;
+	background-color:$white;
+	$pd:20px;
+	.sms-wrap{
+		padding:$pd;
+		.sms-title{
+			@include ellipsis();
+			a{
+				@include hover-link();
+				color:$black;
+			}
+		}
+	}
+	.adver-wrap{
+		padding:$pd;
+		a{
+			img{
+				max-width:100%;
+				max-height:100%;
+			}
+		}
+		
+	}
+}
+.item-bottom{
+	padding:0;
+	padding-bottom:20px;
+	.level{
+		margin-top:48px;
+		.flex-box{
+			@extend %flex-box;
+		}
+	}
+	.level-one{
+
+	}
+	.level-two{
+
+	}
+}
