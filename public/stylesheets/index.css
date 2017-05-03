@@ -82,8 +82,8 @@
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   -webkit-align-items: center;
   align-items: center;
   -webkit-align-content: center;
@@ -94,17 +94,36 @@
   width: 280px;
   height: 230px;
   background-color: white;
+  border: 1px solid #f0f0f0;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  position: relative;
 }
-/* line 14, ../scss/common/_item.scss */
+/* line 18, ../scss/common/_item.scss */
 .normal-wrap .flex-box .item a.img-link img {
   width: 100%;
   height: 160px;
 }
-/* line 19, ../scss/common/_item.scss */
+/* line 23, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .s-tag {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  padding: 2px 6px;
+  background-color: #4baf50;
+  color: white;
+}
+/* line 33, ../scss/common/_item.scss */
 .normal-wrap .flex-box .item .notice-wrap {
   padding: 0 12px;
 }
-/* line 21, ../scss/common/_item.scss */
+/* line 35, ../scss/common/_item.scss */
 .normal-wrap .flex-box .item .notice-wrap .sms-title {
   white-space: nowrap;
   overflow: hidden;
@@ -114,22 +133,22 @@
   color: black;
   margin-top: 12px;
 }
-/* line 27, ../scss/common/_item.scss */
+/* line 41, ../scss/common/_item.scss */
 .normal-wrap .flex-box .item .notice-wrap .notice-sms a {
   cursor: default;
 }
-/* line 30, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap {
+/* line 44, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap, .normal-wrap .flex-box .item .notice-wrap .notice-sms .sms-wrap {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
-  color: black;
+  color: #b1b1b1;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:focus {
+.normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms a.money-wrap:focus, .normal-wrap .flex-box .item .notice-wrap .notice-sms .sms-wrap:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .sms-wrap:focus {
   outline: none;
 }
-/* line 34, ../scss/common/_item.scss */
+/* line 48, ../scss/common/_item.scss */
 .normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num {
   color: inherit;
   text-decoration: inherit;
@@ -141,23 +160,23 @@
 .normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .learning-num:focus {
   outline: none;
 }
-/* line 39, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite {
+/* line 53, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite, .normal-wrap .flex-box .item .notice-wrap .notice-sms .btn-continue {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
   float: right;
 }
 /* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:focus {
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .is-favorite:focus, .normal-wrap .flex-box .item .notice-wrap .notice-sms .btn-continue:active, .normal-wrap .flex-box .item .notice-wrap .notice-sms .btn-continue:focus {
   outline: none;
 }
-/* line 43, ../scss/common/_item.scss */
+/* line 57, ../scss/common/_item.scss */
 .normal-wrap .flex-box .item .notice-wrap .notice-sms .ok-favorite {
   color: #f53636;
 }
-/* line 46, ../scss/common/_item.scss */
-.normal-wrap .flex-box .item .notice-wrap .notice-sms .no-favorite {
+/* line 60, ../scss/common/_item.scss */
+.normal-wrap .flex-box .item .notice-wrap .notice-sms .no-favorite, .normal-wrap .flex-box .item .notice-wrap .notice-sms .btn-continue {
   color: #4baf50;
 }
 

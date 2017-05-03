@@ -1,0 +1,49 @@
+@import "compass/css3";
+@import "compass/typography/lists";
+@import "../common/header";
+@import "../common/dialog";
+@import "../common/item";
+body{
+	background-color:$bg-color;
+}
+
+.all-wrap{
+	background-color:$white;
+	padding:0;
+	ul.control-wrap{
+		margin:0;
+		padding:0;
+		@include no-bullets();
+		@include inline-block-list(20px);
+		li{
+			padding-top:18px;
+			padding-bottom:18px;
+			border-bottom: 3px solid transparent;
+			a{
+				@include unstyled-link();
+				font-size:18px;
+			}
+		}
+		li.actived{
+			color:$theme-color;
+			a{
+				//@include unstyled-link();
+				color:$theme-color;
+			}
+			border-bottom-color:$theme-color;
+		}
+		
+	}
+	.course-container{
+		border-top:1px solid $a-gray;
+		padding-top:20px;
+		.flag-course{
+			.flex-box{
+				@extend %flex-box;
+			}
+		}
+		.flag-two,.flag-three{
+			display:none;
+		}
+	}
+}
