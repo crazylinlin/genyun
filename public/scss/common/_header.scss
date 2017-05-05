@@ -1,6 +1,9 @@
-@import "theme";
+@import "compass/typography/lists";
 @import "compass/typography/links";
 @import "compass/css3";
+@import "font-awesome-compass";
+@import "font-awesome";
+@import "theme";
 .header{
 	width:100%;
 	color:hsl(0deg,50%,100%);
@@ -57,5 +60,70 @@
 				margin-right:42px;
 			}
 		}
+		.login-info{
+			float:right;
+			position:relative;
+			.img-wrap{
+				@include unstyled-link();
+				span.name{
+					margin-left:1rem;
+				}
+			}
+			.links-wrap{
+				@include opacity(0);
+				@include no-bullets();
+				position:absolute;
+				padding:0;
+				line-height:normal;
+				background-color:$white;
+				width:170px;
+				z-index:-1;
+				left:-70px;
+				li{
+					color:$black;
+					text-align:left;
+					padding:6px 20px;
+					i{
+						font-size:24px;
+					}
+					a{
+						@include unstyled-link();
+						font-size:16px;
+						margin-left:20px;
+					}
+					&:hover{
+						background-color:$bg-color;
+					}
+				}
+				&:before{
+					position:absolute;
+					content:"";
+					width:0px;
+					height:0px;
+					border:8px solid transparent;
+					border-bottom-color:$white;
+					top:-16px;
+				}
+			}
+			&:hover{
+				ul.links-wrap{
+					z-index:101;
+					@include animation(infoShow 300ms 0s linear 1 null forwards null);
+				}
+			}
+		}
 	}
+}
+
+@include keyframes(infoShow) {
+	0%{
+		@include opacity(0);
+	}
+	50%{
+		@include opacity(0.5);
+	}
+	100%{
+		@include opacity(1);
+	}
+
 }
