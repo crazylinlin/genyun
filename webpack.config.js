@@ -12,7 +12,8 @@ module.exports = {
 		special_detail:"./public/javascripts/special_detail.js",
 		course_info:"./public/javascripts/course_info.js",
 		feedback:"./public/javascripts/feedback.js",
-		curricula:"./public/javascripts/curricula.js"
+		curricula:"./public/javascripts/curricula.js",
+		lecturer:"./public/javascripts/lecturer.js"
 	},
 	output:{
 		filename:'js/[name].bundle.js',
@@ -207,6 +208,12 @@ module.exports = {
 			filename:"html/vip/curricula.html",
 			inject:"body",
 			chunks:['main','curricula']
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/vip/lecturer.html",
+			filename:"html/vip/lecturer.html",
+			inject:"body",
+			chunks:['main','lecturer']
 		}),
 	]
 }

@@ -1,0 +1,141 @@
+@import "compass/css3";
+@import "compass/typography/lists";
+@import "compass/typography/links";
+@import "../common/header";
+@import "../common/dialog";
+@import "../common/info";
+
+body{
+	background-color:$bg-color;
+}
+.myCourse{
+	margin-top:20px;
+	padding:0;
+	.courseWrap{
+		background-color:$white;
+		padding:0;
+		.tabs-top{
+			height:60px;
+			border-bottom:1px solid $bg-color;
+			margin-bottom:20px;
+			.tabs-wrap{
+				@include no-bullets();
+				@include inline-block-list(20px);
+				@include inline-block();
+				margin-top:17px;
+				li{
+					padding:7px 20px;
+					border-bottom:3px solid transparent;
+					a{
+						@include unstyled-link();
+						font-size:18px;
+					}
+				}
+				li.actived{
+					border-bottom-color:$theme-color;
+				}
+			}
+			.add-course{
+				float:right;
+				@include inline-block();
+				@include unstyled-link();
+				@include border-radius(4px);
+				padding:10px; 
+				margin-top:10px;
+				margin-right:10px;
+				color:$white;
+				background-color:$theme-color;
+				&:hover{
+					background-color:$hover-color;
+				}
+				&:active{
+					@include opacity(0.809);
+				}
+			}
+		}
+		.level-container{
+			$height:210px;
+			.flag-level{
+				.item-course{
+					height:$height;
+					margin-bottom:30px;
+					overflow:hidden;
+					.pic-wrap{
+						.link-img{
+							img{
+								max-width:100%;
+								max-height:100%;
+							}
+						}
+					}
+					.detail-wrap{
+						p{
+							text-indent:28px;
+						}
+					}
+				}
+			}
+			.level-online{
+
+			}
+			.level-waiting{
+				display:none;
+				.item-course{
+					
+					.detail-wrap{
+						position:relative;
+						height:$height;
+						.state-wrap{
+							position:absolute;
+							padding:0 15px;
+							bottom:0;
+							left:0;
+							right:0;
+							.curState{
+
+							}
+							.state-noPass{
+								color:$red;
+							}
+							.state-audit{
+								color:$gray;
+							}
+							.edit-course{
+								float:right;
+								@include hover-link();
+								color:$theme-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.orderInfoWrap{
+		.wrap-infoOrder{
+			background-color:$white;
+			padding:10px 0px;
+			$pd:20px;
+			h4{
+				border-bottom:1px solid $bg-color;
+				margin-top:0;
+				padding:15px $pd;
+				.month-ago{
+					float:right;
+					@include hover-link();
+				}
+			}
+			.order-item{
+				border-bottom:1px solid $bg-color;
+				margin:0px $pd;
+				padding:$pd/2 0;
+				p{
+					.right-span{
+						float:right;
+						color:$gray;
+					}
+				}
+			}
+		}
+	}
+}
