@@ -1,0 +1,78 @@
+
+@import "../common/header";
+@import "../common/dialog";
+
+body{
+	background-color:$bg-color;
+}
+.toBeWrap{
+	background-color:$white;
+	padding:0;
+	.form-title{
+		padding:10px 0px 18px 35px;
+		border-bottom:1px solid $bg-color;
+
+		.sms-notice{
+			font-size:12px;
+			color:$gray;
+		}
+	}
+	.fm-group{
+		height:36px;
+		margin:24px 0px;
+		.fl-label{
+			width:12%;
+			.label-notice{
+				font-size:12px;
+				color:$gray;
+			}
+		}
+		.mt-label{
+			margin-top:4px;
+		}
+		.fl-input-wrap,.n-input-wrap{
+			width:88%;
+			padding-left:24px;
+		}
+		.fl-input-wrap{
+			.checkbox-wrap{
+				margin-right:48px;
+			}
+			.sms-input{
+				width:300px;
+				height:32px;
+				border:1px solid $gray;
+				outline:none;
+				line-height:normal;
+				&:focus{
+					@include box-shadow(0 0 1px 1px $theme-color);
+				}
+			}
+		}
+		.n-input-wrap{
+			margin-left:12%;
+		}
+	}
+	.h-group{
+		$height:240px;
+		height:$height;
+		.images-item{
+			float:left;
+			position:relative;
+			margin-right:48px;
+			border:1px solid $theme-color;
+			width:$height - 20px;
+			height:$height - 20px;
+			.images-wrap{
+				width:100%;
+				height:180px;
+			}
+			.txt-notice{
+				position:absolute;
+				bottom:0;
+				left:0;
+				right:0;
+			}
+		}
+	}
+}

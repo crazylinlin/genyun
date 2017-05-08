@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>成为讲师</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=no">
+		<script type="text/javascript" src="../../js/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/layer-v3.0.3/layer/layer.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header" id="header">
+		</div>
+		<!--头部结束-->
+		<!--start 成为讲师注册表单-->
+		<div class="container toBeWrap">
+			<h4 class="form-title">讲师资格审核
+				<span class="sms-notice">(个人资格审核需要您的身份证/团体机构需要团体营业执照)</span>
+			</h4>
+			<form>
+				<div class="fm-group">
+					<label class="pull-left text-right fl-label">讲师类型</label>
+					<div class="pull-left fl-input-wrap">
+						<label class="radio-inline checkbox-wrap">
+							<input type="radio" chekced name="isType" value="0"/>个人
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="isType" value="1"/>团体
+						</label>
+					</div>
+				</div>
+				<div class="fm-group">
+					<label class="pull-left text-right fl-label mt-label">
+						<span id="label-name">姓名</span>
+						<span class="label-notice">(必填)</span>
+					</label>
+					<div class="pull-left fl-input-wrap">
+						<input type="text" name="name" class="sms-input" id="name"/>
+					</div>
+				</div>
+				<div class="fm-group h-group">
+					<label class="pull-left text-right fl-label">
+						<span id="pic-name">上传身份证</span>
+						<span class="label-notice">(必填)</span>
+					</label>
+					<div class="pull-left fl-input-wrap">
+						<div class="images-item">
+							<div class="images-wrap">
+								<i></i>
+							</div>
+						</div>
+						<div class="images-item">
+							<div class="images-wrap">
+								<i></i>
+							</div>
+							<p class="text-center txt-notice">身份证扫描件1</p>
+						</div>
+						<div class="images-item">
+							<div class="images-wrap">
+								<i></i>
+							</div>
+							<p class="text-center txt-notice">身份证扫描件2</p>
+						</div>
+					</div>
+				</div>
+				<div class="fm-group h-group">
+					<label class="pull-left text-right fl-label">其他相关证件 
+						<span class="label-notice">(选填)</span>
+					</label>
+					<div class="pull-left fl-input-wrap">
+						<p>上传相关教师证件可以提高审核通过率以及可以被推荐课程</p>
+						<div class="images-item">
+							<div class="images-wrap">
+								<i></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fm-group">
+					<div class="pull-left n-input-wrap">
+						<label class="checkbox-inline">
+							<input type="checkbox" name="is_agree" value="1"/>
+							<a href="#"><<讲师协议>></a>
+						</label>
+					</div>
+				</div>
+				<div class="text-center fm-group bttn-group">
+					<a href="javascript:void(0)" class="btn-submit">提交审核</a>
+				</div>
+			</form>
+		</div>
+		<!--end 成为讲师注册表单-->
+		<!--start 添加登录以及注册对话框-->
+		<div id="dialog-container">
+		</div>
+		<!--end 添加登录一集注册对话框-->
+	<script type="text/javascript" src="../../js/main.bundle.js"></script><script type="text/javascript" src="../../js/toBeLecturer.bundle.js"></script></body>
+</html>
