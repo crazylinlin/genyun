@@ -28,10 +28,10 @@
 					<label class="pull-left text-right fl-label">讲师类型</label>
 					<div class="pull-left fl-input-wrap">
 						<label class="radio-inline checkbox-wrap">
-							<input type="radio" chekced name="isType" value="0"/>个人
+							<input type="radio" checked name="isType" class="typeSelect" value="0"/>个人
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="isType" value="1"/>团体
+							<input type="radio" name="isType" class="typeSelect" value="1"/>团体
 						</label>
 					</div>
 				</div>
@@ -50,21 +50,24 @@
 						<span class="label-notice">(必填)</span>
 					</label>
 					<div class="pull-left fl-input-wrap">
-						<div class="images-item">
+						<div class="images-item item-team">
 							<div class="images-wrap">
-								<i></i>
+								<i class="fa fa-plus"></i>
 							</div>
+							<input type="file" name="business-license" id="business-license" class="upload-file"/>
 						</div>
-						<div class="images-item">
+						<div class="images-item item-personal">
 							<div class="images-wrap">
-								<i></i>
+								<i class="fa fa-plus"></i>
 							</div>
+							<input type="file" name="identilyCard-one" id="identilyCard-one" class="upload-file"/>
 							<p class="text-center txt-notice">身份证扫描件1</p>
 						</div>
-						<div class="images-item">
+						<div class="images-item item-personal">
 							<div class="images-wrap">
-								<i></i>
+								<i class="fa fa-plus"></i>
 							</div>
+							<input type="file" name="identilyCard-two" id="identilyCard-two" class="upload-file"/>
 							<p class="text-center txt-notice">身份证扫描件2</p>
 						</div>
 					</div>
@@ -77,16 +80,17 @@
 						<p>上传相关教师证件可以提高审核通过率以及可以被推荐课程</p>
 						<div class="images-item">
 							<div class="images-wrap">
-								<i></i>
+								<i class="fa fa-plus"></i>
 							</div>
+							<input type="file" name="identilyCard-one" id="identilyCard-one" class="upload-file"/>
 						</div>
 					</div>
 				</div>
 				<div class="fm-group">
 					<div class="pull-left n-input-wrap">
 						<label class="checkbox-inline">
-							<input type="checkbox" name="is_agree" value="1"/>
-							<a href="#"><<讲师协议>></a>
+							<input type="checkbox" name="is_agree" value="1"/>同意
+							<a href="#" class="link-agreement"><<讲师协议>></a>
 						</label>
 					</div>
 				</div>

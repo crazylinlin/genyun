@@ -45,33 +45,87 @@ body{
 				outline:none;
 				line-height:normal;
 				&:focus{
+					border-color:$theme-color;
 					@include box-shadow(0 0 1px 1px $theme-color);
 				}
 			}
 		}
 		.n-input-wrap{
 			margin-left:12%;
+			.checkbox-inline{
+				@at-root (without:role){
+					.link-agreement{
+						color:$theme-color;
+					}
+				}
+			}
 		}
 	}
 	.h-group{
 		$height:240px;
 		height:$height;
-		.images-item{
-			float:left;
-			position:relative;
-			margin-right:48px;
-			border:1px solid $theme-color;
-			width:$height - 20px;
-			height:$height - 20px;
-			.images-wrap{
-				width:100%;
-				height:180px;
+		@at-root (without:all){
+			.images-item{
+				float:left;
+				position:relative;
+				margin-right:48px;
+				//border:1px solid $theme-color;
+				width:$height - 20px;
+				height:$height - 20px;
+				.images-wrap{
+					width:100%;
+					height:180px;
+					line-height:180px;
+					text-align:center;
+					border:1px dotted $bg-color;
+					i{
+						font-size:48px;
+						color:$a-gray;
+						&:hover{
+							cursor:pointer;
+						}
+					}
+					image{
+						max-width:100%;
+						max-height:100%;
+					}
+				}
+				.upload-file{
+					@include opacity(0);
+					position:absolute;
+					height:48px;
+					width:100%;
+					top:50%;
+					margin-top:-50px;
+
+				}
+				.txt-notice{
+					position:absolute;
+					bottom:0;
+					left:0;
+					right:0;
+				}
 			}
-			.txt-notice{
-				position:absolute;
-				bottom:0;
-				left:0;
-				right:0;
+			.item-team{
+				display:none;
+			}
+		}
+	}
+	.bttn-group{
+		.btn-submit{
+			@include unstyled-link();
+			@include inline-block();
+			@include border-radius(5px);
+			color:$white;
+			background-color:$theme-color;
+			padding:8px 0px;
+			width:380px;
+			&:hover{
+				background-color:$hover-color;
+
+			}
+			&:active{
+				@include opacity(0.5);
 			}
 		}
 	}

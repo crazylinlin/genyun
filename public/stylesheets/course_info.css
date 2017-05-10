@@ -3904,6 +3904,9 @@
 /* line 109, ../scss/common/_header.scss */
 .header .header-wrap .login-info:hover ul.links-wrap {
   z-index: 101;
+  -moz-box-shadow: 0px 0px 3px 1px #f0f0f0;
+  -webkit-box-shadow: 0px 0px 3px 1px #f0f0f0;
+  box-shadow: 0px 0px 3px 1px #f0f0f0;
   -moz-animation: infoShow 300ms 0s linear 1 forwards;
   -webkit-animation: infoShow 300ms 0s linear 1 forwards;
   animation: infoShow 300ms 0s linear 1 forwards;

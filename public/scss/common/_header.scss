@@ -108,13 +108,13 @@
 			&:hover{
 				ul.links-wrap{
 					z-index:101;
+					@include box-shadow(0px 0px 3px 1px $bg-color);
 					@include animation(infoShow 300ms 0s linear 1 null forwards null);
 				}
 			}
 		}
 	}
 }
-
 @include keyframes(infoShow) {
 	0%{
 		@include opacity(0);
