@@ -1,5 +1,7 @@
 import $ from "../bower_components/jquery/dist/jquery.min.js";
 
+import uploadPre from "./common/uploadPre.js";
+
 require("../stylesheets/vip/toBeLecturer.css");
 
 

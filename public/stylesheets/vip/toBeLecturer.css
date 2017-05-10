@@ -4307,11 +4307,16 @@ body {
   cursor: pointer;
 }
 /* line 88, ../../scss/vip/toBeLecturer.scss */
-.images-item .images-wrap image {
+.images-item .images-wrap img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 93, ../../scss/vip/toBeLecturer.scss */
+/* line 94, ../../scss/vip/toBeLecturer.scss */
+.images-item .images-wrap div.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 99, ../../scss/vip/toBeLecturer.scss */
 .images-item .upload-file {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -4321,7 +4326,7 @@ body {
   top: 50%;
   margin-top: -50px;
 }
-/* line 102, ../../scss/vip/toBeLecturer.scss */
+/* line 108, ../../scss/vip/toBeLecturer.scss */
 .images-item .txt-notice {
   position: absolute;
   bottom: 0;
@@ -4329,11 +4334,11 @@ body {
   right: 0;
 }
 
-/* line 109, ../../scss/vip/toBeLecturer.scss */
+/* line 115, ../../scss/vip/toBeLecturer.scss */
 .item-team {
   display: none;
 }
-/* line 115, ../../scss/vip/toBeLecturer.scss */
+/* line 121, ../../scss/vip/toBeLecturer.scss */
 .toBeWrap .bttn-group .btn-submit {
   color: inherit;
   text-decoration: inherit;
@@ -4355,11 +4360,11 @@ body {
 .toBeWrap .bttn-group .btn-submit:active, .toBeWrap .bttn-group .btn-submit:focus {
   outline: none;
 }
-/* line 123, ../../scss/vip/toBeLecturer.scss */
+/* line 129, ../../scss/vip/toBeLecturer.scss */
 .toBeWrap .bttn-group .btn-submit:hover {
   background-color: #47a14b;
 }
-/* line 127, ../../scss/vip/toBeLecturer.scss */
+/* line 133, ../../scss/vip/toBeLecturer.scss */
 .toBeWrap .bttn-group .btn-submit:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;

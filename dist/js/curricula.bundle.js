@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 36);
+/******/ 	return __webpack_require__(__webpack_require__.s = 37);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -163,21 +163,21 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 14:
+/***/ 15:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"item\">\n\t<a href=\"#\" class=\"img-link\">\n\t\t<img src=\"/images/hkk001.jpg\" alt=\"课程封面\"/>\n\t</a>\n\t<div class=\"notice-wrap\">\n\t\t<p class=\"sms-title\">\n\t\t\t这是一个寂寞的天，下着有些伤心的雨， ！\n\t\t</p>\n\t\t<p class=\"notice-sms\">\n\t\t\t<a href=\"javascript:void(0);\" class=\"money-wrap\">\n\t\t\t\t<span class=\"already\">99</span>\n\t\t\t\t<span class=\"total\">/999</span>\n\t\t\t</a>\n\t\t\t<a href=\"javascript:void(0);\" class=\"is-favorite no-favorite\">取消收藏</a>\n\t\t</p>\n\t</div>\n</div>";
 
 /***/ }),
 
-/***/ 15:
+/***/ 16:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"item\">\n\t<a href=\"#\" class=\"img-link\">\n\t\t<img src=\"/images/hkk001.jpg\" alt=\"课程封面\"/>\n\t</a>\n\t<span class=\"s-tag\">必修</span>\n\t<div class=\"notice-wrap\">\n\t\t<p class=\"sms-title\">\n\t\t\t这是一个寂寞的天，下着有些伤心的雨， ！\n\t\t</p>\n\t\t<p class=\"notice-sms\">\n\t\t\t<a href=\"javascript:void(0);\" class=\"sms-wrap\">\n\t\t\t\t已学习\n\t\t\t\t<span class=\"already\">99</span>\n\t\t\t\t<span class=\"total\">/999课</span>\n\t\t\t</a>\n\t\t\t<a href=\"javascript:void(0);\" class=\"btn-continue\">继续学习</a>\n\t\t</p>\n\t</div>\n</div>";
 
 /***/ }),
 
-/***/ 16:
+/***/ 17:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"item\">\n\t<a href=\"#\" class=\"img-link\">\n\t\t<img src=\"/images/hkk001.jpg\" alt=\"课程封面\"/>\n\t</a>\n\t<div class=\"notice-wrap\">\n\t\t<p class=\"sms-title\">\n\t\t\t这是一个寂寞的天，下着有些伤心的雨， ！\n\t\t</p>\n\t\t<p class=\"notice-sms\">\n\t\t\t<a href=\"javascript:void(0);\" class=\"sms-wrap\">\n\t\t\t\t已学习\n\t\t\t\t<span class=\"already\">99</span>\n\t\t\t\t<span class=\"total\">/999课</span>\n\t\t\t</a>\n\t\t\t<a href=\"javascript:void(0);\" class=\"btn-continue\">继续学习</a>\n\t\t</p>\n\t</div>\n</div>";
@@ -481,33 +481,6 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 29:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(53);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/index.js??ref--0-2!./curricula.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/index.js??ref--0-2!./curricula.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
 /***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -630,7 +603,34 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
-/***/ 36:
+/***/ 30:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(54);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/index.js??ref--0-2!./curricula.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--0-1!../../../node_modules/postcss-loader/index.js??ref--0-2!./curricula.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -640,21 +640,21 @@ var _jqueryMin = __webpack_require__(0);
 
 var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
-var _item_study = __webpack_require__(16);
+var _item_study = __webpack_require__(17);
 
 var _item_study2 = _interopRequireDefault(_item_study);
 
-var _item_sponsor = __webpack_require__(15);
+var _item_sponsor = __webpack_require__(16);
 
 var _item_sponsor2 = _interopRequireDefault(_item_sponsor);
 
-var _item_favorite = __webpack_require__(14);
+var _item_favorite = __webpack_require__(15);
 
 var _item_favorite2 = _interopRequireDefault(_item_favorite);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(29);
+__webpack_require__(30);
 
 (0, _jqueryMin2.default)(document).ready(function () {
 
@@ -2571,7 +2571,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
-/***/ 53:
+/***/ 54:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);

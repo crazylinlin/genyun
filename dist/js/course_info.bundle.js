@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 34);
+/******/ 	return __webpack_require__(__webpack_require__.s = 35);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -460,13 +460,13 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(46);
+var content = __webpack_require__(47);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -609,7 +609,7 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
-/***/ 34:
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -623,7 +623,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //require("../bower_components/bootstrap-star-rating/css/star-rating.min.css");
 
-__webpack_require__(22);
+__webpack_require__(23);
 (0, _jqueryMin2.default)(document).ready(function () {});
 
 /***/ }),
@@ -2426,7 +2426,7 @@ function isnan (val) {
 
 /***/ }),
 
-/***/ 46:
+/***/ 47:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);

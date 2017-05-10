@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 39);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -163,7 +163,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 13:
+/***/ 14:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"info-wrap\">\n\t<div class=\"info-top\">\n\t\t<div class=\"col-xs-4 h-wrap\">\n\t\t\t<img src=\"/images/ll001.jpg\" width=\"120\" height=\"120\" alt=\"用户图像\" class=\"img-circle\"/>\n\t\t</div>\n\t\t<div class=\"col-xs-8 h-wrap\">\n\t\t\t<div  class=\"sms-wrap\">\n\t\t\t\t<p id=\"vip-name\" class=\"\">阿里巴巴&罗大佑</p>\n\t\t\t\t<p id=\"vip-univers\" class=\"gray-font\">西方地产大亨学院</p>\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t</div>\n\t<div class=\"info-bottom clearfix\">\n\t\t<div class=\"col-xs-3 text-center notice-tag\">\n\t\t\t<p class=\"num-font\">999.99元</p>\n\t\t\t<p class=\"gray-font\">今日收益</p>\n\t\t</div>\n\t\t<div class=\"col-xs-3 text-center notice-tag\">\n\t\t\t<p class=\"num-font\">99人</p>\n\t\t\t<p class=\"gray-font\">新增学员数</p>\n\t\t</div>\n\t\t<div class=\"col-xs-3 text-center notice-tag\">\n\t\t\t<p class=\"num-font\">999999.999元</p>\n\t\t\t<p class=\"gray-font\">累计收益</p>\n\t\t</div>\n\t\t<div class=\"col-xs-3 text-center notice-tag\">\n\t\t\t<p class=\"num-font\">99999人</p>\n\t\t\t<p class=\"gray-font\">累计学员数</p>\n\t\t</div>\n\t</div>\n</div>";
@@ -589,13 +589,13 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
-/***/ 30:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(54);
+var content = __webpack_require__(55);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -613,40 +613,6 @@ if(false) {
 	// When the module is disposed, remove the <style> tags
 	module.hot.dispose(function() { update(); });
 }
-
-/***/ }),
-
-/***/ 39:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jqueryMin = __webpack_require__(0);
-
-var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
-
-var _info = __webpack_require__(13);
-
-var _info2 = _interopRequireDefault(_info);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-__webpack_require__(30);
-
-(0, _jqueryMin2.default)(document).ready(function () {
-	/*start 加入会员信息*/
-	(0, _jqueryMin2.default)("#info-container").html(_info2.default);
-	/*end   加入会员信息*/
-
-	(0, _jqueryMin2.default)(".tabs-wrap").delegate("li", "click", function () {
-		var role = (0, _jqueryMin2.default)(this).data("target");
-		if (!(0, _jqueryMin2.default)(this).hasClass("actived")) {
-			(0, _jqueryMin2.default)(this).addClass("actived").siblings().removeClass("actived");
-			(0, _jqueryMin2.default)(".flag-level").filter("[data-role=" + role + "]").fadeIn().siblings(".flag-level").fadeOut();
-		}
-	});
-});
 
 /***/ }),
 
@@ -2448,6 +2414,40 @@ function isnan (val) {
 
 /***/ }),
 
+/***/ 40:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jqueryMin = __webpack_require__(0);
+
+var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
+
+var _info = __webpack_require__(14);
+
+var _info2 = _interopRequireDefault(_info);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+__webpack_require__(31);
+
+(0, _jqueryMin2.default)(document).ready(function () {
+	/*start 加入会员信息*/
+	(0, _jqueryMin2.default)("#info-container").html(_info2.default);
+	/*end   加入会员信息*/
+
+	(0, _jqueryMin2.default)(".tabs-wrap").delegate("li", "click", function () {
+		var role = (0, _jqueryMin2.default)(this).data("target");
+		if (!(0, _jqueryMin2.default)(this).hasClass("actived")) {
+			(0, _jqueryMin2.default)(this).addClass("actived").siblings().removeClass("actived");
+			(0, _jqueryMin2.default)(".flag-level").filter("[data-role=" + role + "]").fadeIn().siblings(".flag-level").fadeOut();
+		}
+	});
+});
+
+/***/ }),
+
 /***/ 5:
 /***/ (function(module, exports) {
 
@@ -2539,7 +2539,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
-/***/ 54:
+/***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
