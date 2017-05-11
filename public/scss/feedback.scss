@@ -10,8 +10,8 @@ body{
 	background-color:$white;
 	.feedback-wrap{
 		position:absolute;
-		width:200px;
-		height:50px;
+		width:310px;
+		height:80px;
 		top:0;
 		bottom:0;
 		margin-top:auto;
@@ -30,9 +30,18 @@ body{
 				left:-0px;
 				top:-12px;
 			}
-			span{
+			#pay-feedback{
 				color:$gray;
+				margin-left:-100px;
 			}
+			#submit-feedback{
+				color:$black;
+			}
+		}
+		.tag-notice{
+			color:$gray;
+			margin-top:24px;
+			text-indent:0;
 		}
 	}
 }

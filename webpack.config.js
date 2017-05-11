@@ -228,6 +228,12 @@ module.exports = {
 			filename:"html/vip/myInfo.html",
 			inject:"body",
 			chunks:['main',"myInfo"]
-		})
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/vip/feedback.html",
+			filename:"html/vip/feedback.html",
+			inject:"body",
+			chunks:['main','feedback']
+		}),
 	]
 }

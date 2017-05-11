@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 39);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -473,7 +473,7 @@ function updateLink(linkElement, options, obj) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(51);
+var content = __webpack_require__(52);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -616,7 +616,7 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
-/***/ 33:
+/***/ 34:
 /***/ (function(module, exports) {
 
 /* ========================================================================
@@ -857,49 +857,6 @@ function fromByteArray (uint8) {
 
 }(jQuery);
 
-
-/***/ }),
-
-/***/ 39:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jqueryMin = __webpack_require__(0);
-
-var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
-
-var _carousel = __webpack_require__(33);
-
-var _carousel2 = _interopRequireDefault(_carousel);
-
-var _item = __webpack_require__(10);
-
-var _item2 = _interopRequireDefault(_item);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/*加载首页样式*/
-
-/*加载轮播控制脚本*/
-__webpack_require__(26);
-/*结束*/
-
-/*导入课程项目模版*/
-/*导入jquery*/
-(0, _jqueryMin2.default)(document).ready(function () {
-	/* start 添加推荐以及分类课程 */
-	var recommendOfCur = document.getElementById("recommendOfCur");
-	var classifyOfCur = document.getElementById("classifyOfCur");
-	var str = " ";
-	for (var i = 0; i < 4; i++) {
-		str += _item2.default;
-	}
-	recommendOfCur.innerHTML = str;
-	classifyOfCur.innerHTML = str;
-	/*end 添加推荐以及分类课程*/
-});
 
 /***/ }),
 
@@ -2701,6 +2658,49 @@ function isnan (val) {
 
 /***/ }),
 
+/***/ 40:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jqueryMin = __webpack_require__(0);
+
+var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
+
+var _carousel = __webpack_require__(34);
+
+var _carousel2 = _interopRequireDefault(_carousel);
+
+var _item = __webpack_require__(10);
+
+var _item2 = _interopRequireDefault(_item);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/*加载首页样式*/
+
+/*加载轮播控制脚本*/
+__webpack_require__(26);
+/*结束*/
+
+/*导入课程项目模版*/
+/*导入jquery*/
+(0, _jqueryMin2.default)(document).ready(function () {
+	/* start 添加推荐以及分类课程 */
+	var recommendOfCur = document.getElementById("recommendOfCur");
+	var classifyOfCur = document.getElementById("classifyOfCur");
+	var str = " ";
+	for (var i = 0; i < 4; i++) {
+		str += _item2.default;
+	}
+	recommendOfCur.innerHTML = str;
+	classifyOfCur.innerHTML = str;
+	/*end 添加推荐以及分类课程*/
+});
+
+/***/ }),
+
 /***/ 5:
 /***/ (function(module, exports) {
 
@@ -2792,7 +2792,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
-/***/ 51:
+/***/ 52:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
