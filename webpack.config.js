@@ -14,7 +14,8 @@ module.exports = {
 		feedback:"./public/javascripts/feedback.js",
 		curricula:"./public/javascripts/curricula.js",
 		lecturer:"./public/javascripts/lecturer.js",
-		toBeLecturer:"./public/javascripts/toBeLecturer.js"
+		toBeLecturer:"./public/javascripts/toBeLecturer.js",
+		myInfo:"./public/javascripts/myInfo.js"
 	},
 	output:{
 		filename:'js/[name].bundle.js',
@@ -221,6 +222,12 @@ module.exports = {
 			filename:"html/vip/toBeLecturer.html",
 			inject:"body",
 			chunks:['main',"toBeLecturer"]
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/vip/myInfo.html",
+			filename:"html/vip/myInfo.html",
+			inject:"body",
+			chunks:['main',"myInfo"]
 		})
 	]
 }

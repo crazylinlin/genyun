@@ -1,0 +1,160 @@
+@import "compass/css3";
+@import "compass/typography/links";
+@import "../common/header";
+@import "../common/dialog";
+
+body{
+	background-color:$bg-color;
+}
+.vipInfo-wrap{
+	background-color:$white;
+	padding-bottom:48px;
+	.form-wrap{
+		$mt:36px;
+		.item-wrap{
+			height:36px;
+			margin-top:36px;
+			.label-prev{
+				width:10%;
+				margin-top:8px;
+			}
+			.detail-wrap{
+				width:90%;
+				padding-left:24px;
+				.sms-input{
+					width:300px;
+					height:32px;
+					padding-left:12px;
+					line-height:normal;
+					border:1px solid $gray;
+					outline:none;
+					&:focus{
+						@include box-shadow(0px 0px 3px 1px $theme-color);
+						border-color:$theme-color;
+					}
+				}
+			}
+		}
+		.user-image-wrap{
+			$hw-const:100px;
+			height:$hw-const;
+			line-height:$hw-const;
+			.detail-wrap{
+				position:relative;
+				.images-wrap{
+					float:left;
+					width:$hw-const;
+					height:100%;
+					img{
+						max-width:100%;
+						max-height:100%;
+					}
+				}
+				.upload-file{
+					@include opacity(0);
+					position:absolute;
+					width:$hw-const;
+					height:100px;
+					top:0;
+					left:24px;
+
+				}
+				.sms-tag{
+					margin-left:24px;
+				}
+			}
+		}
+		.save-wrap{
+			margin-top:$mt;
+			padding-left:24px;
+			#info-save{
+				@include inline-block();
+				@include border-radius(3px);
+				@include unstyled-link();
+				padding:8px 32px;
+				margin-left:10%;
+				color:$white;
+				background-color:$theme-color;
+				&:hover{
+					background-color:$hover-color;
+				}
+				&:active{
+					@include opacity(0.5);
+				}
+			}
+		}
+	}
+}
+
+//更换手机模态框
+.dialog{
+	.change-content{
+		$width:384px;
+		$mt:36px;
+		$i-input:32px;
+		padding-bottom:$mt;
+		.content-item{
+			@include border-radius(2px);
+			width:$width;
+			margin:0 auto;
+			margin-top:$mt;
+			border:1px solid $gray;
+			.num-input{
+				width:80%;
+				height:$i-input;
+				outline:none;
+				border:0;
+				padding-left:12px;
+			}
+			.btn-free{
+				position:relative;
+				@include unstyled-link();
+				@include inline-block();
+				height:$i-input;
+				line-height:$i-input;
+				vertical-align:middle;
+				padding:0px 8px;
+				float:right;
+				&:before{
+					position:absolute;
+					content:"";
+					height:$i-input - 8px;
+					border-left:2px solid $bg-color;
+					top:4px;
+					left:0;
+				}
+			}
+			.overed{
+				color:$gray;
+				background-color:$a-gray;
+			}
+		}
+		.show-shadow{
+			border-color:$theme-color;
+			@include box-shadow(0px 0px 3px 1px $theme-color);
+		}
+		.warning{
+			@include box-shadow(0px 0px 3px 1px $red);
+			border-color:$red;
+		}
+		.content-btn{
+			border:0px;
+			.btn-confirm{
+				@include inline-block();
+				@include unstyled-link();
+				@include border-radius(3px);
+				width:$width;
+				color:$white;
+				text-align:center;
+				background-color:$theme-color;
+				padding:8px 0;
+				&:hover{
+					background-color:$hover-color;
+				}
+				&:active{
+					@include opacity(0.809);
+				}
+			}
+		}
+	}
+}
