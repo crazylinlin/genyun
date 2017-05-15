@@ -4313,51 +4313,87 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   margin-top: -4px;
 }
 
-/* line 2, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap {
+/* line 4, ../scss/common/_specialItem.scss */
+.normal-wrap .special-wrap .col-left-big {
+  float: left;
+  width: 60%;
   position: relative;
+  height: 444px;
+  border-right: 24px solid transparent;
 }
-/* line 5, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap a.img-link img {
+/* line 12, ../scss/common/_specialItem.scss */
+a.link-img img {
   width: 100%;
-  height: 366px;
+  height: 100%;
 }
-/* line 10, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap span {
+
+/* line 17, ../scss/common/_specialItem.scss */
+.special-tag {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-}
-/* line 14, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap a .sponsor {
-  color: white;
-  background-color: #4baf50;
-  font-size: 24px;
-  padding: 4px 8px;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  background-color: #4baf50;
+  color: white;
 }
 /* line 25, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap .sms-wrap {
+.special-tag a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.special-tag a:active, .special-tag a:focus {
+  outline: none;
+}
+
+/* line 30, ../scss/common/_specialItem.scss */
+.wrap-centerTag {
   position: absolute;
-  height: 56px;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  width: 50%;
+  height: 58px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 1px solid rgba(240, 240, 240, 0.618);
+  padding: 6px;
 }
-/* line 36, ../scss/common/_specialItem.scss */
-.normal-wrap .special-img-wrap .sms-wrap .sms-center {
-  padding: 14px 92px;
+/* line 44, ../scss/common/_specialItem.scss */
+.wrap-centerTag .center-notice {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
   background-color: rgba(240, 240, 240, 0.618);
-  font-size: 20px;
+  width: 100%;
+  padding: 12px 0px;
+}
+/* line 55, ../scss/common/_specialItem.scss */
+.normal-wrap .special-wrap .col-right-small {
+  float: left;
+  width: 40%;
+  height: 444px;
+}
+/* line 60, ../scss/common/_specialItem.scss */
+.normal-wrap .special-wrap .col-right-small .right-top {
+  height: 210px;
+  position: relative;
+}
+/* line 64, ../scss/common/_specialItem.scss */
+.normal-wrap .special-wrap .col-right-small .right-bottom {
+  margin-top: 24px;
+  height: 210px;
 }
 
 /* line 9, ../scss/index.scss */
