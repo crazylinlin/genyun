@@ -3858,6 +3858,7 @@
   width: 170px;
   z-index: -1;
   left: -70px;
+  top: 68px;
 }
 /* line 11, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
 .header .header-wrap .login-info .links-wrap li {
@@ -3865,17 +3866,17 @@
   list-style-type: none;
   margin-left: 0;
 }
-/* line 82, ../scss/common/_header.scss */
+/* line 83, ../scss/common/_header.scss */
 .header .header-wrap .login-info .links-wrap li {
   color: black;
   text-align: left;
   padding: 8px 30px;
 }
-/* line 86, ../scss/common/_header.scss */
+/* line 87, ../scss/common/_header.scss */
 .header .header-wrap .login-info .links-wrap li i {
   font-size: 18px;
 }
-/* line 89, ../scss/common/_header.scss */
+/* line 90, ../scss/common/_header.scss */
 .header .header-wrap .login-info .links-wrap li a {
   color: inherit;
   text-decoration: inherit;
@@ -3887,11 +3888,11 @@
 .header .header-wrap .login-info .links-wrap li a:active, .header .header-wrap .login-info .links-wrap li a:focus {
   outline: none;
 }
-/* line 94, ../scss/common/_header.scss */
+/* line 95, ../scss/common/_header.scss */
 .header .header-wrap .login-info .links-wrap li:hover {
   background-color: #f0f0f0;
 }
-/* line 98, ../scss/common/_header.scss */
+/* line 99, ../scss/common/_header.scss */
 .header .header-wrap .login-info .links-wrap:before {
   position: absolute;
   content: "";
@@ -3900,8 +3901,9 @@
   border: 8px solid transparent;
   border-bottom-color: white;
   top: -16px;
+  left: 90px;
 }
-/* line 109, ../scss/common/_header.scss */
+/* line 111, ../scss/common/_header.scss */
 .header .header-wrap .login-info:hover ul.links-wrap {
   z-index: 101;
   -moz-box-shadow: 0px 0px 3px 1px #f0f0f0;
