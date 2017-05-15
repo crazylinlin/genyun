@@ -1,0 +1,75 @@
+@import "compass/css3";
+@import "../common/header";
+@import "../common/dialog";
+
+body{
+	background-color:$bg-color;
+}
+$mt:20px;
+.money-notice{
+	background-color:$white;
+	height:200px;
+	margin-top:$mt;
+	.total-wrap{
+		margin-top:30px;
+		.primary-sms{
+			color:$red;
+			font-size:18px;
+		}
+		.second-sms{
+			color:$gray;
+			font-size:12px;
+		}
+	}
+	.deposit-topUp{
+		margin-top:40px;
+		a{
+			@include inline-block();
+			@include border-radius(3px);
+			@include unstyled-link();
+			color:$theme-color;
+			background-color:$white;
+			border:2px solid $theme-color;
+			padding:6px 18px;
+			&:hover{
+				color:$hover-color;
+				border-color:$hover-color;
+			}
+			&:active{
+				@include opacity(0.809);
+			}
+		}
+		.btn-topUp{
+			margin-right:80px;
+		}
+	}
+}
+.record-wrap{
+	background-color:$white;
+	margin-top:$mt;
+	padding:0;
+	h4{
+		text-indent:20px;
+	}
+	.lists-wrap{
+		border-top:1px solid $bg-color;
+		padding:20px;
+		.list{
+			@include display-flex();
+			@include flex-flow(row nowrap);
+			@include justify-content(space-around);
+			@include align-items(center);
+			@include align-content(center);
+			padding:10px 0;
+			.item{
+				@include flex(1 1 auto);
+			}
+			.item:first-child{
+				padding-left:12px;
+			}
+		}
+		.list:nth-child(odd){
+			background-color:$bg-color;
+		}
+	}
+}

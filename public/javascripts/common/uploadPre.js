@@ -1,9 +1,8 @@
 import $ from "../../bower_components/jquery/dist/jquery.min.js";
 
 
-
 $(document).ready(function(){
-	$(".upload-file").on("change",function(){
+	$(document).delegate(".upload-file","change",function(){
 		var _this = this,
 			$wrap = $(this).prev(".images-wrap");
 		Preview(_this,$wrap);

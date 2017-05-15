@@ -12,12 +12,12 @@ require("../bower_components/bootstrap/dist/css/bootstrap-theme.min.css");
 
 $(document).ready(function(){
 	/*start 添加头部*/
-	var head = document.getElementById("header");
-	var cur_dialog = document.getElementById("dialog-container");
-	head.innerHTML = header;
+	//var head = document.getElementById("header");
+	//var cur_dialog = document.getElementById("dialog-container");
+	$("#header").html(header);
 	/*end 添加尾部*/
 	/*start 添加登录以及注册对话框*/
-	cur_dialog.innerHTML = dialog;
+	$("#dialog-container").html(dialog);
 	/*end 添加登陆一集注册对话框*/
 	/*start 点击登录，注册按钮打开模态框*/
 	//window.index = ""; //弹出框的索引；

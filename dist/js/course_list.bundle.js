@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 37);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -163,7 +163,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 11:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"item\">\n\t<a href=\"#\" class=\"img-link\">\n\t\t<img src=\"/images/hkk001.jpg\" alt=\"课程封面\"/>\n\t</a>\n\t<div class=\"notice-wrap\">\n\t\t<p class=\"sms-title\">\n\t\t\t这是一个寂寞的天，下着有些伤心的雨， ！\n\t\t</p>\n\t\t<p class=\"notice-sms\">\n\t\t\t<a href=\"javascript:void(0);\" class=\"money-wrap\">\n\t\t\t\t<i class=\"glyphicon glyphicon-yen\"></i>\n\t\t\t\t<span class=\"money\">99999元</span>\n\t\t\t</a>\n\t\t\t<a href=\"javascript:void(0);\" class=\"learning-num\">9999人学习</a>\n\t\t</p>\n\t</div>\n</div>";
@@ -467,13 +467,13 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(50);
+var content = __webpack_require__(55);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -613,62 +613,6 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-
-/***/ }),
-
-/***/ 37:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jqueryMin = __webpack_require__(0);
-
-var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
-
-var _item = __webpack_require__(10);
-
-var _item2 = _interopRequireDefault(_item);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/*加载课程列表样式*/
-__webpack_require__(24);
-
-(0, _jqueryMin2.default)(document).ready(function () {
-
-	/*start 向容器中添加课程*/
-	var course = document.getElementById("course-wrap");
-	var str = "";
-	for (var i = 0; i < 8; i++) {
-		str += _item2.default;
-	}
-	course.innerHTML = str;
-	/*end 向容器中添加课程*/
-	/*start 鼠标移入移除hide类 */
-	(0, _jqueryMin2.default)(".all-right").on("mouseover", function () {
-		(0, _jqueryMin2.default)("ul.free-wrap").hasClass("hide") ? (0, _jqueryMin2.default)("ul.free-wrap").removeClass("hide") : '';
-	});
-	/*end 鼠标移入移除hide类*/
-	/*start 课程类型的切换*/
-	(0, _jqueryMin2.default)(".all-right .free-wrap").delegate("a", "click", function () {
-		var curId = (0, _jqueryMin2.default)(this).attr("data-role"),
-		    curTxt = (0, _jqueryMin2.default)(this).text(),
-		    rplId = (0, _jqueryMin2.default)("#showCur").attr("data-role"),
-		    rplTxt = (0, _jqueryMin2.default)("#showCur").text();
-		var tempId = "",
-		    tempTxt = "";
-		tempId = curId;
-		tempTxt = curTxt;
-		console.log(rplId);
-		(0, _jqueryMin2.default)(this).attr("data-role", rplId);
-		(0, _jqueryMin2.default)(this).text(rplTxt);
-		(0, _jqueryMin2.default)("#showCur").attr("data-role", tempId);
-		(0, _jqueryMin2.default)("#showCur").text(tempTxt);
-		(0, _jqueryMin2.default)(this).parents("ul.free-wrap").addClass("hide");
-	});
-	/*end 课程类型的切换*/
-});
 
 /***/ }),
 
@@ -2470,6 +2414,62 @@ function isnan (val) {
 
 /***/ }),
 
+/***/ 40:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jqueryMin = __webpack_require__(0);
+
+var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
+
+var _item = __webpack_require__(11);
+
+var _item2 = _interopRequireDefault(_item);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/*加载课程列表样式*/
+__webpack_require__(25);
+
+(0, _jqueryMin2.default)(document).ready(function () {
+
+	/*start 向容器中添加课程*/
+	var course = document.getElementById("course-wrap");
+	var str = "";
+	for (var i = 0; i < 8; i++) {
+		str += _item2.default;
+	}
+	course.innerHTML = str;
+	/*end 向容器中添加课程*/
+	/*start 鼠标移入移除hide类 */
+	(0, _jqueryMin2.default)(".all-right").on("mouseover", function () {
+		(0, _jqueryMin2.default)("ul.free-wrap").hasClass("hide") ? (0, _jqueryMin2.default)("ul.free-wrap").removeClass("hide") : '';
+	});
+	/*end 鼠标移入移除hide类*/
+	/*start 课程类型的切换*/
+	(0, _jqueryMin2.default)(".all-right .free-wrap").delegate("a", "click", function () {
+		var curId = (0, _jqueryMin2.default)(this).attr("data-role"),
+		    curTxt = (0, _jqueryMin2.default)(this).text(),
+		    rplId = (0, _jqueryMin2.default)("#showCur").attr("data-role"),
+		    rplTxt = (0, _jqueryMin2.default)("#showCur").text();
+		var tempId = "",
+		    tempTxt = "";
+		tempId = curId;
+		tempTxt = curTxt;
+		console.log(rplId);
+		(0, _jqueryMin2.default)(this).attr("data-role", rplId);
+		(0, _jqueryMin2.default)(this).text(rplTxt);
+		(0, _jqueryMin2.default)("#showCur").attr("data-role", tempId);
+		(0, _jqueryMin2.default)("#showCur").text(tempTxt);
+		(0, _jqueryMin2.default)(this).parents("ul.free-wrap").addClass("hide");
+	});
+	/*end 课程类型的切换*/
+});
+
+/***/ }),
+
 /***/ 5:
 /***/ (function(module, exports) {
 
@@ -2561,7 +2561,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
-/***/ 50:
+/***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);

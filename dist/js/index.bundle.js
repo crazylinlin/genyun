@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ 	return __webpack_require__(__webpack_require__.s = 43);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -163,7 +163,7 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 11:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"item\">\n\t<a href=\"#\" class=\"img-link\">\n\t\t<img src=\"/images/hkk001.jpg\" alt=\"课程封面\"/>\n\t</a>\n\t<div class=\"notice-wrap\">\n\t\t<p class=\"sms-title\">\n\t\t\t这是一个寂寞的天，下着有些伤心的雨， ！\n\t\t</p>\n\t\t<p class=\"notice-sms\">\n\t\t\t<a href=\"javascript:void(0);\" class=\"money-wrap\">\n\t\t\t\t<i class=\"glyphicon glyphicon-yen\"></i>\n\t\t\t\t<span class=\"money\">99999元</span>\n\t\t\t</a>\n\t\t\t<a href=\"javascript:void(0);\" class=\"learning-num\">9999人学习</a>\n\t\t</p>\n\t</div>\n</div>";
@@ -467,13 +467,13 @@ function updateLink(linkElement, options, obj) {
 
 /***/ }),
 
-/***/ 26:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(52);
+var content = __webpack_require__(57);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -616,7 +616,7 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
-/***/ 34:
+/***/ 37:
 /***/ (function(module, exports) {
 
 /* ========================================================================
@@ -2658,7 +2658,7 @@ function isnan (val) {
 
 /***/ }),
 
-/***/ 40:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2668,11 +2668,11 @@ var _jqueryMin = __webpack_require__(0);
 
 var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
-var _carousel = __webpack_require__(34);
+var _carousel = __webpack_require__(37);
 
 var _carousel2 = _interopRequireDefault(_carousel);
 
-var _item = __webpack_require__(10);
+var _item = __webpack_require__(11);
 
 var _item2 = _interopRequireDefault(_item);
 
@@ -2681,7 +2681,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /*加载首页样式*/
 
 /*加载轮播控制脚本*/
-__webpack_require__(26);
+__webpack_require__(27);
 /*结束*/
 
 /*导入课程项目模版*/
@@ -2792,7 +2792,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
-/***/ 52:
+/***/ 57:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);

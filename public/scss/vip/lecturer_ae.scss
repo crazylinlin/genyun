@@ -1,0 +1,219 @@
+@import "compass/css3";
+@import "compass/typography/lists";
+@import "compass/typography/links";
+@import "../common/header";
+@import "../common/dialog";
+@import "../common/info";
+
+body{
+	background-color:$bg-color;
+}
+.course-ae{
+	background-color:$white;
+	margin-top:20px;
+	padding:0;
+	.link-tabs{
+		@include no-bullets();
+		@include inline-block-list(20px);
+		margin-left:20px;
+		border-bottom:1px solid $bg-color;
+		.tab-li{
+			padding-top:12px;
+			padding-bottom:9px;
+			border-bottom:3px solid transparent;
+			a{
+				@include unstyled-link();
+			}
+		}
+		.actived{
+			border-bottom-color:$theme-color;
+		}
+	}
+	.ae-content{
+		padding:40px 0px 40px 40px;
+		@at-root (without:all){
+			.add-content{
+				$width:300px;
+				$hw-const:150px;
+				.place-wrap{
+					$mt-width:7%;
+					height:36px;
+					margin-bottom:36px;
+					.notice-label{
+						width:$mt-width;
+						margin-top:6px;
+					}
+					.input-wrap{
+						//width:93%;
+						input{
+							width:$width;
+							height:32px;
+							outline:none;
+							border:1px solid $bg-color;
+							&:focus{
+								border-color:$theme-color;
+								@include box-shadow(0px 0px 3px 1px $theme-color);
+							}
+						}
+						.notice-txt{
+							color:$gray;
+							font-size:12px;
+						}
+						.txt-warning{
+							color:$red;
+						}
+					}
+					.add-lecturer{
+						color:$theme-color;
+						margin-left:$mt-width;
+					}
+					.btn-save{
+						@include unstyled-link();
+						@include border-radius(3px);
+						color:$white;
+						background-color:$theme-color;
+						padding:8px 20px;
+						margin-left:$mt-width;
+						&:hover{
+							background-color:$hover-color;
+						}
+						&:active{
+							@include opacity(0.809);
+						}
+					}
+				}
+				.adverWrap{
+					height:$hw-const;
+					.image-wrap{
+						position:relative;
+						width:240px;
+						z-index:100;
+						.images-wrap{
+							height:$hw-const;
+							width:$hw-const;
+							img{
+								max-width:100%;
+								max-height:100%;
+							}
+						}
+						.upload-file{
+							position:absolute;
+							@include opacity(0);
+							height:36px;
+							width:68px;
+							top:50%;
+							right:0;
+							margin-top:-24px;
+							z-index:102;
+						}
+						.btn-adver{
+							position:absolute;
+							@include inline-block();
+							@include unstyled-link();
+							@include border-radius(3px);
+							z-index:101;
+							padding:8px 20px;
+							color:$white;
+							top:50%;
+							margin-top:-24px;
+							margin-left:20px;
+							background-color:$theme-color;
+							&:hover{
+								background-color:$hover-color;
+							}
+							&:active{
+								@include opacity(0.5);
+							}
+						}
+					}
+				}
+				.detailWrap{
+					height:$hw-const;
+					.contentWrap{
+						position:relative;
+						textarea{
+							width:$width;
+							border:1px solid $bg-color;
+							outline:none;
+							&:focus{
+								border-color:$theme-color;
+								@include box-shadow(0px 0px 3px 1px $theme-color);
+							}
+						}
+						.num-reduce{
+							position:absolute;
+							bottom:12px;
+							right:12px;
+							color:$gray;
+						}
+					}
+				}
+				.save{
+					margin-bottom:0;
+				}
+			}
+			.update-content{
+				display:none;
+				padding-right:20px;
+				table.info-table{
+					thead,tbody{
+						th{
+							text-align:center;
+							border:0;
+						}
+						tr{
+							td{
+								text-align:center;
+								@at-root (without:all){
+									.links-wrap{
+										@include inline-block();
+										width:120px;
+										text-align:left;
+										a{
+											@include unstyled-link();
+										}
+										.link-control{
+											color:$control-color;
+											margin-left:16px;
+										}
+										.link-overed{
+											color:$gray;
+										}
+									}
+									.btn-add{
+										color:$theme-color;
+										&:hover{
+											color:$hover-color;
+										}
+									}
+								}
+							}
+						}
+					}
+					thead{
+						background-color:$bg-color;
+						border:0;
+					}
+				}
+				.check-wrap{
+					margin-top:36px;
+					.sub-check{
+						@include unstyled-link();
+						@include border-radius(3px);
+						@include inline-block();
+						color:$white;
+						background-color:$theme-color;
+						padding:8px 20px;
+						&:hover{
+							background-color:$hover-color;
+						}
+						&:active{
+							@include opacity(0.809);
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}

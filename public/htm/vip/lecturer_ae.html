@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>我是讲师</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=no">
+		<script type="text/javascript" src="../../js/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/layer-v3.0.3/layer/layer.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header" id="header">
+		</div>
+		<!--头部结束-->
+		<!--start 我的信息模块-->
+		<div class="container myInfo" id="info-container"></div>
+		<!--end   我的信息模块-->
+		<!--start 我是讲师新增课时和添加课时-->
+		<div class="container course-ae">
+			<ul class="link-tabs">
+				<li class="tab-li actived" data-target="addContent" id="add-tab">
+					<a href="javascript:void(0);">新增课时</a>
+				</li>
+				<li class="tab-li" data-target="updateContent" id="update-tab">
+					<a href="javascript:void(0);">添加课时</a>
+				</li>
+			</ul>
+			<div class="ae-content">
+				<div class="add-content" id="add-content" data-role="addContent">
+					<form>
+						<div class="place-wrap">
+							<label class="pull-left notice-label">课程类型</label>
+							<div class="pull-left input-wrap">
+								<input type="text" name=“typeOf” id="typeOf"/>
+							</div>
+						</div>
+						<div class="place-wrap">
+							<label class="pull-left notice-label">课程名称</label>
+							<div class="pull-left input-wrap">
+								<input type="text" name="nameOf" id="nameOf"/>
+								<span class="notice-txt">不得超过15个字</span>
+							</div>
+						</div>
+						<div class="place-wrap">
+							<label class="pull-left notice-label">课程价格</label>
+							<div class="pull-left input-wrap">
+								<input type="number" name="priceOf" min="0" id="priceOf"/>
+								<span class="notice-txt txt-warning">不填则视为免费课程</span>
+							</div>
+						</div>
+						<div class="place-wrap adverWrap">
+							<label class="pull-left notice-label">课程封面</label>
+							<div class="pull-left image-wrap">
+								<div class="pull-left images-wrap">
+									<img src="/images/ll001.jpg" alt="课程封面"/>
+								</div>
+								<input type="file" class="upload-file" name="adverPic"/>
+								<a href="javascript:void(0);" class="btn-adver">上传</a>
+							</div>
+						</div>
+						<div class="place-wrap detailWrap">
+							<label class="pull-left notice-label">课程简介</label>
+							<div class="pull-left contentWrap">
+								<textarea rows="7"></textarea>
+								<span class="num-reduce">0/200</span>
+							</div>
+						</div>
+						<div class="lecturer" id="lecturer">
+							<div class="place-wrap">
+								<label class="pull-left notice-label">讲师名称</label>
+								<div class="pull-left input-wrap">
+									<input type="text" name="nameOf-1"/>
+								</div>
+							</div>
+							<div class="place-wrap adverWrap">
+								<label class="pull-left notice-label">讲师头像</label>
+								<div class="pull-left image-wrap">
+									<div class="pull-left images-wrap">
+										<img src="/images/ll001.jpg" alt="讲师头像"/>
+									</div>
+									<input type="file" class="upload-file" name="imageOf-1"/>
+									<a href="javascript:void(0);" class="btn-adver">上传</a>
+								</div>
+							</div>
+							<div class="place-wrap detailWrap">
+								<label class="pull-left notice-label">讲师简介</label>
+								<div class="pull-left contentWrap">
+									<textarea rows="7" name="detailOf-1"></textarea>
+									<span class="num-reduce">0/200</span>
+								</div>
+							</div>
+						</div>
+						<div class="place-wrap">
+							<a href="javascript:void(0);" class="add-lecturer">添加讲师</a>
+						</div>
+						<div class="place-wrap save">
+							<a href="javascript:void(0);" class="btn-save">保存</a>
+						</div>
+					</form>
+				</div>
+				<div class="update-content" id="update-content" data-role="updateContent">
+					<table class="table table-hover table-bordered table-striped info-table">
+						<thead>
+							<th>序号</th>
+							<th>课时名称</th>
+							<th>可否试看</th>
+							<th>音频/视频添加</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>爱你一万年</td>
+								<td>
+									<select>
+										<option value="0">是</option>
+										<option value="1">否</option>
+									</select>
+								</td>
+								<td>
+									<span class="links-wrap">
+										<a href="javascript:void(0);" class="link-control link-delete">删除</a>
+										<a href="javascript:void(0);" class="link-control link-add">添加</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>欢迎来到新世界</td>
+								<td>
+									<select>
+										<option value="0">是</option>
+										<option value="1">否</option>
+									</select>
+								</td>
+								<td>
+									<span class="links-wrap">
+										<a href="javascript:void(0);" class="link-control link-delete">删除</a>
+										<a href="javascript:void(0);" class="link-control link-overed">已添加</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="javascript:void(0);" class="btn-add">添加</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="check-wrap">
+						<a href="javascript:void(0);" class="sub-check">提交审核</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--start 我是讲师新增课时和添加课时-->
+		<!--start 添加登录以及注册对话框-->
+		<div id="dialog-container">
+		</div>
+		<!--end 添加登录一集注册对话框-->
+	</body>
+</html>
