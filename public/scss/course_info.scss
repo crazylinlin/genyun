@@ -201,6 +201,9 @@ body{
 //继承注册以及登陆模态框的部分样式以及变量
 .dialog{
 	.dialog-wrap{
+		h4.dialog-title{
+			margin-bottom:20px;
+		}
 		div.dialog-content{
 			$btn-width:384px;
 			$width:480px;
@@ -217,7 +220,7 @@ body{
 					width:100%;
 					border:none;
 					outline:none;
-					font-size:16px;
+					font-size:14px;
 					padding:$pd 0;
 					line-height:normal;
 					border-bottom:1px solid $bg-color;

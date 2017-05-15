@@ -2862,6 +2862,7 @@ __webpack_require__(22);
 	/*end 当页面需要二维码支付时导入二维码组件*／
  /*start 当页面需要生成订单页面时导入订单组件*/
 	(0, _jqueryMin2.default)("#order-container").html(_order2.default);
+	(0, _jqueryMin2.default)("#topup-container").html(_order2.default);
 	/*end 当页面需要生成订单页面时导入订单组件*/
 
 	/*start 支付方式选择*/

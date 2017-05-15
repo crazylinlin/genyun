@@ -4207,36 +4207,234 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   margin-top: -4px;
 }
 
-/* line 5, ../../scss/vip/myWallet.scss */
+/* line 3, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main {
+  height: auto;
+  margin-top: 20px;
+}
+/* line 7, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap {
+  width: 510px;
+  margin: 0 auto 16px auto;
+}
+/* line 10, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-item, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .deposit-item, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-item, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .deposit-item {
+  padding: 14px 0px 4px 0px;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 16, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-item span, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .deposit-item span, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-item span, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .deposit-item span {
+  float: right;
+  color: #b1b1b1;
+}
+/* line 20, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-item span.pay-wrap, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .deposit-item span.pay-wrap, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-item span.pay-wrap, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .deposit-item span.pay-wrap {
+  color: #f53636;
+  font-size: 16px;
+}
+/* line 25, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type {
+  margin-bottom: 60px;
+}
+/* line 30, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-wrap, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap {
+  position: relative;
+  margin-right: 70px;
+  border: 1px solid #f0f0f0;
+  padding: 8px 14px;
+}
+/* line 35, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-wrap i, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap i {
+  font-size: 24px;
+}
+/* line 38, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-wrap i.color-wallet, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap i.color-wallet {
+  color: #9ad122;
+}
+/* line 41, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-wrap i.color-wechat, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap i.color-wechat {
+  color: #4baf50;
+}
+/* line 44, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-wrap .icon-selected, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap .icon-selected {
+  display: none;
+}
+/* line 47, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-wrap input[type="radio"], .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap input[type="radio"] {
+  position: absolute;
+  width: 125px;
+  height: 28px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  left: 0;
+  right: 0;
+}
+/* line 55, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-wrap:hover, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-wrap:hover {
+  cursor: pointer;
+}
+/* line 59, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-selected, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-selected {
+  -moz-box-sizing: padding-box;
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  border: 2px solid #4baf50;
+  position: relative;
+}
+/* line 64, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-selected:after, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-selected:after {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 14px solid transparent;
+  border-bottom-color: #4baf50;
+  top: -14px;
+  right: -14px;
+  z-index: 100;
+}
+/* line 76, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .order-type .type-selected i.icon-selected, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .order-type .type-selected i.icon-selected {
+  display: inline;
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  color: white;
+  z-index: 101;
+  -moz-transform: scale(0.618, 0.618);
+  -ms-transform: scale(0.618, 0.618);
+  -webkit-transform: scale(0.618, 0.618);
+  transform: scale(0.618, 0.618);
+}
+/* line 87, ../../scss/common/_order.scss */
+.qr-wrap {
+  height: 0;
+  overflow: hidden;
+}
+/* line 90, ../../scss/common/_order.scss */
+.qr-wrap .img-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 150px;
+  height: 130px;
+  padding: 10px 20px;
+}
+/* line 96, ../../scss/common/_order.scss */
+.qr-wrap .img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 105, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap {
+  margin-top: 0px;
+}
+/* line 107, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-withdraw, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-pay, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-withdraw, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 384px;
+  background-color: #4baf50;
+  color: white;
+  font-size: 16px;
+  padding: 8px 0;
+}
+/* line 6, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-withdraw:active, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-withdraw:focus, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-pay:active, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-pay:focus, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-withdraw:active, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-withdraw:focus, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:active, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:focus {
+  outline: none;
+}
+/* line 117, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-withdraw:hover, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-pay:hover, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-withdraw:hover, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:hover {
+  background-color: #47a14b;
+}
+/* line 120, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-withdraw:active, .dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .btn-wrap .btn-pay:active, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-withdraw:active, .dialog .dialog-wrap div.dialog-content.dialog-main .orderPay-wrap .btn-wrap .btn-pay:active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
+  opacity: 0.809;
+}
+/* line 127, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .deposit-item {
+  padding-bottom: 8px;
+}
+/* line 129, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .deposit-item #max-num {
+  color: #f53636;
+  font-size: 18px;
+}
+/* line 134, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .deposit-item .withdraw-wrap input {
+  outline: none;
+  border: 0;
+}
+/* line 137, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .deposit-item .withdraw-wrap input:focus {
+  color: black;
+}
+/* line 143, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .apply-wrap {
+  margin-top: 40px;
+}
+/* line 145, ../../scss/common/_order.scss */
+.dialog .dialog-wrap div.dialog-content.dialog-main .deposit-wrap .apply-wrap .mark-tag {
+  width: 384px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: 0 auto;
+  margin-top: 14px;
+  color: #b1b1b1;
+}
+
+/* line 6, ../../scss/vip/myWallet.scss */
 body {
   background-color: #f0f0f0;
 }
 
-/* line 9, ../../scss/vip/myWallet.scss */
+/* line 10, ../../scss/vip/myWallet.scss */
 .money-notice {
   background-color: white;
   height: 200px;
   margin-top: 20px;
 }
-/* line 13, ../../scss/vip/myWallet.scss */
+/* line 14, ../../scss/vip/myWallet.scss */
 .money-notice .total-wrap {
   margin-top: 30px;
 }
-/* line 15, ../../scss/vip/myWallet.scss */
+/* line 16, ../../scss/vip/myWallet.scss */
 .money-notice .total-wrap .primary-sms {
   color: #f53636;
   font-size: 18px;
 }
-/* line 19, ../../scss/vip/myWallet.scss */
+/* line 20, ../../scss/vip/myWallet.scss */
 .money-notice .total-wrap .second-sms {
   color: #b1b1b1;
   font-size: 12px;
 }
-/* line 24, ../../scss/vip/myWallet.scss */
+/* line 25, ../../scss/vip/myWallet.scss */
 .money-notice .deposit-topUp {
   margin-top: 40px;
 }
-/* line 26, ../../scss/vip/myWallet.scss */
+/* line 27, ../../scss/vip/myWallet.scss */
 .money-notice .deposit-topUp a {
   display: inline-block;
   vertical-align: middle;
@@ -4258,37 +4456,37 @@ body {
 .money-notice .deposit-topUp a:active, .money-notice .deposit-topUp a:focus {
   outline: none;
 }
-/* line 34, ../../scss/vip/myWallet.scss */
+/* line 35, ../../scss/vip/myWallet.scss */
 .money-notice .deposit-topUp a:hover {
   color: #47a14b;
   border-color: #47a14b;
 }
-/* line 38, ../../scss/vip/myWallet.scss */
+/* line 39, ../../scss/vip/myWallet.scss */
 .money-notice .deposit-topUp a:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
   opacity: 0.809;
 }
-/* line 42, ../../scss/vip/myWallet.scss */
+/* line 43, ../../scss/vip/myWallet.scss */
 .money-notice .deposit-topUp .btn-topUp {
   margin-right: 80px;
 }
 
-/* line 47, ../../scss/vip/myWallet.scss */
+/* line 48, ../../scss/vip/myWallet.scss */
 .record-wrap {
   background-color: white;
   margin-top: 20px;
   padding: 0;
 }
-/* line 51, ../../scss/vip/myWallet.scss */
+/* line 52, ../../scss/vip/myWallet.scss */
 .record-wrap h4 {
   text-indent: 20px;
 }
-/* line 54, ../../scss/vip/myWallet.scss */
+/* line 55, ../../scss/vip/myWallet.scss */
 .record-wrap .lists-wrap {
   border-top: 1px solid #f0f0f0;
   padding: 20px;
 }
-/* line 57, ../../scss/vip/myWallet.scss */
+/* line 58, ../../scss/vip/myWallet.scss */
 .record-wrap .lists-wrap .list {
   display: -webkit-flex;
   display: flex;
@@ -4302,16 +4500,16 @@ body {
   align-content: center;
   padding: 10px 0;
 }
-/* line 64, ../../scss/vip/myWallet.scss */
+/* line 65, ../../scss/vip/myWallet.scss */
 .record-wrap .lists-wrap .list .item {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-/* line 67, ../../scss/vip/myWallet.scss */
+/* line 68, ../../scss/vip/myWallet.scss */
 .record-wrap .lists-wrap .list .item:first-child {
   padding-left: 12px;
 }
-/* line 71, ../../scss/vip/myWallet.scss */
+/* line 72, ../../scss/vip/myWallet.scss */
 .record-wrap .lists-wrap .list:nth-child(odd) {
   background-color: #f0f0f0;
 }

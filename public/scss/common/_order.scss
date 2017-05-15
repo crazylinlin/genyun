@@ -1,11 +1,13 @@
 .dialog{
 	.dialog-wrap{
-		.dialog-content.dialog-main{
+		div.dialog-content.dialog-main{
 			height:auto;
-			.orderPay-wrap{
+			margin-top:20px;
+			$width:384px;
+			.deposit-wrap,.orderPay-wrap{
 				width:510px;
 				margin:0 auto 16px auto;
-				.order-item{
+				.order-item,.deposit-item{
 					padding:14px 0px 4px 0px;
 					border-bottom:1px solid $bg-color;
 					label{
@@ -102,11 +104,11 @@
 				}
 				.btn-wrap{
 					margin-top:0px;
-					.btn-pay{
+					.btn-withdraw,.btn-pay{
 						@include inline-block();
 						@include unstyled-link();
 						@include border-radius(3px);
-						width:384px;
+						width:$width;
 						background-color:$theme-color;
 						color:$white;
 						font-size:16px;
@@ -118,6 +120,34 @@
 						&:active{
 							@include opacity(0.809);
 						}
+					}
+				}
+			}
+			.deposit-wrap{
+				.deposit-item{
+					padding-bottom:8px;
+					#max-num{
+						color:$red;
+						font-size:18px;
+					}
+					.withdraw-wrap{
+						input{
+							outline:none;
+							border:0;
+							&:focus{
+								color:$black;
+							}
+						}
+					}
+				}
+				.apply-wrap{
+					margin-top:40px;
+					.mark-tag{
+						width:$width;
+						@include inline-block();
+						margin:0 auto;
+						margin-top:14px;
+						color:$gray;
 					}
 				}
 			}

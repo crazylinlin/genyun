@@ -119,6 +119,7 @@ $(document).ready(function(){
 	/*end 当页面需要二维码支付时导入二维码组件*／
 	/*start 当页面需要生成订单页面时导入订单组件*/
 	$("#order-container").html(order);
+	$("#topup-container").html(order);
 	/*end 当页面需要生成订单页面时导入订单组件*/
 
 	/*start 支付方式选择*/

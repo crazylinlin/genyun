@@ -109,9 +109,98 @@
 			</div>
 		</div>
 		<!--end 充值记录模块-->
+		<!--start 提现模态框-->
+		<div class="dialog" id="deposit-dialog">
+			<h4 class="dialog-title text-right">
+				<a href="javascript:void(0);" class="close-btn text-center">
+					<i class="glyphicon glyphicon-remove"></i>
+				</a>
+			</h4>
+			<div class="dialog-wrap">
+				<div class="dialog-content dialog-main">
+					<div class="deposit-wrap">
+						<div class="deposit-item">
+							<label>可提现金额</label>
+							<span id="max-num">
+								<i class="glyphicon glyphicon-jpy"></i>
+								<b id="tx-money">500.00元</b>
+							</span>
+						</div>
+						<div class="deposit-item">
+							<label>姓名</label>
+							<span class="withdraw-wrap">
+								<input type="text" placeholder="请输入姓名"/>
+							</span>
+						</div>
+						<div class="deposit-item">
+							<label>提现账户</label>
+							<span class="withdraw-wrap">
+								<input type="text" placeholder="请输入账户"/>
+							</span>
+						</div>
+						<div class="deposit-item">
+							<label>提现金额</label>
+							<span class="withdraw-wrap">
+								<input type="number" min="0" placeholder="请输入金额"/>
+							</span>
+						</div>
+						<div class="btn-wrap apply-wrap text-center">
+							<a href="javascript:void(0);" class="btn-withdraw">申请提现</a>
+							<p class="mark-tag text-left">工作人员将在3个工作日内审核您的提现方式，将会以短信的方式将结果发送给您，请注意查收！</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end 提现模态框-->
+		<!--start 充值模态框-->
+		<div id="topup-container">
+			
+		</div>
+		<!--end   充值模态框-->
 		<!--start 添加登录以及注册对话框-->
 		<div id="dialog-container">
 		</div>
 		<!--end 添加登录一集注册对话框-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//弹出提现模态框
+				$(".btn-deposit").on("click",function(){
+					window.index = layer.open({
+						type:1,
+						title:false,
+						closeBtn:0,
+						shadeClose:true,
+						content:$('#deposit-dialog'),
+						skin:"",
+						area:'600px',
+						success:function(layero,index){
+							//$("#set-grade").rating({step:0.5,size:'xs'});
+						},
+						end:function(){
+							$("div#deposit-dialog").css("display","none");
+						}
+					});
+				})
+				//弹出充值模态框
+				$(".btn-topUp").on("click",function(){
+					window.index = layer.open({
+						type:1,
+						title:false,
+						closeBtn:0,
+						shadeClose:true,
+						content:$('#orderPay-dialog'),
+						skin:"",
+						area:'600px',
+						success:function(layero,index){
+							//$("#set-grade").rating({step:0.5,size:'xs'});
+						},
+						end:function(){
+							$("div#orderPay-dialog").css("display","none");
+						}
+					});
+				})
+			})
+		</script>
 	<script type="text/javascript" src="../../js/main.bundle.js"></script><script type="text/javascript" src="../../js/myWallet.bundle.js"></script></body>
 </html>
