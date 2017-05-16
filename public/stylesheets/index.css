@@ -4129,17 +4129,18 @@ div#login-a-reg .dialog-wrap .dialog-content, div.dialog .dialog-wrap .dialog-co
   margin-top: 40px;
   position: relative;
   height: 214px;
+  overflow: hidden;
 }
-/* line 41, ../scss/common/_dialog.scss */
+/* line 42, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent, div.dialog .dialog-wrap .dialog-content .curContent {
   width: 604px;
   height: 214px;
 }
-/* line 44, ../scss/common/_dialog.scss */
+/* line 45, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap {
   margin-bottom: 20px;
 }
-/* line 46, ../scss/common/_dialog.scss */
+/* line 47, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap input {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -4151,21 +4152,21 @@ div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input, div.d
   text-indent: 14px;
   border: 1px solid #b1b1b1;
 }
-/* line 54, ../scss/common/_dialog.scss */
+/* line 55, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap input:focus:not(.warning), div.dialog .dialog-wrap .dialog-content .curContent .form-wrap input:focus:not(.warning) {
   border-color: #4baf50;
   -moz-box-shadow: 0 0 3px 1px #4baf50;
   -webkit-box-shadow: 0 0 3px 1px #4baf50;
   box-shadow: 0 0 3px 1px #4baf50;
 }
-/* line 60, ../scss/common/_dialog.scss */
+/* line 61, ../scss/common/_dialog.scss */
 input.warning, div.warning {
   border: 1px solid #f53636 !important;
   -moz-box-shadow: 0 0 3px 1px #f53636;
   -webkit-box-shadow: 0 0 3px 1px #f53636;
   box-shadow: 0 0 3px 1px #f53636;
 }
-/* line 65, ../scss/common/_dialog.scss */
+/* line 66, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn {
   color: inherit;
   text-decoration: inherit;
@@ -4186,73 +4187,73 @@ div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn, div.
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:focus, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:focus {
   outline: none;
 }
-/* line 72, ../scss/common/_dialog.scss */
+/* line 73, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:hover, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:hover {
   background-color: #47a14b;
 }
-/* line 75, ../scss/common/_dialog.scss */
+/* line 76, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .m-btn:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 79, ../scss/common/_dialog.scss */
+/* line 80, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .btn-login, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .btn-login {
   padding: 8px 0;
   width: 384px;
 }
-/* line 83, ../scss/common/_dialog.scss */
+/* line 84, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap {
   width: 384px;
   margin: 0 auto;
 }
-/* line 86, ../scss/common/_dialog.scss */
+/* line 87, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap a, div.dialog .dialog-wrap .dialog-content .curContent .form-wrap .forget-wrap a {
   color: #b1b1b1;
 }
-/* line 91, ../scss/common/_dialog.scss */
+/* line 92, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .curContent .btn-wrap, div.dialog .dialog-wrap .dialog-content .curContent .btn-wrap {
   margin-top: 40px;
 }
-/* line 96, ../scss/common/_dialog.scss */
+/* line 97, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .login-content, div.dialog .dialog-wrap .dialog-content .login-content {
   position: absolute;
 }
-/* line 99, ../scss/common/_dialog.scss */
+/* line 100, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content, div.dialog .dialog-wrap .dialog-content .register-content {
   top: -4px;
   position: absolute;
   display: none;
 }
-/* line 104, ../scss/common/_dialog.scss */
+/* line 105, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container, div.dialog .dialog-wrap .dialog-content .register-content .level-container {
   width: 100%;
   height: 106px;
   padding: 4px 0;
   overflow: hidden;
 }
-/* line 109, ../scss/common/_dialog.scss */
+/* line 110, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap {
   width: 384px;
   margin: 0 auto;
 }
-/* line 112, ../scss/common/_dialog.scss */
+/* line 113, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap {
   border: 1px solid #b1b1b1;
   position: relative;
 }
-/* line 115, ../scss/common/_dialog.scss */
+/* line 116, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input {
   border: 0;
   width: auto;
   outline: none;
 }
-/* line 119, ../scss/common/_dialog.scss */
+/* line 120, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input:focus, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap input:focus {
   -moz-box-shadow: 0 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 0 transparent;
   box-shadow: 0 0 0 0 transparent;
 }
-/* line 123, ../scss/common/_dialog.scss */
+/* line 124, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num {
   color: inherit;
   text-decoration: inherit;
@@ -4275,7 +4276,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:active, div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:focus, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:active, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:focus {
   outline: none;
 }
-/* line 135, ../scss/common/_dialog.scss */
+/* line 136, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:before, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap #get-num:before {
   position: absolute;
   content: "";
@@ -4285,7 +4286,7 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   top: -1px;
   border-left: 2px solid rgba(240, 240, 240, 0.618);
 }
-/* line 145, ../scss/common/_dialog.scss */
+/* line 146, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -4295,25 +4296,29 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container 
   height: 28px;
   background-color: rgba(240, 240, 240, 0.618);
 }
-/* line 151, ../scss/common/_dialog.scss */
+/* line 152, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap a#get-num.disabled:before {
   top: 4px;
 }
-/* line 156, ../scss/common/_dialog.scss */
+/* line 157, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap.hover-wrap, div.dialog .dialog-wrap .dialog-content .register-content .level-container .level-wrap .num-wrap.hover-wrap {
   border: 1px solid #4baf50;
   -moz-box-shadow: 0 0 3px 1px #4baf50;
   -webkit-box-shadow: 0 0 3px 1px #4baf50;
   box-shadow: 0 0 3px 1px #4baf50;
 }
-/* line 163, ../scss/common/_dialog.scss */
+/* line 164, ../scss/common/_dialog.scss */
 div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-next, div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-register, div.dialog .dialog-wrap .dialog-content .register-content .btn-wrap .btn-next, div.dialog .dialog-wrap .dialog-content .register-content .btn-wrap .btn-register {
   padding: 8px 0;
   width: 384px;
   margin-top: -4px;
 }
 
-/* line 4, ../scss/common/_specialItem.scss */
+/* line 5, ../scss/common/_specialItem.scss */
+.normal-wrap .special-wrap {
+  height: 444px;
+}
+/* line 8, ../scss/common/_specialItem.scss */
 .normal-wrap .special-wrap .col-left-big {
   float: left;
   width: 60%;
@@ -4321,13 +4326,13 @@ div#login-a-reg .dialog-wrap .dialog-content .register-content .btn-wrap .btn-ne
   height: 444px;
   border-right: 24px solid transparent;
 }
-/* line 12, ../scss/common/_specialItem.scss */
+/* line 16, ../scss/common/_specialItem.scss */
 a.link-img img {
   width: 100%;
   height: 100%;
 }
 
-/* line 17, ../scss/common/_specialItem.scss */
+/* line 21, ../scss/common/_specialItem.scss */
 .special-tag {
   display: inline-block;
   vertical-align: middle;
@@ -4341,7 +4346,7 @@ a.link-img img {
   background-color: #4baf50;
   color: white;
 }
-/* line 25, ../scss/common/_specialItem.scss */
+/* line 29, ../scss/common/_specialItem.scss */
 .special-tag a {
   color: inherit;
   text-decoration: inherit;
@@ -4352,7 +4357,7 @@ a.link-img img {
   outline: none;
 }
 
-/* line 30, ../scss/common/_specialItem.scss */
+/* line 34, ../scss/common/_specialItem.scss */
 .wrap-centerTag {
   position: absolute;
   width: 50%;
@@ -4368,7 +4373,7 @@ a.link-img img {
   border: 1px solid rgba(240, 240, 240, 0.618);
   padding: 6px;
 }
-/* line 44, ../scss/common/_specialItem.scss */
+/* line 48, ../scss/common/_specialItem.scss */
 .wrap-centerTag .center-notice {
   white-space: nowrap;
   overflow: hidden;
@@ -4379,18 +4384,18 @@ a.link-img img {
   width: 100%;
   padding: 12px 0px;
 }
-/* line 55, ../scss/common/_specialItem.scss */
+/* line 59, ../scss/common/_specialItem.scss */
 .normal-wrap .special-wrap .col-right-small {
   float: left;
   width: 40%;
   height: 444px;
 }
-/* line 60, ../scss/common/_specialItem.scss */
+/* line 64, ../scss/common/_specialItem.scss */
 .normal-wrap .special-wrap .col-right-small .right-top {
   height: 210px;
   position: relative;
 }
-/* line 64, ../scss/common/_specialItem.scss */
+/* line 68, ../scss/common/_specialItem.scss */
 .normal-wrap .special-wrap .col-right-small .right-bottom {
   margin-top: 24px;
   height: 210px;

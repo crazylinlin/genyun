@@ -38,6 +38,7 @@ div#login-a-reg,div.dialog{
 			$f-width:384px;
 			$b-radius:3px;
 			height:$h-height;
+			overflow:hidden;
 			.curContent{
 				width:$w-width;
 				height:$h-height;

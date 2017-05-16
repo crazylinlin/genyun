@@ -3,11 +3,11 @@
 @import "./common/specialItem";
 
 .special-container{
-	$pd-mt:40px;
+	$pd-mt:30px;
 	padding-bottom:$pd-mt;
-	.special-wrap{
+	.specialItem-wrap{
 		@extend %special_item;
-		.special-img-wrap{
+		.special-wrap{
 			margin-top:$pd-mt;
 		}
 	}

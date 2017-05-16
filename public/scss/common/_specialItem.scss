@@ -1,6 +1,10 @@
+@import "compass/typography/links";
+@import "compass/typography/text/ellipsis";
+
 %special_item{
 	.special-wrap{
 		$height:444px;
+		height:$height;
 		.col-left-big{
 			float:left;
 			width:60%;
