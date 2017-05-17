@@ -10,13 +10,13 @@ require("../stylesheets/index.css");
 
 $(document).ready(function(){
 	/* start 添加推荐以及分类课程 */
-	var recommendOfCur = document.getElementById("recommendOfCur");
-	var classifyOfCur = document.getElementById("classifyOfCur");
+	/*var recommendOfCur = document.getElementById("recommendOfCur");
+	var classifyOfCur = document.getElementById("classifyOfCur");*/
 	var str = " ";
 	for(var i=0; i<4; i++){
 		str += item;
 	}
-	recommendOfCur.innerHTML = str;
-	classifyOfCur.innerHTML = str;
+	$("#recommendOfCur").html(str);
+	$("#classifyOfCur").html(str);
 	/*end 添加推荐以及分类课程*/
 })
