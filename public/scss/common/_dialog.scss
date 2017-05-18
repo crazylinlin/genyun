@@ -31,12 +31,13 @@ div#login-a-reg,div.dialog{
 			}
 		}
 		.dialog-content{
-			margin-top:40px;
+			margin-top:36px;
 			position:relative;
 			$w-width:604px;
 			$h-height:214px;
 			$f-width:384px;
 			$b-radius:3px;
+			$tt-top:4px;
 			height:$h-height;
 			overflow:hidden;
 			.curContent{
@@ -96,10 +97,9 @@ div#login-a-reg,div.dialog{
 			}
 			.login-content{
 				position:absolute;
+				margin-top:4px;
 			}
 			.register-content{
-				$tt-top:4px;
-				top:-$tt-top;
 				position:absolute;
 				display:none;
 				.level-container{

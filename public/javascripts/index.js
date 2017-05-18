@@ -17,6 +17,6 @@ $(document).ready(function(){
 		str += item;
 	}
 	$("#recommendOfCur").html(str);
-	$("#classifyOfCur").html(str);
+	$(".classifyOfCur").html(str);
 	/*end 添加推荐以及分类课程*/
 })
