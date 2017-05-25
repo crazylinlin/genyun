@@ -74,3 +74,29 @@ $mt:20px;
 		}
 	}
 }
+#topup-dialog{
+	display:none;
+	.dialog-wrap{
+		.dialog-content{
+			.orderPay-wrap{
+				.order-item{
+					.pay-wrap{
+						#myBalance{
+							color:$red;
+						}
+					}
+					span{
+						.topUp-input{
+							border:0;
+							outline:none;
+							width:120px;
+							&:focus{
+								color:$black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

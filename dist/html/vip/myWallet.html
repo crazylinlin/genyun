@@ -154,8 +154,53 @@
 		</div>
 		<!--end 提现模态框-->
 		<!--start 充值模态框-->
-		<div id="topup-container">
-			
+		<div class="dialog" id="topup-dialog">
+			<h4 class="dialog-title text-right">
+				<a href="javascript:void(0);" class="close-btn text-center">
+					<i class="glyphicon glyphicon-remove"></i>
+				</a>
+			</h4>
+			<div class="dialog-wrap">
+				<div class="dialog-content dialog-main">
+					<div class="orderPay-wrap">
+						<div class="order-item">
+							<label>账户余额</label>
+							<span class="pay-wrap">
+								<i class="glyphicon glyphicon-jpy"></i>
+								<b id="myBalance">5200.00元</b>
+							</span>
+						</div>
+						<div class="order-item">
+							<label>充值金额</label>
+							<span>
+								<input type="number" class="topUp-input" placeholder="请输入充值金额"/>
+							</span>
+						</div>
+						<div class="order-type">
+							<h5>支付方式</h5>
+							<label class="type-wrap type-selected">
+								<i class="fa fa-credit-card-alt color-wallet"></i>
+								<input type="radio" name="pay-type" class="pay-type" value="0" checked/>&nbsp;余额支付
+								<i class="fa fa-check icon-selected"></i>
+							</label>
+							<label class="type-wrap">
+								<i class="fa fa-wechat color-wechat"></i>
+								<input type="radio" name="pay-type" class="pay-type" value="1" />&nbsp;微信支付
+								<i class="fa fa-check icon-selected"></i>
+							</label>
+							<div class="qr-wrap text-center">
+								<div class="img-wrap">
+									<img src="/images/qrcode001.jpg" alt="二维码"/>
+								</div>
+								<p class="text-center">请使用手机微信扫描二维码支付</p>
+							</div>
+						</div>
+						<div class="btn-wrap text-center">
+							<a href="javascript:void(0);" class="btn-pay">立即支付</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!--end   充值模态框-->
 		<!--start 添加登录以及注册对话框-->
@@ -189,14 +234,14 @@
 						title:false,
 						closeBtn:0,
 						shadeClose:true,
-						content:$('#orderPay-dialog'),
+						content:$('#topup-dialog'),
 						skin:"",
 						area:'600px',
 						success:function(layero,index){
 							//$("#set-grade").rating({step:0.5,size:'xs'});
 						},
 						end:function(){
-							$("div#orderPay-dialog").css("display","none");
+							$("div#topup-dialog").css("display","none");
 						}
 					});
 				})
