@@ -28,7 +28,7 @@ body{
 	}
 	.link-wrap{
 		margin-top:40px;
-		text-align:right;
+		text-align:left;
 		a{
 			@include unstyled-link();
 			@include inline-block();
