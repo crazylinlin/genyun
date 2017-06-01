@@ -9,6 +9,7 @@
 	color:hsl(0deg,50%,100%);
 	background-color:rgba(49,49,49,1);
 	.header-wrap{
+		position:relative;
 		text-align:center;
 		line-height:68px;
 		.head-title{
@@ -17,17 +18,21 @@
 			margin-left:48px;
 		}
 		.search-wrap{
+			position:absolute;
 			@include inline-block();
 			@include box-sizing(border-box);
 			$h-height:42px;
 			vertical-align:middle;
 			position:relative;
 			height:$h-height;
-			line-height:$h-height;
+			line-height:normal;
+			top:0;
+			bottom:0;
+			margin-top:auto;
+			margin-bottom:auto;
 			input{
 				width:700px;
 				height:$h-height;
-				line-height:normal;
 				border:none;
 				font-size:24px;
 				padding:2px 42px 2px 14px;
@@ -41,12 +46,15 @@
 			}
 			#btn-search{
 				position:absolute;
+				@include inline-block();
 				right:20px;
+				height:24px;
+				top:0;
+				bottom:0;
+				margin-top:auto;
+				margin-bottom:auto;
 				color:$theme-color;
 				font-size:24px;
-				top:1px;
-				height:$h-height - 3px;
-
 				&:active{
 					@include opacity(0.809);
 				}
