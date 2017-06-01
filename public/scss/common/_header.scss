@@ -22,16 +22,21 @@
 			@include inline-block();
 			@include box-sizing(border-box);
 			$h-height:42px;
+			$w-width:700px;
 			vertical-align:middle;
-			position:relative;
 			height:$h-height;
+			width:$w-width;
 			line-height:normal;
 			top:0;
 			bottom:0;
 			margin-top:auto;
 			margin-bottom:auto;
+			left:0;
+			right:0;
+			margin-left:auto;
+			margin-right:auto;
 			input{
-				width:700px;
+				width:$w-width;
 				height:$h-height;
 				border:none;
 				font-size:24px;
