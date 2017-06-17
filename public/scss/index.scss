@@ -11,7 +11,7 @@ body{
 	padding-bottom:100px;
 }
 .top-wrap{
-	height:640px;
+	height:360px;
 	background-color:$white;
 	padding:0;
 	@at-root (without:role){
@@ -20,23 +20,27 @@ body{
 				.item{
 					img{
 						width:100%;
-						height:500px;
+						height:300px;
 					}
 				}
 			}
 		}
 	}
 	.link-wrap{
-		margin-top:40px;
+		margin-top:20px;
 		text-align:left;
 		a{
 			@include unstyled-link();
 			@include inline-block();
-			@include border-radius(3px);
-			padding:12px 20px;
-			border:2px solid $theme-color;
+			//@include border-radius(3px);
+			//padding:12px 20px;
+			padding-bottom:2px;
+			border-bottom:1px solid $theme-color;
 			color:$theme-color;
 			margin-left:20px;
+			&:hover{
+				color:$hover-color;
+			}
 		}
 		a:last-child{
 			border:0;
@@ -44,7 +48,7 @@ body{
 	}
 }
 .normal-wrap{
-	margin-top:64px;
+	margin-top:24px;
 	padding:0;
 	.title-wrap{
 		.all-right{

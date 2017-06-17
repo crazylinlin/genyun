@@ -15,11 +15,14 @@ body{
 			height:36px;
 			margin-top:36px;
 			.label-prev{
-				width:10%;
+				width:12%;
 				margin-top:8px;
+				.tag-color{
+					color:$gray;
+				}
 			}
 			.detail-wrap{
-				width:90%;
+				width:88%;
 				padding-left:24px;
 				.sms-input{
 					width:300px;

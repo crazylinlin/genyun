@@ -6,7 +6,18 @@
 body{
 	background-color:$bg-color;
 }
-
+.myCredit{
+	$h-height:36px;
+	background-color:$white;
+	height:$h-height;
+	line-height:$h-height;
+	margin-bottom:20px;
+	.creditWrap{
+		#credit{
+			color:$red;
+		}
+	}
+}
 .all-wrap{
 	background-color:$white;
 	padding:0;

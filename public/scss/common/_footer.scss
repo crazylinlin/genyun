@@ -1,0 +1,21 @@
+@import "compass/css3";
+@import "compass/typography/links";
+@import './theme';
+.footer{
+	$height:48px;
+	position:absolute;
+	bottom:0;
+	height:$height;
+	line-height:$height;
+	background-color:$white;
+	text-align:center;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	.bottom-link{
+		@include unstyled-link();
+		@include inline-block();
+		margin:0 12px;
+	}
+}
