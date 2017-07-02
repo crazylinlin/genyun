@@ -33,6 +33,7 @@ body{
 			a{
 				@include unstyled-link();
 				font-size:18px;
+				color:$fb-black;
 			}
 		}
 		li.actived{

@@ -24,7 +24,7 @@
 							</div>
 							<div class="form-wrap">
 								<div class="forget-wrap text-right">
-									<a href="javascript:void(0);">忘记密码</a>
+									<a href="javascript:void(0);" id="forget-password">忘记密码</a>
 								</div>
 							</div>
 						</form>
@@ -58,3 +58,37 @@
 			</div>
 		</div>
 		<!--end 登录注册模态框-->
+		<!--start 找回密码模态框-->
+		<div class="dialog" id="find-password">
+			<h4 class="dialog-title text-right">
+				<a href="javascript:void(0);" class="close-btn" id="">
+					<i class="glyphicon glyphicon-remove"></i>
+				</a>
+			</h4>
+			<div class="dialog-wrap text-center">
+				<h4>重置密码</h4>
+				<div class="dialog-find text-center">
+					<form>
+						<div class="form-wrap">
+							<input type="text" class="normal-input warning"
+							id="myPhone" placeholder="输入手机号"/>
+						</div>
+						<div class="form-wrap  num-wrap warning text-left">
+							<input type="text" id="check-code" placeholder="请输入验证码"/>
+							<!--点击获取手机验证码后，给a元素添加个disabled类-->
+							<a href="javascript:void(0);" class="" id="getCode">免费获取</a>
+						</div>
+						<div class="form-wrap">
+							<input type="password" class="normal-input" id="password-set" placeholder="请输入密码"/>
+						</div>
+						<div class="form-wrap">
+							<input type="password" class="normal-input" id="password-repeat" placeholder="再次输入密码"/>
+						</div>
+						<div class="form-wrap btn-wrap text-center">
+							<a href="javascript:void(0);" class="m-btn btn-login" id="reset-confirm">确定</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--end 找回密码模态框-->

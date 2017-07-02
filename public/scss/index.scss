@@ -54,6 +54,11 @@ body{
 		.all-right{
 			@include unstyled-link();
 			float:right;
+			font-size:12px;
+			color:$f-color;
+			.arrow-color{
+				
+			}
 		}
 	}
 	.flex-box{

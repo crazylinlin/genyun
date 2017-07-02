@@ -143,4 +143,24 @@ $(document).ready(function(){
 		}
 	})
 	/*end 支付方式选择*/
+	/*start 忘记密码*/
+	$(document).delegate("#forget-password","click",function(){
+		layer.close(window.index);
+		window.index = layer.open({
+			type:1,
+			title:false,
+			closeBtn:0,
+			shadeClose:true,
+			content:$('#find-password'),
+			skin:"",
+			area:['604px','380px'],
+			success:function(layero,index){
+				//$("#btn-"+role).trigger("click");
+			},
+			end:function(){
+				$("div#find-password").css("display","none");
+			}
+		})
+	})
+	/*end   忘记密码*/
 })

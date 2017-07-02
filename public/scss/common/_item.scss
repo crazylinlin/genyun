@@ -3,7 +3,7 @@
 %flex-box{
 	@include display-flex();
 	@include flex-flow(row wrap);
-	@include justify-content(space-between);
+	@include justify-content(flex-star);
 	@include align-items(center);
 	@include align-content(center);
 	.item{
@@ -12,7 +12,8 @@
 		background-color:$white;
 		border:1px solid $bg-color;
 		//margin-left:10px;
-		margin-bottom:10px;
+		margin-bottom:24px;
+		margin-left:10px;
 		position:relative;
 		a.img-link{
 			img{

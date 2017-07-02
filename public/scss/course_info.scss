@@ -30,11 +30,15 @@ body{
 		.info-wrap{
 			height:$height;
 			position:relative;
+			#course-title{
+				color:$f-black;
+			}
 			#course-content{
 				height:120px;
 				text-indent:24px;
 				@include ellipsis();
 				white-space:normal;
+				color:$f-gray;
 			}
 			.grade-wrap{
 				color:$theme-color;
@@ -116,10 +120,12 @@ body{
 							}
 							.link-course{
 								@include hover-link();
+								color:$f-gray;
 							}
 							.notice-right{
 								float:right;
 								@include unstyled-link();
+								color:$f-gray;
 							}
 
 						}
@@ -144,6 +150,7 @@ body{
 						@include unstyled-link();
 						float:right;
 						font-size:14px;
+						color:$fb-black;
 					}
 				}
 				.question-wrap{
@@ -151,14 +158,19 @@ body{
 					padding-right:15px;
 					.question{
 						border-bottom:1px solid $a-gray;
+						h5{
+							color:$fb-black;
+						}
 						p.detail{	
 							height:60px;
 							@include ellipsis();
 							white-space:normal;
+							color:$f-gray;
 						}
 						.edit-wrap{
 							.btn-a{
 								@include unstyled-link();
+								color:$f-color;
 							}
 							.btn-sms{
 								margin-right:14px;
@@ -187,12 +199,14 @@ body{
 				padding:10px 20px 14px 15px;
 				h4{
 					margin-bottom:0;
+					color:$fb-black;
 				}
 				p.user-info{
 					height:120px;
 					padding-left:50px;
 					@include ellipsis();
 					white-space:normal;
+					color:$f-gray;
 				}
 			}
 		}

@@ -64,6 +64,9 @@ $mt:20px;
 			padding:10px 0;
 			.item{
 				@include flex(1 1 auto);
+				span:last-child{
+					color:$f-gray;
+				}
 			}
 			.item:first-child{
 				padding-left:12px;
