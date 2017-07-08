@@ -17,5 +17,6 @@
 		@include unstyled-link();
 		@include inline-block();
 		margin:0 12px;
+		color:$black;
 	}
 }
