@@ -2561,12 +2561,12 @@ __webpack_require__(36);
 	(0, _jqueryMin2.default)(".typeSelect").on("change", function () {
 		var val = this.value;
 		switch (val) {
-			case "0":
+			case "1":
 				(0, _jqueryMin2.default)("#label-name").text("姓名");
 				(0, _jqueryMin2.default)("#pic-name").text("身份证扫描件");
 				(0, _jqueryMin2.default)(".item-team").hide().siblings(".images-item").show();
 				break;
-			case "1":
+			case "2":
 				(0, _jqueryMin2.default)("#label-name").text("团体名称");
 				(0, _jqueryMin2.default)("#pic-name").text("团队营业执照");
 				(0, _jqueryMin2.default)(".item-personal").hide();

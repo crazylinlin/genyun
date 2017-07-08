@@ -13,12 +13,12 @@ $(document).ready(function(){
 	$(".typeSelect").on("change",function(){
 		 var val = this.value;
 		 switch(val){
-		 	case "0":
+		 	case "1":
 		 		$("#label-name").text("姓名");
 		 		$("#pic-name").text("身份证扫描件");
 		 		$(".item-team").hide().siblings(".images-item").show();
 		 		break;
-		 	case "1":
+		 	case "2":
 		 		$("#label-name").text("团体名称");
 		 		$("#pic-name").text("团队营业执照");
 		 		$(".item-personal").hide();
