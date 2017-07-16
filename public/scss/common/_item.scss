@@ -1,5 +1,6 @@
 @import "compass/css3";
 @import "compass/typography/text/ellipsis";
+@import "theme";
 %flex-box{
 	@include display-flex();
 	@include flex-flow(row wrap);
@@ -11,10 +12,12 @@
 		height:230px;
 		background-color:$white;
 		border:1px solid $bg-color;
-		//margin-left:10px;
 		margin-bottom:24px;
-		margin-left:10px;
 		position:relative;
+		@include transition(margin-top 0ms linear);
+		&:not(:first-child){
+			margin-left:16.4px;
+		}
 		a.img-link{
 			img{
 			width:100%;
@@ -62,6 +65,10 @@
 					color:$theme-color;
 				}
 			}
+		}
+		&:hover{
+			margin-top:-4px;
+			@include box-shadow(4px 4px 4px 1px $f-color);
 		}
 	}
 }

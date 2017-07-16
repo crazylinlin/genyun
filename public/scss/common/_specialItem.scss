@@ -1,10 +1,13 @@
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
 @import "compass/typography/links";
 @import "compass/typography/text/ellipsis";
-
+@import "theme";
 %special_item{
 	.special-wrap{
 		$height:444px;
 		height:$height;
+		@include transition(all 1s linear);
 		.col-left-big{
 			float:left;
 			width:66.6666666667%;
@@ -64,10 +67,16 @@
 			.right-top{
 				height:$s-height;
 				position:relative;
+				&:hover{
+					@include box-shadow(4px 4px 4px 1px $f-color);
+				}
 			}
 			.right-bottom{
 				margin-top:24px;
 				height:$s-height;
+				&:hover{
+					@include box-shadow(4px 4px 4px 1px $f-color);
+				}
 			}
 		}
 	}
