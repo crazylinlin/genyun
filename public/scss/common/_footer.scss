@@ -1,6 +1,10 @@
 @import "compass/css3";
 @import "compass/typography/links";
 @import './theme';
+body{
+	padding-bottom:50px;
+}
+
 .footer{
 	$height:48px;
 	position:absolute;

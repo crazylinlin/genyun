@@ -21,6 +21,8 @@ div.course-container{
 			margin-right:$pm;
 			height:34px;
 			line-height:normal;
+			color:$f-color;
+			z-index:101;
 			a{
 				@include inline-block();
 				@include unstyled-link();

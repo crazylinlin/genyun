@@ -17,6 +17,7 @@ $pd-lr:30px;
 				float:right;
 				font-size:16px;
 				padding-top:4px;
+				color:$f-color;
 				a{
 					@include unstyled-link();
 				}
@@ -41,6 +42,7 @@ $pd-lr:30px;
 			.btn-wrap{
 				a{
 					@include unstyled-link();
+					color:$f-color;
 				}
 			}
 		}

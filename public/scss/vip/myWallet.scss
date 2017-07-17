@@ -2,6 +2,7 @@
 @import "../common/header";
 @import "../common/dialog";
 @import "../common/order";
+@import "compass/typography/text/ellipsis";
 
 body{
 	background-color:$bg-color;
@@ -58,18 +59,24 @@ $mt:20px;
 		.list{
 			@include display-flex();
 			@include flex-flow(row nowrap);
-			@include justify-content(space-around);
+			@include justify-content(flex-start);
 			@include align-items(center);
 			@include align-content(center);
 			padding:10px 0;
 			.item{
 				@include flex(1 1 auto);
+				width:20%;
 				span:last-child{
 					color:$f-gray;
 				}
 			}
 			.item:first-child{
 				padding-left:12px;
+				width:12%;
+			}
+			.item:nth-child(3){
+				width:30%;
+				@include ellipsis();
 			}
 		}
 		.list:nth-child(odd){
