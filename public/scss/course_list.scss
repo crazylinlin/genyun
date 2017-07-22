@@ -7,7 +7,7 @@ body{
 	background-color:$bg-color;
 }
 div.course-container{
-	$pm:30px;
+	$pm:22px;
 	padding:0;
 	background-color:$white;
 	h4{
@@ -18,10 +18,10 @@ div.course-container{
 			float:right;
 			position:relative;
 			font-size:16px;
+			font-weight:normal;
 			margin-right:$pm;
 			height:34px;
 			line-height:normal;
-			color:$f-color;
 			z-index:101;
 			a{
 				@include inline-block();
@@ -89,7 +89,17 @@ div.course-container{
 		}
 	}
 	.course-wrap{
-		@extend %flex-box;
+		@include  flex-box(264px,216px,150px);
+		.item{
+			margin-left:22px;
+			width:264px;
+			height:216px;
+			a.img-link{
+				img{
+					height:150px;
+				}
+			}
+		}
 		padding-top:8px;
 	}
 } 

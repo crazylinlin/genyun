@@ -7,13 +7,13 @@
 	.special-wrap{
 		$height:444px;
 		height:$height;
-		@include transition(all 1s linear);
 		.col-left-big{
 			float:left;
 			width:66.6666666667%;
 			position:relative;
 			height:$height;
 			border-right:24px solid transparent;
+			overflow:hidden;
 			@at-root (without:all){
 				a.link-img{
 					img{
@@ -66,16 +66,29 @@
 			$s-height:210px;
 			.right-top{
 				height:$s-height;
+				overflow:hidden;
 				position:relative;
 				&:hover{
-					@include box-shadow(4px 4px 4px 1px $f-color);
+					
 				}
 			}
 			.right-bottom{
 				margin-top:24px;
 				height:$s-height;
+				overflow:hidden;
 				&:hover{
-					@include box-shadow(4px 4px 4px 1px $f-color);
+					
+				}
+			}
+		}
+		//鼠标移入图片放大效果
+		a {
+			img{
+				@include transition(all 1s linear);
+			}
+			&:hover{
+				img{
+					@include scale(1.0809);
 				}
 			}
 		}

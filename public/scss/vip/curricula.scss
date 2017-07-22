@@ -51,7 +51,10 @@ body{
 		padding-top:20px;
 		.flag-course{
 			.flex-box{
-				@extend %flex-box;
+				@include flex-box(264px,216px,150px);
+				.item{
+					margin-left:22px;
+				}
 			}
 		}
 		.flag-two,.flag-three{

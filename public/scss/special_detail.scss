@@ -39,7 +39,13 @@ body{
 	.level{
 		margin-top:48px;
 		.flex-box{
-			@extend %flex-box;
+			@include flex-box();
+			.item{
+				&:not(:nth-child(4n+1)){
+					margin-left:16.4px;
+				}
+			}
+			
 		}
 	}
 	.level-one{
