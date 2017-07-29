@@ -84,6 +84,15 @@ body{
 							@include opacity(0.809);
 						}
 					}
+					.btn-favorite{
+						background-color:$fr-red;
+						&:hover{
+							@include box-shadow(0 0 5px 1px  $fr-red); 
+						}
+						&:active{
+							@include opacity(0.809);
+						}
+					}
 					.btn-overed{
 						background-color:$gray;
 						cursor:crosshair;

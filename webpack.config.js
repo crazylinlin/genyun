@@ -168,85 +168,85 @@ module.exports = {
 		new htmlWebpackPlugin({
 			template:"public/index.html",
 			filename:"index.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','index']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/QA_list.html",
 			filename:"html/QA_list.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','qa_list']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/course_list.html",
 			filename:"html/course_list.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','course_list']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/special_list.html",
 			filename:"html/special_list.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','special_list']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/course_info.html",
 			filename:"html/course_info.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','course_info']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/feedback.html",
 			filename:"html/feedback.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','feedback']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/special_detail.html",
 			filename:"html/special_detail.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','special_detail']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/vip/curricula.html",
 			filename:"html/vip/curricula.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','curricula']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/vip/lecturer.html",
 			filename:"html/vip/lecturer.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','lecturer']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/vip/toBeLecturer.html",
 			filename:"html/vip/toBeLecturer.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main',"toBeLecturer"]
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/vip/myInfo.html",
 			filename:"html/vip/myInfo.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main',"myInfo"]
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/vip/feedback.html",
 			filename:"html/vip/feedback.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','feedback']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/vip/lecturer_ae.html",
 			filename:"html/vip/lecturer_ae.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','lecturer_ae']
 		}),
 		new htmlWebpackPlugin({
 			template:"public/htm/vip/myWallet.html",
 			filename:"html/vip/myWallet.html",
-			inject:"body",
+			inject:"head",
 			chunks:['main','myWallet']
 		}),
 	]
