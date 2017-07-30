@@ -17,7 +17,8 @@ module.exports = {
 		toBeLecturer:"./public/javascripts/toBeLecturer.js",
 		myInfo:"./public/javascripts/myInfo.js",
 		lecturer_ae:"./public/javascripts/lecturer_ae.js",
-		myWallet:"./public/javascripts/myWallet.js"
+		myWallet:"./public/javascripts/myWallet.js",
+		agreement:"./public/javascripts/agreement.js"
 	},
 	output:{
 		filename:'js/[name].bundle.js',
@@ -248,6 +249,12 @@ module.exports = {
 			filename:"html/vip/myWallet.html",
 			inject:"head",
 			chunks:['main','myWallet']
+		}),
+		new htmlWebpackPlugin({
+			template:"public/htm/vip/agreement.html",
+			filename:"html/vip/agreement.html",
+			inject:"head",
+			chunks:['main','agreement']
 		}),
 	]
 }

@@ -5,12 +5,18 @@
 body{
 }
 .special-container{
-	$pd-mt:30px;
+	$pd-mt:20px;
 	padding-bottom:$pd-mt;
 	.specialItem-wrap{
 		@extend %special_item;
 		.special-wrap{
 			margin-top:$pd-mt;
+			height:310px;
+			.special-item{
+				.special-tag{
+					right:15px;
+				}
+			}
 		}
 	}
 }
