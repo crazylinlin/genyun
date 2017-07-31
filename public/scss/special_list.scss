@@ -13,6 +13,13 @@ body{
 			margin-top:$pd-mt;
 			height:310px;
 			.special-item{
+				height:306px;
+				.link-img{
+					img{
+						width:100%;
+						height:100%;
+					}
+				}
 				.special-tag{
 					right:15px;
 				}
