@@ -5,7 +5,7 @@
 @import "theme";
 %special_item{
 	.special-wrap{
-		$height:444px;
+		$height:420px;
 		height:$height;
 		.col-left-big{
 			float:left;
@@ -63,7 +63,7 @@
 			float:left;
 			width:33.3333333333%;
 			height:$height;
-			$s-height:210px;
+			$s-height:198px;
 			.right-top{
 				height:$s-height;
 				overflow:hidden;

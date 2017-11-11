@@ -15,7 +15,7 @@
 		border:1px solid $bg-color;
 		margin-bottom:32px;
 		position:relative;
-		@include transition(margin-top 0ms linear);
+		//@include transition(margin-top 0s linear);
 		a.img-link{
 			img{
 			width:100%;
@@ -34,7 +34,7 @@
 		}
 		.notice-wrap{
 			padding:0 12px;
-			@include transition(margin-top,500ms,linear);
+			//@include transition(margin-top,200ms,linear);
 			.sms-title{
 				@include ellipsis(nowrap);
 				color:$black;
@@ -66,8 +66,18 @@
 			}
 		}
 		&:hover{
-			margin-top:-4px;
-			@include box-shadow(0px 4px 4px 2px $shadow-color);
+			@include animation(shadow 300ms linear  1 normal);
+			animation-fill-mode: forwards;
 		}
+	}
+}
+
+@include keyframes(shadow){
+	0%{
+		@include box-shadow(0px 4px 8px 2px $zero-color);
+	}
+	100%{
+		margin-top:-4px;
+		@include box-shadow(0px 4px 8px 2px $shadow-color);
 	}
 }

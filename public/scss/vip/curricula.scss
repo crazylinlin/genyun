@@ -25,10 +25,12 @@ body{
 		margin:0;
 		padding:0;
 		@include no-bullets();
-		@include inline-block-list(20px);
 		li{
+			@include inline-block();
 			padding-top:18px;
 			padding-bottom:18px;
+			margin-left:20px;
+			margin-right:20px;
 			border-bottom: 3px solid transparent;
 			a{
 				@include unstyled-link();

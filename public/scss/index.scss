@@ -51,6 +51,7 @@ body{
 	margin-top:24px;
 	padding:0;
 	.title-wrap{
+		font-weight:bold;
 		.all-right{
 			@include unstyled-link();
 			float:right;
